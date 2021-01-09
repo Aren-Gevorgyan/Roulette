@@ -34,12 +34,54 @@ header{
    border: 8px solid #643013;
 }
 
-.lastData{
+.containerLastData{
+    border: 1px solid white;
     display: flex;
     align-items: center;
+    justify-content: space-around;
 }
 
-#time{
+.lastDataTitle{
+    word-wrap: break-word;
+    font-size: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+    color: gold;
+    border: 1px solid white;
+}
+
+.lastData{
+    width: 12%;
+    height: 300px;
+    border-left: 1px groove white;
+    border-top: 1px groove white;
+    border-bottom: 1px groove white;
+    background-color: #232221;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.lastDataNumber{
+    height: 285px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.numberData{
+    height: 26px;
+    border: 1px solid white;
+    border-radius: 6px;
+    background-color: #111010;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.stopwatch{
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -47,12 +89,11 @@ header{
     justify-content: center;
     align-items: center;
     background-color: white;
-    border: 1px solid white;
     position: relative;
     overflow: hidden;
 }
 
-#timeProcess{
+#stopwatchProcess{
     width: 0;
     height: 30px;
     margin-top: -2px;
@@ -60,7 +101,7 @@ header{
     background-color: cadetblue;
 }
 
-#startTime{
+#startStopwatch{
     width: 80px;
     height: 80px;
     border-radius: 50%;
@@ -73,15 +114,14 @@ header{
     color: white;
 }
 
-.timeProcessLeft{
+.stopwatchProcessLeft{
    height: 100px;
    overflow: hidden;
    padding: 0;
 }
 
-.timeProcessRight{
+.stopwatchProcessRight{
    overflow: hidden;
    height: 100px;
    padding: 0;
 }
-

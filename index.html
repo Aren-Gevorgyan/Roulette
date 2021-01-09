@@ -13,7 +13,7 @@
 
    <header class ='row'>
 
-      <div class = 'containerScore col-3'>
+      <div class = 'containerScore col'>
 
         <h1 id = 'title'>Run Routte</h1>
         <div class = 'score col-5'><span >Score:</span><p>0.25</p></div>
@@ -22,17 +22,23 @@
 
       </div>
 
-      <div class = 'roulette col-5'>
+      <div class = 'roulette col'>
       </div>
 
-      <div class = 'lastData col-3'>
-        <div id = 'time'>
-          <div class = 'timeProcessLeft col'></div>
-          <div class = 'timeProcessRight col'></div>
-            <div id = 'startTime'>
-                <h2 id = 'timeNumber'>
+      <div class = 'row containerLastData col'>
+        <div class = 'stopwatch'>
+          <div class = 'stopwatchProcessLeft col'></div>
+          <div class = 'stopwatchProcessRight col'></div>
+            <div id = 'startStopwatch'>
+                <h2 id = 'stopwatchNumber'>
                 </h2>
             </div>
+        </div>
+         
+        <div class = 'lastDataTitle col-1'>LAST10DATA</div> 
+
+        <div class = 'lastData'>
+           <div class = 'lastDataNumber col-11'></div>
         </div>
       </div>
 

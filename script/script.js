@@ -1,16 +1,16 @@
 $(document).ready(function(){
     
-    function cretaeTime(){
+    function cretaeStopwatch(){
         
-        let time = 59;
-        let timeDiv = $('#time');
-        let timeProcessRight = $('.timeProcessRight');
-        let timeProcessLeft = $('.timeProcessLeft');  
+        let stopwatch = 59;
+        let stopwatchDiv = $('.stopwatch');
+        let stopwatchProcessRight = $('.stopwatchProcessRight');
+        let stopwatchProcessLeft = $('.stopwatchProcessLeft');  
         let rotateSize = 0;
         let heightBorder = '90px';
         let colorArrow = 'cadetblue';
         let cretaeDiv;
-        let timeNumber = $('#timeNumber');
+        let stopwatchNumber = $('#stopwatchNumber');
         
         setInterval(function(){
             cretaeArrow();
@@ -20,12 +20,12 @@ $(document).ready(function(){
 
             processConditions();
             setInterval(function(){
-                timeDiv.css({'box-shadow': '1px 1px 15px 10px #411F0C',})
+                stopwatchDiv.css({'box-shadow': '1px 1px 15px 10px #411F0C',})
             }, 900)
 
             appendArrow();
             createArrowStyle();
-            timeNumber.text(time--);
+            stopwatchNumber.text(stopwatch--);
             rotateSize+=6;
         }
 
@@ -34,21 +34,21 @@ $(document).ready(function(){
                 newStart()
             }else if (rotateSize === 294){
                colorArrow = 'red';
-               timeDiv.css({'box-shadow': '1px 1px 15px 10px #411F0C',})
-            } else if (rotateSize === 264 || rotateSize === 270 || rotateSize === 276 || rotateSize === 282 || rotateSize === 288){
-               timeDiv.css({'box-shadow': '1px 1px 15px 10px white',})   
+               stopwatchDiv.css({'box-shadow': '1px 1px 15px 10px #411F0C',})
+            } else if (rotateSize === 264 || rotateSize === 270 || rotateSize === 276 || rotateSize === 282 || rotateSize === 288 || rotateSize === 2){
+                stopwatchDiv.css({'box-shadow': '1px 1px 15px 10px white',})   
             }else if (rotateSize > 10){
                heightBorder = '105px';
             }
         }
 
         function newStart(){
-            timeProcessRight.empty();
-            timeProcessLeft.empty();
+            stopwatchProcessRight.empty();
+            stopwatchProcessLeft.empty();
             colorArrow = 'cadetblue';
             heightBorder =  '90px';
             rotateSize = 0;
-            time = 59;
+            stopwatch = 59;
         }
         
         function createArrowStyle(){
@@ -66,14 +66,27 @@ $(document).ready(function(){
         function appendArrow(){
             cretaeDiv = `<div id="arrow${rotateSize}"></div>`;
             if(rotateSize <= 180){
-                timeProcessRight.append(cretaeDiv);
+                stopwatchProcessRight.append(cretaeDiv);
             }else{
-                timeProcessLeft.append(cretaeDiv);
+                stopwatchProcessLeft.append(cretaeDiv);
                 $(`#arrow${rotateSize}`).css({'left': '48px',})
             }  
         }
     }
 
-    cretaeTime();
+
+    function createLastData(number){
+        let lastNumber = 4;
+        let lastDataArray = [24,25, 26, 28, 29, 30, 31, 32, 33, 34];
+        lastDataArray.push(lastNumber);
+        lastDataArray.shift();
+        lastDataArray.forEach(value => {
+            let createDiv = `<div class="numberData col-12">${value}</div>`
+            $('.lastDataNumber').append(createDiv);
+        })
+    }
+
+    cretaeStopwatch();
+    createLastData();
 
 })
