@@ -2,6 +2,10 @@
     border: 1px solid red;
 } */
 
+.row{
+    margin: 0;
+}
+
 body{
    margin: 0;
 }
@@ -16,13 +20,6 @@ header{
     background-color: #411F0C;
 }
 
-#title{
-    margin-left: 4%;
-    margin-top: 1%;
-    font-size: 50px;
-    color: #F0A92B;
-}
-
 .containerScore{
     border: 1px solid black;
     padding: 0;
@@ -31,7 +28,6 @@ header{
 .score, .win, .bet{
    height: 60px;
    color: white;
-   border: 8px solid #643013;
 }
 
 .containerLastData{
@@ -39,15 +35,6 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-}
-
-.lastDataTitle{
-    word-wrap: break-word;
-    font-size: 16px;
-    margin-top: auto;
-    margin-bottom: auto;
-    color: gold;
-    border: 1px solid white;
 }
 
 .lastData{
