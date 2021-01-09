@@ -1,41 +1,54 @@
 $(document).ready(function(){
     
     function cretaeTime(){
+        
         let time = 59;
+        let timeDiv = $('#time');
         let timeProcessRight = $('.timeProcessRight');
-        let timeProcessLeft = $('.timeProcessLeft');
+        let timeProcessLeft = $('.timeProcessLeft');  
         let rotateSize = 0;
         let heightBorder = '90px';
         let colorArrow = 'cadetblue';
         let cretaeDiv;
         let timeNumber = $('#timeNumber');
-
-        let createTime = setInterval(function(){
-            cretaeTimeNuber();   
+        
+        setInterval(function(){
             cretaeArrow();
         }, 1000)
 
-        function cretaeTimeNuber(){
+        function cretaeArrow(){
+
+            processConditions();
+            setInterval(function(){
+                timeDiv.css({'box-shadow': '1px 1px 15px 10px #411F0C',})
+            }, 900)
+
+            appendArrow();
+            createArrowStyle();
             timeNumber.text(time--);
-            if(time < 0){
-                time = 60;
+            rotateSize+=6;
+        }
+
+        function  processConditions(){
+            if(rotateSize === 354){
+                newStart()
+            }else if (rotateSize === 294){
+               colorArrow = 'red';
+               timeDiv.css({'box-shadow': '1px 1px 15px 10px #411F0C',})
+            } else if (rotateSize === 264 || rotateSize === 270 || rotateSize === 276 || rotateSize === 282 || rotateSize === 288){
+               timeDiv.css({'box-shadow': '1px 1px 15px 10px white',})   
+            }else if (rotateSize > 10){
+               heightBorder = '105px';
             }
         }
 
-        function cretaeArrow(){
-            
-            appendArrow();
-            createArrowStyle();
-            if(rotateSize > 350){
-                clearInterval(createTime);
-                timeProcessRight.empty()
-                timeProcessLeft.empty()       
-            }else if (rotateSize > 290){
-               colorArrow = 'red';
-            } else if (rotateSize > 10){
-               heightBorder = '105px';
-            } 
-            rotateSize+=6;
+        function newStart(){
+            timeProcessRight.empty();
+            timeProcessLeft.empty();
+            colorArrow = 'cadetblue';
+            heightBorder =  '90px';
+            rotateSize = 0;
+            time = 59;
         }
         
         function createArrowStyle(){
@@ -43,7 +56,7 @@ $(document).ready(function(){
                 {
                     'position':'absolute',
                     'margin-top': `-5px`,
-                    'border': `5px solid ${colorArrow}`,
+                    'border': `4px solid ${colorArrow}`,
                     'height': `${heightBorder}`,
                     'background-color': `${colorArrow}`,
                     'transform': `rotate(${rotateSize}deg)`,
@@ -56,54 +69,11 @@ $(document).ready(function(){
                 timeProcessRight.append(cretaeDiv);
             }else{
                 timeProcessLeft.append(cretaeDiv);
-                $(`#arrow${rotateSize}`).css({'left': '45px',})
+                $(`#arrow${rotateSize}`).css({'left': '48px',})
             }  
         }
     }
 
     cretaeTime();
 
-    // function changeTime(){
-    //     let roit = $('.timeProcessRight');
-    //     let roit1 = $('.timeProcessLeft');
-    //     let count = 0;
-    //     let count1 = '90px';
-    //     let cretaeDiv;
-
-    //     let a = setInterval(function(){
-           
-    //         cretaeDiv = `<div id="arrow${count}"></div>`;
-
-    //         if(count <= 180){
-    //             roit.append(cretaeDiv);
-    //         }else{
-    //             roit1.append(cretaeDiv);
-    //             $(`#arrow${count}`).css({'left': '45px',})
-    //         }  
-
-    //         console.log(count1);
-
-    //         $(`#arrow${count}`).css(
-    //             {
-    //                 'position':'absolute',
-    //                 'margin-top': `-5px`,
-    //                 'border': '4px solid cadetblue',
-    //                 'height': `${count1}`,
-    //                 'background-color': 'cadetblue',
-    //                 'transform': `rotate(${count}deg)`,
-    //             })
-
-
-
-    //         if(count === 360){
-    //             clearInterval(a);
-    //         }else if (count > 10){
-    //            count1 = '105px';
-    //         }
-    //         count+=6;
-
-    //     }, 1000);
-    // }
-
-    // changeTime();
 })
