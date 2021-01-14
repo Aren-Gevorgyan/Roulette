@@ -13,17 +13,62 @@
 
    <header class ='row'>
 
-      <div class = 'containerScore col'>
+      <div class = 'containerScore col-3'>
 
         <div class = 'score col-5'><span >Score:</span><p>0.25</p></div>
-        <div class = 'win col-5'><spna>Win:</spna><p>0</p></div>
+        <div class = 'win col-5'><span>Win:</span><p>0</p></div>
         <div class = 'bet col-5'><span>Bet:</span><p>0</p></div>
+
       </div>
 
       <div class = 'roulette col'>
+        <div id="rotate3d"> 
+          <div class="plate" id="plate">
+               <ul class="inner">
+                   <li class="number"><label><input type="radio" name="pit" value="32" /><span class="pit">32</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="15" /><span class="pit">15</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="19" /><span class="pit">19</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="4" /><span class="pit">4</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="21" /><span class="pit">21</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="2" /><span class="pit">2</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="25" /><span class="pit">25</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="17" /><span class="pit">17</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="34" /><span class="pit">34</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="6" /><span class="pit">6</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="27" /><span class="pit">27</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="13" /><span class="pit">13</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="36" /><span class="pit">36</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="11" /><span class="pit">11</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="30" /><span class="pit">30</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="8" /><span class="pit">8</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="23" /><span class="pit">23</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="10" /><span class="pit">10</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="5" /><span class="pit">5</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="24" /><span class="pit">24</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="16" /><span class="pit">16</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="33" /><span class="pit">33</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="1" /><span class="pit">1</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="20" /><span class="pit">20</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="14" /><span class="pit">14</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="31" /><span class="pit">31</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="9" /><span class="pit">9</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="22" /><span class="pit">22</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="18" /><span class="pit">18</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="29" /><span class="pit">29</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="7" /><span class="pit">7</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="28" /><span class="pit">28</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="12" /><span class="pit">12</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="35" /><span class="pit">35</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="3" /><span class="pit">3</span></label></li>
+                   <li class="number"><label><input type="radio" name="pit" value="26" /><span class="pit">26</span></label></li>
+                 <li class="number"><label><input type="radio" name="pit" value="0" /><span class="pit">0</span></label></li>
+               </ul>
+             <div class="wheel"></div>
+          </div>
+        </div>
       </div>
 
-      <div class = 'containerLastData row col'>
+      <div class = 'containerLastData row col-3'>
         <div class = 'stopwatch'>
           <div class = 'stopwatchProcessLeft col'></div>
           <div class = 'stopwatchProcessRight col'></div>
@@ -39,6 +84,114 @@
       </div>
 
    </header>
+
+   <div class='container_table col-12'>
+     
+   <div class='tableNumberContainer col-11 offset-1'>
+      <div class='tableNumber0'></div>
+
+      <div class='firstLineNumber'>
+        <div class='tableNumber3'></div>
+        <div class='tableNumber2'></div>
+        <div class='tableNumber1'></div>  
+      </div>
+
+      <div class='secondLineNumber'>
+        <div class='tableNumber6'></div>
+        <div class='tableNumber5'></div>
+        <div class='tableNumber4'></div>  
+      </div>
+
+      <div class='thirdLineNumber'>
+        <div class='tableNumber9'></div>
+        <div class='tableNumber8'></div>
+        <div class='tableNumber7'></div>  
+      </div>
+
+      <div class='fourthLineNumber'>
+        <div class='tableNumber12'></div>
+        <div class='tableNumber11'></div>
+        <div class='tableNumber10'></div>  
+      </div>
+
+      <div class='fifthLineNumber'>
+        <div class='tableNumber15'></div>
+        <div class='tableNumber14'></div>
+        <div class='tableNumber13'></div>  
+      </div>
+
+      <div class='sixthLineNumber'>
+        <div class='tableNumber18'></div>
+        <div class='tableNumber17'></div>
+        <div class='tableNumber16'></div>  
+      </div>
+
+      <div class='seventhLineNumber'>
+        <div class='tableNumber21'></div>
+        <div class='tableNumber20'></div>
+        <div class='tableNumber19'></div>  
+      </div>
+
+      <div class='eighthLineNumber'>
+        <div class='tableNumber24'></div>
+        <div class='tableNumber23'></div>
+        <div class='tableNumber22'></div>  
+      </div>
+
+      <div class='ninethLineNumber'>
+        <div class='tableNumber27'></div>
+        <div class='tableNumber26'></div>
+        <div class='tableNumber25'></div>  
+      </div>
+
+      <div class='tenthLineNumber'>
+        <div class='tableNumber27'></div>
+        <div class='tableNumber26'></div>
+        <div class='tableNumber25'></div>  
+      </div>
+
+      <div class='eleventhLineNumber'>
+        <div class='tableNumber27'></div>
+        <div class='tableNumber26'></div>
+        <div class='tableNumber25'></div>  
+      </div>
+
+      <div class='twelfthLineNumber'>
+        <div class='tableNumber27'></div>
+        <div class='tableNumber26'></div>
+        <div class='tableNumber25'></div>  
+      </div>
+      
+      <div class='getLines'>
+        <div class='firstLine'></div>
+        <div class='secondLine'></div>
+        <div class='thirdLine'></div>
+      </div>
+
+    </div>
+
+    <div class='container_logic'>
+
+       <div class='firstLogic col'>
+        <div class='_1st12'></div>
+        <div class='_1to18'></div>
+        <div class='even'></div>  
+      </div>
+
+      <div class='secondLogic col'>
+        <div class='_2en12'></div>
+        <div class='highlightColorRed'></div>
+        <div class='highlightColorBlack'></div>  
+      </div>
+
+      <div class='thirdLogic col'>
+        <div class='_3rd12'></div>
+        <div class='odd'></div>
+        <div class='_19to36'></div>  
+      </div>
+    </div>
+      
+   </div>
 
  </div>
 
