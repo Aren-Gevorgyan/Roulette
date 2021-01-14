@@ -137,4 +137,138 @@ $(document).ready(function() {
 
     plate.css("animation-play-state", "paused");
 
+    $('#tableNumber0').mouseover(function() {
+        $(this).css({ 'background-color': 'white', 'opacity': '0.2' });
+    })
+
+    $('#tableNumber0').mouseout(function() {
+        $(this).css({ 'background-color': 'white', 'opacity': '0' });
+    })
+
+    $('#firstLine').mouseover(function() {
+        setOpacityLine(1, this);
+    })
+
+    $('#firstLine').mouseout(function() {
+        deleteOpacityLine(1);
+    })
+
+    $('#secondLine').mouseover(function() {
+        setOpacityLine(2, this);
+    })
+
+    $('#secondLine').mouseout(function() {
+        deleteOpacityLine(2);
+    })
+
+    $('#thirdLine').mouseover(function() {
+        setOpacityLine(3, this);
+    })
+
+    $('#thirdLine').mouseout(function() {
+        deleteOpacityLine(3);
+    })
+
+    function setOpacityLine(numberChild, $this) {
+        $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`).css({ 'background-color': 'white', 'opacity': '0.2' });
+        $($this).css({ 'background-color': 'white', 'opacity': '0' })
+    }
+
+    function deleteOpacityLine(numberChild) {
+        $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`).css({ 'background-color': 'white', 'opacity': '0' });
+    }
+
+    $('#_1st12').mouseover(function() {
+        opacityFourOrEighLine(1, 12, 0.2)
+    })
+
+    $('#_1st12').mouseout(function() {
+        opacityFourOrEighLine(1, 12, 0)
+    })
+
+    $('#_2en12').mouseover(function() {
+        opacityFourOrEighLine(13, 24, 0.2)
+    })
+
+    $('#_2en12').mouseout(function() {
+        opacityFourOrEighLine(13, 24, 0)
+    })
+
+    $('#_3rd12').mouseover(function() {
+        opacityFourOrEighLine(25, 36, 0.2)
+    })
+
+    $('#_3rd12').mouseout(function() {
+        opacityFourOrEighLine(25, 36, 0)
+
+    })
+
+    $('#_1to18').mouseover(function() {
+        opacityFourOrEighLine(1, 18, 0.2)
+
+    })
+
+    $('#_1to18').mouseout(function() {
+        opacityFourOrEighLine(1, 18, 0)
+
+    })
+
+    $('#_19to36').mouseover(function() {
+        opacityFourOrEighLine(19, 36, 0.2)
+    })
+
+    $('#_19to36').mouseout(function() {
+        opacityFourOrEighLine(19, 36, 0)
+    })
+
+    function opacityFourOrEighLine(startNumber, sizeNumber, opacity) {
+        for (let i = startNumber; i <= sizeNumber; i++) {
+            $(`#tableNumber${i}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
+        }
+    }
+
+    $('#even').mouseover(function() {
+        hoverEvenOrOdd(2, 0.2);
+    })
+
+    $('#even').mouseout(function() {
+        hoverEvenOrOdd(2, 0);
+    })
+
+    $('#odd').mouseover(function() {
+        hoverEvenOrOdd(1, 0.2);
+    })
+
+    $('#odd').mouseout(function() {
+        hoverEvenOrOdd(1, 0);
+    })
+
+    function hoverEvenOrOdd(startNumber, opacity) {
+        let pairNumber = startNumber;
+        for (let i = 0; i <= 18; i++) {
+            $(`#tableNumber${pairNumber}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
+            pairNumber += 2;
+        }
+    }
+
+    $('#highlightColorRed').mouseover(function() {
+        hoverRedOrBlack('red', 0.2)
+    })
+
+    $('#highlightColorRed').mouseout(function() {
+        hoverRedOrBlack('red', 0)
+    })
+
+    $('#highlightColorBlack').mouseover(function() {
+        hoverRedOrBlack('black', 0.2)
+    })
+
+    $('#highlightColorBlack').mouseout(function() {
+        hoverRedOrBlack('black', 0)
+    })
+
+    function hoverRedOrBlack(color, opacity) {
+        $(`.${color}`).css({ 'background-color': 'white', 'opacity': `${opacity}` })
+    }
+
 });

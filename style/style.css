@@ -687,8 +687,38 @@ body {
     }
 }
 
+.container_money {
+    margin-left: 0;
+    margin-right: 0;
+    padding-right: 0%;
+    padding-left: 0%;
+    margin-top: -97px;
+}
+
+.leftMoney,
+.rightMoney {
+    display: flex;
+    padding-right: 0%;
+    padding-left: 0%;
+}
+
+.leftMoney {
+    margin-left: 13.9%;
+}
+
+.rightMoney {
+    margin-left: 31.9%;
+}
+
+.leftMoney>div,
+.rightMoney>div {
+    width: 20%;
+    height: 80px;
+    border-radius: 4px;
+}
+
 .container_table {
-    margin-top: 178px;
+    margin-top: 176px;
     padding-left: 0;
     padding-right: 0;
 }
@@ -697,6 +727,7 @@ body {
     display: flex;
     padding-left: 0;
     padding-right: 0;
+    margin-top: 27px;
 }
 
 #tableNumber0 {
@@ -818,7 +849,7 @@ body {
 }
 
 #_1to18,
-#highlightColorRed,
+#highlightColorBlack,
 #odd {
     width: 51%;
     height: 52%;
@@ -827,7 +858,7 @@ body {
 }
 
 #even,
-#highlightColorBlack,
+#highlightColorRed,
 #_19to36 {
     width: 51%;
     height: 52%;
@@ -842,11 +873,11 @@ body {
     transform: skewX(-3deg);
 }
 
-#highlightColorRed {
+#highlightColorBlack {
     transform: skewX(-3deg);
 }
 
-#highlightColorBlack {
+#highlightColorRed {
     transform: skewX(4deg);
 }
 
