@@ -137,45 +137,46 @@ $(document).ready(function() {
 
     plate.css("animation-play-state", "paused");
 
-    $('#tableNumber0').mouseover(function() {
-        $(this).css({ 'background-color': 'white', 'opacity': '0.2' });
-    })
+    bindHoverTableNumber();
 
-    $('#tableNumber0').mouseout(function() {
-        $(this).css({ 'background-color': 'white', 'opacity': '0' });
-    })
+    function bindHoverTableNumber(opacity) {
+        for (let i = 0; i <= 36; i++) {
+            $(`#tableNumber${i}`).mouseover(function() {
+                $(this).css({ 'background-color': 'white', 'opacity': `0.2` });
+            })
+            $(`#tableNumber${i}`).mouseout(function() {
+                $(this).css({ 'background-color': 'white', 'opacity': `0` });
+            })
+        }
+    }
 
     $('#firstLine').mouseover(function() {
-        setOpacityLine(1, this);
+        setOpacityLine(1, 0.2, this);
     })
 
     $('#firstLine').mouseout(function() {
-        deleteOpacityLine(1);
+        setOpacityLine(1, 0);
     })
 
     $('#secondLine').mouseover(function() {
-        setOpacityLine(2, this);
+        setOpacityLine(2, 0.2, this);
     })
 
     $('#secondLine').mouseout(function() {
-        deleteOpacityLine(2);
+        setOpacityLine(2, 0);
     })
 
     $('#thirdLine').mouseover(function() {
-        setOpacityLine(3, this);
+        setOpacityLine(3, 0.2, this);
     })
 
     $('#thirdLine').mouseout(function() {
-        deleteOpacityLine(3);
+        setOpacityLine(3, 0);
     })
 
-    function setOpacityLine(numberChild, $this) {
-        $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`).css({ 'background-color': 'white', 'opacity': '0.2' });
+    function setOpacityLine(numberChild, opacity, $this) {
+        $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
         $($this).css({ 'background-color': 'white', 'opacity': '0' })
-    }
-
-    function deleteOpacityLine(numberChild) {
-        $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`).css({ 'background-color': 'white', 'opacity': '0' });
     }
 
     $('#_1st12').mouseover(function() {
