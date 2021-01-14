@@ -1,13 +1,7 @@
 $(document).ready(function() {
     cretaeStopwatch();
     let inner = $(".inner");
-    let spin = $("#spin");
-    let reset = $("#reset");
-    let data = $(".data");
-    let mask = $(".mask");
     let plate = $("#plate");
-    let maskDefault = "Place Your Bets";
-    let timer = 9000;
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
 
     function cretaeStopwatch() {
@@ -90,28 +84,20 @@ $(document).ready(function() {
     function spinSharik(lastDataArray, lastNumberColorArray) {
 
         plate.css("animation-play-state", "running");
-        var randomNumber = Math.floor(Math.random() * 36),
+        let randomNumber = Math.floor(Math.random() * 36),
             color = null;
         inner
             .attr("data-spinto", randomNumber)
             .find("li:nth-child(" + randomNumber + ") input")
             .prop("checked", "checked");
         $(this).hide();
-        reset.addClass("disabled").prop("disabled", "disabled").show();
 
-        $(".placeholder").remove();
+        getRouletteNumber(randomNumber, lastDataArray, lastNumberColorArray);
+    }
 
-        setTimeout(function() {
-            mask.text("No More Bets");
-        }, timer / 2);
-
-        setTimeout(function() {
-            mask.text(maskDefault);
-        }, timer + 500);
-
+    function getRouletteNumber(randomNumber, lastDataArray, lastNumberColorArray) {
         setTimeout(function() {
             plate.css("animation-play-state", "paused");
-            reset.removeClass("disabled").prop("disabled", "");
 
             if ($.inArray(randomNumber, red) !== -1) {
                 color = "red";
@@ -122,20 +108,14 @@ $(document).ready(function() {
                 color = "green";
             }
 
-            $(".result-number").text(randomNumber);
-            $(".result-color").text(color);
-            $(".result").css({ "background-color": "" + color + "" });
-            data.addClass("reveal");
             inner.addClass("rest");
 
             createLastData(randomNumber, color, lastDataArray, lastNumberColorArray);
-        }, timer);
-
+        }, 9000);
     }
 
     function createLastData(number, color, lastDataArray, lastNumberColorArray) {
         $('.lastDataNumber').empty();
-        console.log(color);
         lastNumberColorArray.push(color);
         lastDataArray.push({ number, color });
 
@@ -144,51 +124,17 @@ $(document).ready(function() {
         }
 
         lastDataArray.forEach(value => {
-            console.log(value);
             let createDiv = `<div class="numberData col-12" style="background-color: ${value.color}">${value.number}</div>`
             $('.lastDataNumber').append(createDiv);
         })
 
-        // lastNumberColorArray.forEach(value => {
-        //     $('.numberData').css({ 'background-color': value });
-        // })
     }
 
     function deleteSharik() {
         inner.attr("data-spinto", "").removeClass("rest");
         $(this).hide();
-        spin.show();
-        data.removeClass("reveal");
     }
 
-
     plate.css("animation-play-state", "paused");
-    reset.hide();
-
-    mask.text(maskDefault);
-
-    spin.on("click", function() {
-
-    });
-
-    reset.on("click", function() {
-        inner.attr("data-spinto", "").removeClass("rest");
-        $(this).hide();
-        spin.show();
-        data.removeClass("reveal");
-    });
-
-    // so you can swipe it too
-    var myElement = document.getElementById("plate");
-    var mc = new Hammer(myElement);
-    mc.on("swipe", function(ev) {
-        if (!$reset.hasClass("disabled")) {
-            if (spin.is(":visible")) {
-                spin.click();
-            } else {
-                $reset.click();
-            }
-        }
-    });
 
 });

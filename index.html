@@ -18,7 +18,10 @@
         <div class = 'score col-5'><span >Score:</span><p>0.25</p></div>
         <div class = 'win col-5'><span>Win:</span><p>0</p></div>
         <div class = 'bet col-5'><span>Bet:</span><p>0</p></div>
-
+        <div class = 'container_buttonLeft col-11'>
+          <button id = 'bet' class='col-3'>Bet</button>
+          <button id = 'rebet' class='col-3'>Rebet</button>
+        </div>
       </div>
 
       <div class = 'roulette col'>
@@ -63,7 +66,6 @@
                    <li class="number"><label><input type="radio" name="pit" value="26" /><span class="pit">26</span></label></li>
                  <li class="number"><label><input type="radio" name="pit" value="0" /><span class="pit">0</span></label></li>
                </ul>
-             <div class="wheel"></div>
           </div>
         </div>
       </div>
@@ -81,6 +83,12 @@
         <div class = 'lastData'>
            <div class = 'lastDataNumber col-11'></div>
         </div>
+
+        <div class = 'container_buttonRight col-11 offset-1'>
+          <button id = 'take' class='col-3'>Take</button>
+          <button id = 'quit' class='col-3'>Quit</button>
+        </div>
+
       </div>
 
    </header>
@@ -88,106 +96,106 @@
    <div class='container_table col-12'>
      
    <div class='tableNumberContainer col-11 offset-1'>
-      <div class='tableNumber0'></div>
+      <div id='tableNumber0'></div>
 
-      <div class='firstLineNumber'>
-        <div class='tableNumber3'></div>
-        <div class='tableNumber2'></div>
-        <div class='tableNumber1'></div>  
+      <div id='firstLineNumber'>
+        <div id='tableNumber3' value='3'></div>
+        <div id='tableNumber2' value='2'></div>
+        <div id='tableNumber1' value='1'></div>  
       </div>
 
-      <div class='secondLineNumber'>
-        <div class='tableNumber6'></div>
-        <div class='tableNumber5'></div>
-        <div class='tableNumber4'></div>  
+      <div id='secondLineNumber'>
+        <div id='tableNumber6' value='6'></div>
+        <div id='tableNumber5' value='5'></div>
+        <div id='tableNumber4' value='4'></div>  
       </div>
 
-      <div class='thirdLineNumber'>
-        <div class='tableNumber9'></div>
-        <div class='tableNumber8'></div>
-        <div class='tableNumber7'></div>  
+      <div id='thirdLineNumber'>
+        <div id='tableNumber9' value='9'></div>
+        <div id='tableNumber8' value='8'></div>
+        <div id='tableNumber7' value='7'></div>  
       </div>
 
-      <div class='fourthLineNumber'>
-        <div class='tableNumber12'></div>
-        <div class='tableNumber11'></div>
-        <div class='tableNumber10'></div>  
+      <div id='fourthLineNumber'>
+        <div id='tableNumber12' value='12'></div>
+        <div id='tableNumber11' value='11'></div>
+        <div id='tableNumber10' value='10'></div>  
       </div>
 
-      <div class='fifthLineNumber'>
-        <div class='tableNumber15'></div>
-        <div class='tableNumber14'></div>
-        <div class='tableNumber13'></div>  
+      <div id='fifthLineNumber'>
+        <div id='tableNumber15' value='15'></div>
+        <div id='tableNumber14' value='14'></div>
+        <div id='tableNumber13' value='13'></div>  
       </div>
 
-      <div class='sixthLineNumber'>
-        <div class='tableNumber18'></div>
-        <div class='tableNumber17'></div>
-        <div class='tableNumber16'></div>  
+      <div id='sixthLineNumber'>
+        <div id='tableNumber18' value='18'></div>
+        <div id='tableNumber17' value='17'></div>
+        <div id='tableNumber16' value='16'></div>  
       </div>
 
-      <div class='seventhLineNumber'>
-        <div class='tableNumber21'></div>
-        <div class='tableNumber20'></div>
-        <div class='tableNumber19'></div>  
+      <div id='seventhLineNumber'>
+        <div id='tableNumber21' value='21'></div>
+        <div id='tableNumber20' value='20'></div>
+        <div id='tableNumber19' value='19'></div>  
       </div>
 
-      <div class='eighthLineNumber'>
-        <div class='tableNumber24'></div>
-        <div class='tableNumber23'></div>
-        <div class='tableNumber22'></div>  
+      <div id='eighthLineNumber'>
+        <div id='tableNumber24' value='24'></div>
+        <div id='tableNumber23' value='23'></div>
+        <div id='tableNumber22' value='22'></div>  
       </div>
 
-      <div class='ninethLineNumber'>
-        <div class='tableNumber27'></div>
-        <div class='tableNumber26'></div>
-        <div class='tableNumber25'></div>  
+      <div id='ninethLineNumber'>
+        <div id='tableNumber27' value='27'></div>
+        <div id='tableNumber26' value='26'></div>
+        <div id='tableNumber25' value='25'></div>  
       </div>
 
-      <div class='tenthLineNumber'>
-        <div class='tableNumber27'></div>
-        <div class='tableNumber26'></div>
-        <div class='tableNumber25'></div>  
+      <div id='tenthLineNumber'>
+        <div id='tableNumber30' value='30'></div>
+        <div id='tableNumber29' value='29'></div>
+        <div id='tableNumber28' value='28'></div>  
       </div>
 
-      <div class='eleventhLineNumber'>
-        <div class='tableNumber27'></div>
-        <div class='tableNumber26'></div>
-        <div class='tableNumber25'></div>  
+      <div id='eleventhLineNumber'>
+        <div id='tableNumber33' value='33'></div>
+        <div id='tableNumber32' value='32'></div>
+        <div id='tableNumber31' value='31'></div>  
       </div>
 
-      <div class='twelfthLineNumber'>
-        <div class='tableNumber27'></div>
-        <div class='tableNumber26'></div>
-        <div class='tableNumber25'></div>  
+      <div id='twelfthLineNumber'>
+        <div id='tableNumber36' value='36'></div>
+        <div id='tableNumber35' value='35'></div>
+        <div id='tableNumber34' value='34'></div>  
       </div>
       
-      <div class='getLines'>
-        <div class='firstLine'></div>
-        <div class='secondLine'></div>
-        <div class='thirdLine'></div>
+      <div id='getLines'>
+        <div id='firstLine'></div>
+        <div id='secondLine'></div>
+        <div id='thirdLine'></div>
       </div>
 
     </div>
 
-    <div class='container_logic'>
+    <div id='container_logic'>
 
        <div class='firstLogic col'>
-        <div class='_1st12'></div>
-        <div class='_1to18'></div>
-        <div class='even'></div>  
+        <div id='_1st12'></div>
+        <div id='_1to18'></div>
+        <div id='even'></div>  
       </div>
 
       <div class='secondLogic col'>
-        <div class='_2en12'></div>
-        <div class='highlightColorRed'></div>
-        <div class='highlightColorBlack'></div>  
+        <div id='_2en12'></div>
+        <div id='highlightColorRed'></div>
+        <div id='highlightColorBlack'></div>  
       </div>
 
       <div class='thirdLogic col'>
-        <div class='_3rd12'></div>
-        <div class='odd'></div>
-        <div class='_19to36'></div>  
+        <div id='_3rd12'></div>
+        <div id='odd'></div>
+        <div id='_19to36'></div>  
       </div>
     </div>
       
