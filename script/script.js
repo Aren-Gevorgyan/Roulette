@@ -2,19 +2,20 @@ $(document).ready(function() {
     cretaeStopwatch();
     let inner = $(".inner");
     let plate = $("#plate");
+    let opacityTableNumber = 0.2;
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
 
     function cretaeStopwatch() {
 
-        let stopwatch = 59;
-        let stopwatchDiv = $('.stopwatch');
-        let stopwatchProcessRight = $('.stopwatchProcessRight');
-        let stopwatchProcessLeft = $('.stopwatchProcessLeft');
+        let stopWatch = 59;
+        let stopWatchDiv = $('.stopWatch');
+        let stopWatchProcessRight = $('.stopWatchProcessRight');
+        let stopWatchProcessLeft = $('.stopWatchProcessLeft');
         let rotateSize = 0;
         let heightBorder = '90px';
         let colorArrow = '#1383BF';
         let cretaeDiv;
-        let stopwatchNumber = $('#stopwatchNumber');
+        let stopWatchNumber = $('#stopWatchNumber');
         let lastDataArray = [];
         let lastNumberColorArray = [];
 
@@ -26,12 +27,12 @@ $(document).ready(function() {
 
             processConditions();
             setInterval(function() {
-                stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803', })
+                stopWatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803', })
             }, 900)
 
             appendArrow();
             createArrowStyle();
-            stopwatchNumber.text(stopwatch--);
+            stopWatchNumber.text(stopWatch--);
             rotateSize += 6;
         }
 
@@ -39,24 +40,26 @@ $(document).ready(function() {
             if (rotateSize === 354) {
                 newStart();
                 spinSharik(lastDataArray, lastNumberColorArray);
+                opacityTableNumber = 0.2;
             } else if (rotateSize === 294) {
                 colorArrow = 'red';
-                stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803', })
+                stopWatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
                 deleteSharik();
+                opacityTableNumber = 0;
             } else if (rotateSize === 264 || rotateSize === 270 || rotateSize === 276 || rotateSize === 282 || rotateSize === 288 || rotateSize === 2) {
-                stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px white', })
+                stopWatchDiv.css({ 'box-shadow': '1px 1px 15px 10px white', })
             } else if (rotateSize > 10) {
                 heightBorder = '105px';
             }
         }
 
         function newStart() {
-            stopwatchProcessRight.empty();
-            stopwatchProcessLeft.empty();
+            stopWatchProcessRight.empty();
+            stopWatchProcessLeft.empty();
             colorArrow = '#1383BF';
             heightBorder = '90px';
             rotateSize = 0;
-            stopwatch = 59;
+            stopWatch = 59;
         }
 
         function createArrowStyle() {
@@ -73,9 +76,9 @@ $(document).ready(function() {
         function appendArrow() {
             cretaeDiv = `<div id="arrow${rotateSize}"></div>`;
             if (rotateSize <= 180) {
-                stopwatchProcessRight.append(cretaeDiv);
+                stopWatchProcessRight.append(cretaeDiv);
             } else {
-                stopwatchProcessLeft.append(cretaeDiv);
+                stopWatchProcessLeft.append(cretaeDiv);
                 $(`#arrow${rotateSize}`).css({ 'left': '48px', })
             }
         }
@@ -155,10 +158,10 @@ $(document).ready(function() {
         }
     }
 
-    function bindHoverTableNumber(opacity) {
+    function bindHoverTableNumber() {
         for (let i = 0; i <= 36; i++) {
             $(`#tableNumber${i}`).mouseover(function() {
-                $(this).css({ 'background-color': 'white', 'opacity': `0.2` });
+                $(this).css({ 'background-color': 'white', 'opacity': `${opacityTableNumber}` });
             })
             $(`#tableNumber${i}`).mouseout(function() {
                 $(this).css({ 'background-color': 'white', 'opacity': `0` });
@@ -167,7 +170,7 @@ $(document).ready(function() {
     }
 
     $('#firstLine').mouseover(function() {
-        setOpacityLine(1, 0.2, this);
+        setOpacityLine(1, opacityTableNumber, this);
     })
 
     $('#firstLine').mouseout(function() {
@@ -175,7 +178,7 @@ $(document).ready(function() {
     })
 
     $('#secondLine').mouseover(function() {
-        setOpacityLine(2, 0.2, this);
+        setOpacityLine(2, opacityTableNumber, this);
     })
 
     $('#secondLine').mouseout(function() {
@@ -183,7 +186,7 @@ $(document).ready(function() {
     })
 
     $('#thirdLine').mouseover(function() {
-        setOpacityLine(3, 0.2, this);
+        setOpacityLine(3, opacityTableNumber, this);
     })
 
     $('#thirdLine').mouseout(function() {
@@ -196,7 +199,7 @@ $(document).ready(function() {
     }
 
     $('#_1st12').mouseover(function() {
-        opacityFourOrEighLine(1, 12, 0.2)
+        opacityFourOrEighLine(1, 12, opacityTableNumber)
     })
 
     $('#_1st12').mouseout(function() {
@@ -204,7 +207,7 @@ $(document).ready(function() {
     })
 
     $('#_2en12').mouseover(function() {
-        opacityFourOrEighLine(13, 24, 0.2)
+        opacityFourOrEighLine(13, 24, opacityTableNumber)
     })
 
     $('#_2en12').mouseout(function() {
@@ -212,7 +215,7 @@ $(document).ready(function() {
     })
 
     $('#_3rd12').mouseover(function() {
-        opacityFourOrEighLine(25, 36, 0.2)
+        opacityFourOrEighLine(25, 36, opacityTableNumber)
     })
 
     $('#_3rd12').mouseout(function() {
@@ -221,7 +224,7 @@ $(document).ready(function() {
     })
 
     $('#_1to18').mouseover(function() {
-        opacityFourOrEighLine(1, 18, 0.2)
+        opacityFourOrEighLine(1, 18, opacityTableNumber)
 
     })
 
@@ -231,7 +234,7 @@ $(document).ready(function() {
     })
 
     $('#_19to36').mouseover(function() {
-        opacityFourOrEighLine(19, 36, 0.2)
+        opacityFourOrEighLine(19, 36, opacityTableNumber)
     })
 
     $('#_19to36').mouseout(function() {
@@ -245,7 +248,7 @@ $(document).ready(function() {
     }
 
     $('#even').mouseover(function() {
-        hoverEvenOrOdd(2, 0.2);
+        hoverEvenOrOdd(2, opacityTableNumber);
     })
 
     $('#even').mouseout(function() {
@@ -253,7 +256,7 @@ $(document).ready(function() {
     })
 
     $('#odd').mouseover(function() {
-        hoverEvenOrOdd(1, 0.2);
+        hoverEvenOrOdd(1, opacityTableNumber);
     })
 
     $('#odd').mouseout(function() {
@@ -269,7 +272,7 @@ $(document).ready(function() {
     }
 
     $('#highlightColorRed').mouseover(function() {
-        hoverRedOrBlack('red', 0.2)
+        hoverRedOrBlack('red', opacityTableNumber)
     })
 
     $('#highlightColorRed').mouseout(function() {
@@ -277,7 +280,7 @@ $(document).ready(function() {
     })
 
     $('#highlightColorBlack').mouseover(function() {
-        hoverRedOrBlack('black', 0.2)
+        hoverRedOrBlack('black', opacityTableNumber)
     })
 
     $('#highlightColorBlack').mouseout(function() {

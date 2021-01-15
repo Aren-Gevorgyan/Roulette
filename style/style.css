@@ -78,7 +78,7 @@ body {
     justify-content: center;
 }
 
-.stopwatch {
+.stopWatch {
     width: 100px;
     height: 100px;
     border-radius: 50%;
@@ -112,13 +112,13 @@ body {
     color: white;
 }
 
-.stopwatchProcessLeft {
+.stopWatchProcessLeft {
     height: 100px;
     overflow: hidden;
     padding: 0;
 }
 
-.stopwatchProcessRight {
+.stopWatchProcessRight {
     overflow: hidden;
     height: 100px;
     padding: 0;
