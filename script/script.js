@@ -13,7 +13,7 @@ $(document).ready(function() {
         let stopWatchProcessRight = $('.stopWatchProcessRight');
         let stopWatchProcessLeft = $('.stopWatchProcessLeft');
         let rotateSize = 0;
-        let heightBorder = '90px';
+        let heightBorder = '84px';
         let colorArrow = '#1383BF';
         let cretaeDiv;
         let stopWatchNumber = $('#stopWatchNumber');
@@ -22,7 +22,7 @@ $(document).ready(function() {
 
         setInterval(function() {
             cretaeArrow();
-        }, 1000)
+        }, 500)
 
         function cretaeArrow() {
 
@@ -60,7 +60,7 @@ $(document).ready(function() {
             stopWatchProcessRight.empty();
             stopWatchProcessLeft.empty();
             colorArrow = '#1383BF';
-            heightBorder = '90px';
+            heightBorder = '84px';
             rotateSize = 0;
             stopWatch = 59;
         }
@@ -130,7 +130,7 @@ $(document).ready(function() {
         }
 
         lastDataArray.forEach(value => {
-            let createDiv = `<div class="numberData col-12" style="background-color: ${value.color}">${value.number}</div>`
+            let createDiv = `<div class="numberData" style="background-color: ${value.color}">${value.number}</div>`
             $('.lastDataNumber').append(createDiv);
         })
 
@@ -150,14 +150,14 @@ $(document).ready(function() {
         for (let i = 0; i <= 8; i++) {
             $(`#money${i}`).click(function() {
                 deleteBorderFromMoney();
-                $(this).css({ 'border': '4px solid #41EE05' });
+                $(this).addClass('borderMoney');
             })
         }
     }
 
     function deleteBorderFromMoney() {
         for (let j = 1; j <= 8; j++) {
-            $(`#money${j}`).css({ 'border': 'none' }).click(disabledMoney);
+            $(`#money${j}`).removeClass('borderMoney').click(disabledMoney);
         }
     }
 

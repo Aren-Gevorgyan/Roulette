@@ -1,1 +1,1142 @@
-@media only screen and (max-width: 1800px) {}
+@media only screen and (max-width: 1680px) {
+    .score,
+    .win,
+    .bet {
+        height: 51px;
+    }
+    .container_buttonLeft {
+        margin-top: 34px;
+    }
+    .lastData {
+        width: 19%;
+        height: 284px;
+    }
+    .numberData {
+        width: 80%;
+        height: 25px;
+    }
+    .plate {
+        width: 685px;
+        height: 684px;
+        border-radius: 50%;
+        margin-left: 8.5%;
+    }
+    .number {
+        width: 60px;
+        height: 334px;
+    }
+    .pit {
+        font-size: 25px;
+        left: -1px;
+    }
+    .container_money {
+        margin-top: -116px;
+    }
+    .tableNumberContainer {
+        margin-top: 14px;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninethLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 163px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninethLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 55px;
+        margin-top: -1px;
+    }
+    #tableNumber0 {
+        height: 164px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 63px;
+        margin-top: -4px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #_19to36,
+    #odd,
+    #even {
+        height: 49%;
+        margin-top: -18px;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .score,
+    .win,
+    .bet {
+        height: 46px;
+        font-size: 19px;
+    }
+    .container_buttonLeft {
+        margin-top: 40px;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        font-size: 20px;
+    }
+    .plate {
+        width: 645px;
+        height: 644px;
+        margin-left: 9%;
+        margin-top: 18.6%;
+    }
+    .number {
+        height: 315px;
+    }
+    .container_buttonRight {
+        margin-top: 20px;
+    }
+    .lastData {
+        height: 272px;
+    }
+    .container_money {
+        margin-top: -123px;
+    }
+    #tableNumber0 {
+        height: 152px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninethLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 53px;
+        margin-top: -2%;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninethLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 153px;
+    }
+    .numberData {
+        height: 23.5px;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .score,
+    .win,
+    .bet {
+        height: 42px;
+        font-size: 18px;
+    }
+    .container_buttonLeft {
+        margin-top: 33px;
+        padding: 1px;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 35px;
+        font-size: 18px;
+        border-radius: 6px;
+    }
+    .lastData {
+        height: 242px;
+    }
+    .container_buttonRight {
+        margin-top: 19px;
+        padding: 1px;
+    }
+    .stopWatch {
+        width: 90px;
+        height: 90px;
+        margin-top: 103px;
+    }
+    .numberData {
+        width: 75%;
+        height: 20.5px;
+    }
+    #startStopWatch {
+        width: 73px;
+        height: 73px;
+    }
+    .plate {
+        width: 582px;
+        height: 581px;
+        margin-left: 8.9%;
+        margin-top: 18.6%;
+    }
+    .number {
+        height: 281px;
+        top: 3px;
+    }
+    .pit {
+        font-size: 23px;
+        left: -6px;
+    }
+    .leftMoney>div,
+    .rightMoney>div {
+        height: 66px;
+    }
+    #tableNumber0 {
+        height: 136px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninethLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 47px;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninethLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 139px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 53px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #_19to36,
+    #odd,
+    #even {
+        height: 63px;
+        margin-top: -35px;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .score,
+    .win,
+    .bet {
+        height: 41px;
+        font-size: 17px;
+    }
+    .container_buttonLeft {
+        margin-top: 30px;
+    }
+    .lastData {
+        height: 234px;
+        margin-top: 8px;
+    }
+    .plate {
+        width: 565px;
+        height: 564px;
+        margin-left: 8.8%;
+        margin-top: 18.6%;
+    }
+    .number {
+        width: 51px;
+        height: 276px;
+    }
+    .inner:before {
+        font-size: 56px;
+    }
+    .container_money {
+        margin-top: -127px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninethLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 46px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 49px;
+        margin-top: -5px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #_19to36,
+    #odd,
+    #even {
+        height: 60px;
+        margin-top: -43px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .score,
+    .win,
+    .bet {
+        height: 39px;
+        font-size: 17px;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 30px;
+        font-size: 17px;
+    }
+    .container_buttonLeft {
+        margin-top: 36px;
+    }
+    .lastData {
+        height: 229px;
+    }
+    .numberData {
+        height: 19.4px;
+        font-size: 14px;
+    }
+    .plate {
+        width: 551px;
+        height: 550px;
+        margin-left: 8.6%;
+        margin-top: 18%;
+    }
+    .number {
+        width: 47px;
+        height: 267px;
+        top: 2px;
+        left: calc(48% - (32px / 2));
+    }
+    .pit {
+        font-size: 21px;
+        left: -7px;
+    }
+    .inner:before {
+        font-size: 59px;
+    }
+    .container_buttonRight {
+        margin-top: 15px;
+    }
+    .stopWatch {
+        width: 76px;
+        height: 76px;
+        margin-top: 104px;
+    }
+    #startStopWatch {
+        width: 62px;
+        height: 62px;
+    }
+    .container_buttonRight {
+        margin-top: 20px;
+    }
+    .leftMoney>div,
+    .rightMoney>div {
+        height: 61px;
+    }
+    #tableNumber0 {
+        height: 130px;
+    }
+    .container_money {
+        margin-top: -125px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninethLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 46px;
+        margin-top: -3.1%;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninethLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 132px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 52px;
+        margin-top: -5px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        width: 50.7%;
+        height: 57px;
+        margin-top: -41px;
+    }
+    .rightMoney {
+        margin-left: 31.8%;
+    }
+    .leftMoney {
+        margin-left: 13.9%;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .score,
+    .win,
+    .bet {
+        height: 36px;
+        font-size: 16px;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 30px;
+        font-size: 15px;
+        padding: 1px;
+    }
+    .plate {
+        width: 514px;
+        height: 513px;
+        margin-left: 8.8%;
+        margin-top: 19%;
+    }
+    .number {
+        width: 45px;
+        height: 248px;
+        top: 2px;
+        left: calc(48% - (32px / 2));
+    }
+    .pit {
+        font-size: 18px;
+    }
+    .borderMoney {
+        border: 3px solid rgb(65, 238, 5);
+    }
+    .lastData {
+        height: 216px;
+    }
+    .lastDataNumber {
+        margin-top: 10px;
+    }
+    .stopWatch {
+        width: 70px;
+        height: 70px;
+        margin-top: 104px;
+    }
+    #startStopWatch {
+        width: 57px;
+        height: 57px;
+    }
+    h2 {
+        font-size: 26px;
+    }
+    .container_buttonRight {
+        margin-top: 16px;
+    }
+    .container_money {
+        margin-top: -132px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninethLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 42px;
+        margin-top: -3.1%;
+    }
+    #tableNumber0 {
+        height: 121px;
+        margin-top: -3px;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninethLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 121px;
+        margin-top: 0px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        height: 55px;
+        margin-top: -50px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 47px;
+        margin-top: -2px;
+    }
+}
+
+@media only screen and (max-width: 1152px) {
+    .score,
+    .win,
+    .bet {
+        height: 33px;
+        font-size: 15px;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 27px;
+        font-size: 15px;
+    }
+    .container_buttonLeft {
+        margin-top: 28px;
+    }
+    .container_buttonRight {
+        margin-top: 13px;
+    }
+    .plate {
+        width: 462px;
+        height: 461px;
+        margin-left: 8.6%;
+        margin-top: 18.8%;
+    }
+    .number {
+        width: 45px;
+        height: 222px;
+        top: 2px;
+        left: calc(48% - (32px / 2));
+    }
+    .pit {
+        font-size: 17px;
+        left: -12px;
+    }
+    .lastData {
+        width: 18%;
+        height: 192px;
+    }
+    .numberData {
+        height: 17px;
+        font-size: 13px;
+    }
+    .container_money {
+        margin-top: -135px;
+    }
+    .leftMoney>div,
+    .rightMoney>div {
+        height: 56px;
+    }
+    .tableNumberContainer {
+        margin-top: 10px;
+    }
+    #tableNumber0 {
+        height: 108px;
+        margin-top: 1px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninethLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 38px;
+        margin-top: -1px;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninethLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 112px;
+        margin-top: -2px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 43px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        height: 49px;
+        margin-top: -55px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .score,
+    .win,
+    .bet {
+        height: 29px;
+        font-size: 14px;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 24px;
+        font-size: 13px;
+    }
+    .plate {
+        width: 410px;
+        height: 409px;
+        margin-left: 8.48%;
+        margin-top: 18.8%;
+    }
+    .number {
+        width: 37px;
+        height: 201px;
+    }
+    .inner:before {
+        font-size: 47px;
+    }
+    .pit {
+        font-size: 15px;
+    }
+    .stopWatch {
+        width: 64px;
+        height: 64px;
+        margin-top: 77px;
+    }
+    #startStopWatch {
+        width: 53px;
+        height: 53px;
+    }
+    h2 {
+        font-size: 23px;
+    }
+    .numberData {
+        width: 74%;
+        height: 15px;
+        font-size: 11px;
+    }
+    .lastData {
+        height: 169px;
+    }
+    .container_money {
+        margin-top: -141px;
+    }
+    .leftMoney>div,
+    .rightMoney>div {
+        height: 50px;
+    }
+    #tableNumber0 {
+        height: 94px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninethLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 34px;
+    }
+    .inner:before {
+        font-size: 43px;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninethLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 99px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 37px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        height: 45px;
+        margin-top: -57px;
+    }
+}
+
+@media only screen and (max-width: 960px) {
+    .score,
+    .win,
+    .bet {
+        height: 26px;
+        font-size: 13px;
+    }
+    .lastData {
+        height: 158px;
+    }
+    .numberData {
+        height: 14px;
+    }
+    .lastDataNumber {
+        margin-top: 8px;
+    }
+    .container_buttonRight {
+        margin-top: 12px;
+    }
+    .plate {
+        width: 383px;
+        height: 382px;
+        margin-left: 8.48%;
+        margin-top: 18.8%;
+    }
+    .number {
+        width: 34px;
+        height: 187px;
+        left: calc(49% - (32px / 2));
+    }
+    .pit {
+        font-size: 13px;
+    }
+    .inner:before {
+        font-size: 39px;
+    }
+    .plate:before {
+        border: 4px groove #BFA923;
+    }
+    .leftMoney>div,
+    .rightMoney>div {
+        height: 42px;
+    }
+    #tableNumber0 {
+        height: 92px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninethLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 32px;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninethLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 94px;
+        margin-top: 0px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        height: 40px;
+        margin-top: -59px;
+    }
+}
+
+@media only screen and (max-width: 928px) {
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 22px;
+        font-size: 11px;
+    }
+    .container_buttonLeft {
+        margin-top: 25px;
+    }
+    .lastData {
+        height: 154px;
+    }
+    .container_buttonRight {
+        margin-top: 11px;
+    }
+    .stopWatch {
+        width: 58px;
+        height: 58px;
+        margin-top: 70px;
+    }
+    #startStopWatch {
+        width: 48px;
+        height: 48px;
+    }
+    h2 {
+        font-size: 21px;
+    }
+    .container_money {
+        margin-top: -143px;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninethLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 89px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninethLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 30px;
+    }
+    #tableNumber0 {
+        height: 88px;
+    }
+    .numberData {
+        height: 13.4px;
+        font-size: 10px
+    }
+}
+
+@media only screen and (max-width: 896px) {
+    .score,
+    .win,
+    .bet {
+        height: 26px;
+        font-size: 12px;
+    }
+    .container_buttonLeft {
+        margin-top: 21px;
+    }
+    .lastData {
+        height: 147px;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 21px;
+        font-size: 11px;
+    }
+    .numberData {
+        height: 12.9px;
+        font-size: 10px;
+    }
+    .plate {
+        width: 356px;
+        height: 355px;
+        margin-left: 8.48%;
+        margin-top: 18.8%;
+    }
+    .number {
+        width: 34px;
+        height: 163px;
+        top: 0px;
+        left: calc(49% - (32px / 2));
+    }
+    .pit {
+        font-size: 14px;
+        left: -16px;
+    }
+    .inner:before {
+        font-size: 33px;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninethLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 84px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninethLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 29px;
+    }
+    #tableNumber0 {
+        height: 84px;
+        margin-top: -1px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 35px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        height: 38px;
+        margin-top: -59px;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    .score,
+    .win,
+    .bet {
+        height: 23px;
+        font-size: 11px;
+    }
+    .container_buttonLeft {
+        margin-top: 19px;
+    }
+    .lastData {
+        height: 131px;
+        border-left: 1px groove white;
+    }
+    .numberData {
+        height: 11.3px;
+        font-size: 10px;
+    }
+    .stopWatch {
+        width: 50px;
+        height: 50px;
+        margin-top: 60px;
+    }
+    #startStopWatch {
+        width: 41px;
+        height: 41px;
+    }
+    h2 {
+        font-size: 19px;
+    }
+    .plate {
+        width: 318px;
+        height: 317px;
+        margin-left: 7.8%;
+        margin-top: 18.8%;
+    }
+    .number {
+        width: 32px;
+        height: 152px;
+        border-top: 156px solid #191919;
+    }
+    .pit {
+        font-size: 11px;
+        left: -16px;
+        padding-top: 23px;
+    }
+    .container_money {
+        margin-top: -150px;
+    }
+    .plate:before {
+        border: 3px groove #BFA923;
+    }
+    .leftMoney>div,
+    .rightMoney>div {
+        height: 38px;
+    }
+    .borderMoney {
+        border: 2px solid rgb(65, 238, 5);
+    }
+    .tableNumberContainer {
+        margin-top: 8px;
+    }
+    #tableNumber0 {
+        height: 77px;
+        margin-top: 0px;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninethLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 76px;
+        margin-top: 0px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninethLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 26px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 30px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        height: 34px;
+        margin-top: -61px;
+    }
+    @media only screen and (max-width: 720px) {}
+}

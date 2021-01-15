@@ -69,6 +69,7 @@ body {
 }
 
 .numberData {
+    width: 100%;
     height: 28px;
     border: 1px solid white;
     border-radius: 6px;
@@ -343,7 +344,7 @@ body {
 
 .number {
     width: 66px;
-    height: 379px;
+    height: 382px;
     display: inline-block;
     text-align: center;
     position: absolute;
@@ -688,6 +689,10 @@ body {
     display: flex;
     padding-right: 0%;
     padding-left: 0%;
+}
+
+.borderMoney {
+    border: 4px solid rgb(65, 238, 5);
 }
 
 .leftMoney {
