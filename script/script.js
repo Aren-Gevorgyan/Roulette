@@ -100,9 +100,9 @@ $(document).ready(function() {
             plate.css("animation-play-state", "paused");
 
             if ($.inArray(randomNumber, red) !== -1) {
-                color = "red";
+                color = "#D81F24";
             } else {
-                color = "black";
+                color = "#101110";
             }
             if (randomNumber == 0) {
                 color = "green";
@@ -142,12 +142,16 @@ $(document).ready(function() {
 
     function bindHoverMoneyTable(opacity) {
         for (let i = 0; i <= 8; i++) {
-            $(`#money${i}`).mouseover(function() {
+            $(`#money${i}`).click(function() {
+                deleteBorderFromMoney();
                 $(this).css({ 'border': '4px solid #41EE05' });
             })
-            $(`#money${i}`).mouseout(function() {
-                $(this).css({ 'border': 'none' });
-            })
+        }
+    }
+
+    function deleteBorderFromMoney() {
+        for (let j = 1; j <= 8; j++) {
+            $(`#money${j}`).css({ 'border': 'none' });
         }
     }
 
