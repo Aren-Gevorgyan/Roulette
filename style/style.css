@@ -657,18 +657,6 @@ body {
     transform-style: preserve-3d;
 }
 
-.color-green {
-    background-color: green;
-}
-
-.color-black {
-    background-color: black;
-}
-
-.color-red {
-    background-color: red;
-}
-
 @-webkit-keyframes flipin {
     0% {
         transform: rotateX(90deg);

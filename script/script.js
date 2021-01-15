@@ -137,7 +137,19 @@ $(document).ready(function() {
 
     plate.css("animation-play-state", "paused");
 
+    bindHoverMoneyTable();
     bindHoverTableNumber();
+
+    function bindHoverMoneyTable(opacity) {
+        for (let i = 0; i <= 8; i++) {
+            $(`#money${i}`).mouseover(function() {
+                $(this).css({ 'border': '4px solid #41EE05' });
+            })
+            $(`#money${i}`).mouseout(function() {
+                $(this).css({ 'border': 'none' });
+            })
+        }
+    }
 
     function bindHoverTableNumber(opacity) {
         for (let i = 0; i <= 36; i++) {
