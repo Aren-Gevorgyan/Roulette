@@ -3,6 +3,7 @@ $(document).ready(function() {
     let inner = $(".inner");
     let plate = $("#plate");
     let opacityTableNumber = 0.2;
+    let disabledMoney = false;
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
 
     function cretaeStopwatch() {
@@ -41,12 +42,14 @@ $(document).ready(function() {
                 newStart();
                 spinSharik(lastDataArray, lastNumberColorArray);
                 opacityTableNumber = 0.2;
-            } else if (rotateSize === 294) {
+                disabledMoney = false;
+            } else if (rotateSize === 300) {
                 colorArrow = 'red';
                 stopWatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
                 deleteSharik();
                 opacityTableNumber = 0;
-            } else if (rotateSize === 264 || rotateSize === 270 || rotateSize === 276 || rotateSize === 282 || rotateSize === 288 || rotateSize === 2) {
+                disabledMoney = true;
+            } else if (rotateSize === 264 || rotateSize === 270 || rotateSize === 276 || rotateSize === 282 || rotateSize === 288 || rotateSize === 294) {
                 stopWatchDiv.css({ 'box-shadow': '1px 1px 15px 10px white', })
             } else if (rotateSize > 10) {
                 heightBorder = '105px';
@@ -154,7 +157,7 @@ $(document).ready(function() {
 
     function deleteBorderFromMoney() {
         for (let j = 1; j <= 8; j++) {
-            $(`#money${j}`).css({ 'border': 'none' });
+            $(`#money${j}`).css({ 'border': 'none' }).click(disabledMoney);
         }
     }
 
