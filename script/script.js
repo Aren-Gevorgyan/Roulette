@@ -8,81 +8,52 @@ $(document).ready(function() {
 
     function cretaeStopwatch() {
 
-        let stopWatch = 59;
-        let stopWatchDiv = $('.stopWatch');
-        let stopWatchProcessRight = $('.stopWatchProcessRight');
-        let stopWatchProcessLeft = $('.stopWatchProcessLeft');
+        let stopwatch = 59;
+        let progressSize = 0;
+        const stopwatchDiv = $('.stopwatch');
         let rotateSize = 0;
         let heightBorder = '84px';
         let colorArrow = '#1383BF';
         let cretaeDiv;
-        let stopWatchNumber = $('#stopWatchNumber');
-        let lastDataArray = [];
-        let lastNumberColorArray = [];
+        const stopwatchNumber = $('#stopwatchNumber');
+        const lastDataArray = [];
+        const lastNumberColorArray = [];
+
+        const progressStopwatch = document.querySelector('.progressStopwatch');
+        const radius = progressStopwatch.r.baseVal.value;
+        const circumference = 2 * Math.PI * radius;
+
+        progressStopwatch.style.strokeDasharray = `${circumference} ${circumference}`;
+        progressStopwatch.style.strokeDashoffset = circumference;
 
         setInterval(function() {
-            cretaeArrow();
-        }, 500)
+            setProgress(progressSize++);
+        }, 1000);
 
-        function cretaeArrow() {
-
-            processConditions();
+        function setProgress(progress) {
+            const offset = circumference - progress / 59 * circumference;
+            progressStopwatch.style.strokeDashoffset = offset;
+            stopwatchNumber.text(stopwatch--);
+            processConditions(stopwatch);
             setInterval(function() {
-                stopWatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803', })
+                stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803', })
             }, 900)
-
-            appendArrow();
-            createArrowStyle();
-            stopWatchNumber.text(stopWatch--);
-            rotateSize += 6;
         }
 
-        function processConditions() {
-            if (rotateSize === 354) {
-                newStart();
+        function processConditions(time) {
+            if (time < 0) {
+                stopwatch = 59;
                 spinSharik(lastDataArray, lastNumberColorArray);
                 opacityTableNumber = 0.2;
                 disabledMoney = false;
-            } else if (rotateSize === 300) {
-                colorArrow = 'red';
-                stopWatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
+            } else if (time === 9) {
+                stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
                 deleteSharik();
+                console.log($('.progressStopwatch').attr('stroke', 'red'));
                 opacityTableNumber = 0;
                 disabledMoney = true;
-            } else if (rotateSize === 264 || rotateSize === 270 || rotateSize === 276 || rotateSize === 282 || rotateSize === 288 || rotateSize === 294) {
-                stopWatchDiv.css({ 'box-shadow': '1px 1px 15px 10px white', })
-            } else if (rotateSize > 10) {
-                heightBorder = '105px';
-            }
-        }
-
-        function newStart() {
-            stopWatchProcessRight.empty();
-            stopWatchProcessLeft.empty();
-            colorArrow = '#1383BF';
-            heightBorder = '84px';
-            rotateSize = 0;
-            stopWatch = 59;
-        }
-
-        function createArrowStyle() {
-            $(`#arrow${rotateSize}`).css({
-                'position': 'absolute',
-                'margin-top': `-5px`,
-                'border': `4px solid ${colorArrow}`,
-                'height': `${heightBorder}`,
-                'background-color': `${colorArrow}`,
-                'transform': `rotate(${rotateSize}deg)`,
-            })
-        }
-
-        function appendArrow() {
-            cretaeDiv = `<div id="arrow${rotateSize}"></div>`;
-            if (rotateSize <= 180) {
-                stopWatchProcessRight.append(cretaeDiv);
-            } else {
-                stopWatchProcessLeft.append(cretaeDiv);
-                $(`#arrow${rotateSize}`).css({ 'left': '48px', })
+            } else if (time === 10 || time === 11 || time === 12 || time === 13 || time === 14) {
+                stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px white', })
             }
         }
     }

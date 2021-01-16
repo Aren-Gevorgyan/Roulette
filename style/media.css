@@ -12,7 +12,7 @@
             height: 284px;
         }
         .numberData {
-            width: 80%;
+            width: 70%;
             height: 25px;
         }
         .plate {
@@ -185,18 +185,8 @@
             margin-top: 19px;
             padding: 1px;
         }
-        .stopWatch {
-            width: 90px;
-            height: 90px;
-            margin-top: 103px;
-        }
         .numberData {
-            width: 75%;
             height: 20.5px;
-        }
-        #startStopWatch {
-            width: 73px;
-            height: 73px;
         }
         .plate {
             width: 582px;
@@ -381,15 +371,6 @@
         .container_buttonRight {
             margin-top: 15px;
         }
-        .stopWatch {
-            width: 76px;
-            height: 76px;
-            margin-top: 104px;
-        }
-        #startStopWatch {
-            width: 62px;
-            height: 62px;
-        }
         .container_buttonRight {
             margin-top: 20px;
         }
@@ -496,18 +477,6 @@
         }
         .lastDataNumber {
             margin-top: 10px;
-        }
-        .stopWatch {
-            width: 70px;
-            height: 70px;
-            margin-top: 104px;
-        }
-        #startStopWatch {
-            width: 57px;
-            height: 57px;
-        }
-        h2 {
-            font-size: 26px;
         }
         .container_buttonRight {
             margin-top: 16px;
@@ -705,21 +674,7 @@
         .pit {
             font-size: 15px;
         }
-        .stopWatch {
-            width: 64px;
-            height: 64px;
-            margin-top: 77px;
-        }
-        #startStopWatch {
-            width: 53px;
-            height: 53px;
-        }
-        h2 {
-            margin-top: 4px;
-            font-size: 23px;
-        }
         .numberData {
-            width: 74%;
             height: 15px;
             font-size: 11px;
         }
@@ -890,18 +845,6 @@
         .container_buttonRight {
             margin-top: 11px;
         }
-        .stopWatch {
-            width: 58px;
-            height: 58px;
-            margin-top: 70px;
-        }
-        #startStopWatch {
-            width: 48px;
-            height: 48px;
-        }
-        h2 {
-            font-size: 21px;
-        }
         .container_money {
             margin-top: -143px;
         }
@@ -1062,18 +1005,6 @@
         }
         .container_buttonRight {
             margin-top: 9px;
-        }
-        .stopWatch {
-            width: 48px;
-            height: 48px;
-            margin-top: 60px;
-        }
-        #startStopWatch {
-            width: 41px;
-            height: 41px;
-        }
-        h2 {
-            font-size: 18px;
         }
         .plate {
             width: 323px;
@@ -1276,15 +1207,6 @@
         .container_buttonRight {
             margin-top: 8px;
         }
-        .stopWatch {
-            width: 42px;
-            height: 42px;
-            margin-top: 60px;
-        }
-        #startStopWatch {
-            width: 36px;
-            height: 36px;
-        }
         .plate {
             width: 294px;
             height: 293px;
@@ -1405,19 +1327,6 @@
         .inner:before {
             font-size: 24px;
         }
-        .stopWatch {
-            width: 41px;
-            height: 41px;
-            margin-top: 60px;
-        }
-        #startStopWatch {
-            width: 35px;
-            height: 35px;
-        }
-        h2 {
-            margin-top: 5px;
-            font-size: 16px;
-        }
         .leftMoney>div,
         .rightMoney>div {
             height: 32px;
@@ -1488,11 +1397,6 @@
         .numberData {
             height: 10.2px;
             font-size: 7px;
-        }
-        .stopWatch {
-            width: 37px;
-            height: 37px;
-            margin-top: 50px;
         }
         #startStopWatch {
             width: 31px;
