@@ -1,59 +1,70 @@
 $(document).ready(function() {
-    cretaeStopwatch();
     let inner = $(".inner");
     let plate = $("#plate");
     let opacityTableNumber = 0.2;
     let disabledMoney = false;
+    const progressStopwatch = $('.progressStopwatch');
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
+
+    cretaeStopwatch();
 
     function cretaeStopwatch() {
 
-        let stopwatch = 59;
-        let progressSize = 0;
         const stopwatchDiv = $('.stopwatch');
-        let rotateSize = 0;
-        let heightBorder = '84px';
-        let colorArrow = '#1383BF';
-        let cretaeDiv;
-        const stopwatchNumber = $('#stopwatchNumber');
         const lastDataArray = [];
         const lastNumberColorArray = [];
+        let countdown = 60;
+        let intervalTime = 60 * 1000 / 360;
+        let pointnum = "";
+        let radius = parseInt($("#clock").css('width')) / 2;
+        let x, y, radian;
+        let angle = 0;
 
-        const progressStopwatch = document.querySelector('.progressStopwatch');
-        const radius = progressStopwatch.r.baseVal.value;
-        const circumference = 2 * Math.PI * radius;
-
-        progressStopwatch.style.strokeDasharray = `${circumference} ${circumference}`;
-        progressStopwatch.style.strokeDashoffset = circumference;
+        $('#countdown-number').text(countdown);
 
         setInterval(function() {
-            setProgress(progressSize++);
+            countdown = --countdown <= 0 ? 60 : countdown;
+            $('#countdown-number').text(countdown);
+            processConditions(countdown)
         }, 1000);
 
-        function setProgress(progress) {
-            const offset = circumference - progress / 59 * circumference;
-            progressStopwatch.style.strokeDashoffset = offset;
-            stopwatchNumber.text(stopwatch--);
-            processConditions(stopwatch);
-            setInterval(function() {
-                stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803', })
-            }, 900)
-        }
+        setInterval(function() {
+
+            if (angle >= 360) {
+                intervalTime = 60 * 1000 / 360;
+                pointnum = "";
+                radius = parseInt($("#clock").css('width')) / 2;
+                x, y, radian;
+                angle = 0;
+
+            }
+
+            radian = angle * (Math.PI / 180);
+            x = (radius + Math.sin(radian) * radius + 5).toFixed(1);
+            y = (radius - Math.cos(radian) * radius + 5).toFixed(1);
+            pointnum += x + ',' + y + ' ';
+            $("polyline").attr('points', pointnum);
+
+            angle++;
+        }, intervalTime);
 
         function processConditions(time) {
-            if (time < 0) {
-                stopwatch = 59;
+            if (time === 60) {
                 spinSharik(lastDataArray, lastNumberColorArray);
                 opacityTableNumber = 0.2;
                 disabledMoney = false;
+                $("polyline").attr('stroke', '#007bff');
             } else if (time === 9) {
                 stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
                 deleteSharik();
-                console.log($('.progressStopwatch').attr('stroke', 'red'));
                 opacityTableNumber = 0;
                 disabledMoney = true;
-            } else if (time === 10 || time === 11 || time === 12 || time === 13 || time === 14) {
-                stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px white', })
+                $("polyline").attr('stroke', '#CC2020');
+            } else if (time === 10 || time === 11 || time === 12 || time === 13 || time === 14 || time === 15) {
+                stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 7px #7E6B5F' })
+                setTimeout(function() {
+                    stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' })
+                }, 300)
             }
         }
     }

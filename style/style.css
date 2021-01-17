@@ -48,6 +48,7 @@ body {
 .containerLastData {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 .lastData {
@@ -79,44 +80,105 @@ body {
     justify-content: center;
 }
 
-#stopwatchProcess {
-    width: 0;
-    height: 30px;
-    margin-top: -2px;
-    transition: all 2s;
-    background-color: cadetblue;
-}
 
-.stopwatch {
-    width: 120px;
-    height: 120px;
+/* #countdown {
     position: relative;
-    background-color: white;
-    border-radius: 50%;
-    margin-top: 150px;
-    border: 1px solid white;
-}
-
-.progressStopwatch {
-    transform-origin: center;
-    transform: rotate(-90deg);
-    transition: stroke-dashoffset 0.3s;
-}
-
-#stopwatchNumber {
-    position: absolute;
-    width: 99px;
-    height: 99px;
-    background-color: #140803;
-    left: 93px;
-    top: 160px;
+    margin-top: 90px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 42px;
+}
+
+.stopwatch {
+    position: reletive;
+    top: 0;
+    right: 0;
+    width: 100px;
+    height: 100px;
+    transform: rotateY(-180deg) rotateZ(-90deg);
+    background-color: #0A9FDF;
     border-radius: 50%;
+}
+
+.progressStopwatch {
+    stroke-dasharray: 294px;
+    stroke-dashoffset: 0px;
+    stroke-width: 15px;
+    stroke: white;
+    fill: none;
+    animation: countdown 60s linear infinite forwards;
+}
+
+#countdown-number {
+    width: 80px;
+    height: 80px;
+    color: white;
+    position: absolute;
     z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    border-radius: 50%;
+    background-color: green;
+} 
+
+@keyframes countdown {
+    from {
+        stroke-dashoffset: 0px;
+    }
+    to {
+        stroke-dashoffset: 294px;
+    }
+}
+*/
+
+.stopwatch {
+    height: 110px;
+    width: 110px;
+    top: 114px;
+    left: 84px;
+    background-color: white;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#countdown-number {
+    width: 93px;
+    height: 93px;
+    color: white;
+    position: absolute;
+    z-index: 2;
+    top: 123px;
+    left: 92px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    border-radius: 50%;
+    background-color: #140803
+}
+
+#clock {
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    background-color: white;
+}
+
+svg {
+    position: absolute;
+    width: 40%;
+    height: 40%;
+    top: 28.1%;
+    left: 17.6%;
+    z-index: 1;
+}
+
+polyline {
+    fill: none;
+    stroke: #007bff;
+    stroke-width: 11px;
 }
 
 .container_buttonLeft,
