@@ -61,6 +61,7 @@ $(document).ready(function() {
                 opacityTableNumber = 0.2;
                 disabledMoney = false;
                 $("polyline").css({ 'stroke': '#007bff' });
+                document.querySelector('audio').play();
             } else if (time === 9) {
                 stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
                 deleteSharik();
