@@ -922,6 +922,27 @@
 }
 
 @media only screen and (max-width: 960px) {
+    #clock {
+        height: 57px;
+        width: 57px;
+    }
+    svg {
+        top: 24.3%;
+        left: 15.5%;
+    }
+    .stopwatch {
+        height: 65px;
+        width: 65px;
+        top: 51px;
+        left: 38px;
+    }
+    #countdown-number {
+        width: 49px;
+        height: 49px;
+        top: 59px;
+        left: 46px;
+        font-size: 20px;
+    }
     .score,
     .win,
     .bet {
@@ -1010,6 +1031,10 @@
 }
 
 @media only screen and (max-width: 928px) {
+    svg {
+        top: 25.3%;
+        left: 16%;
+    }
     #bet,
     #rebet,
     #take,
@@ -1069,6 +1094,10 @@
 }
 
 @media only screen and (max-width: 896px) {
+    svg {
+        top: 25.9%;
+        left: 16.5%;
+    }
     .score,
     .win,
     .bet {
@@ -1163,6 +1192,23 @@
 }
 
 @media only screen and (max-width: 812px) {
+    svg {
+        top: 23%;
+        left: 16.5%;
+    }
+    .stopwatch {
+        height: 65px;
+        width: 65px;
+        top: 41px;
+        left: 34px;
+    }
+    #countdown-number {
+        width: 49px;
+        height: 49px;
+        top: 49px;
+        left: 42.4px;
+        font-size: 20px;
+    }
     .score,
     .win,
     .bet {
@@ -1274,6 +1320,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+    svg {
+        top: 23.5%;
+        left: 16.5%;
+    }
     .score,
     .win,
     .bet {
@@ -1369,11 +1419,35 @@
 }
 
 @media only screen and (max-width: 736px) {
+    svg {
+        top: 26%;
+        left: 18.5%;
+    }
+    #clock {
+        height: 36px;
+        width: 36px;
+    }
+    .stopwatch {
+        height: 44px;
+        width: 44px;
+        top: 42px;
+        left: 34.9px;
+    }
+    #countdown-number {
+        width: 32px;
+        height: 32px;
+        top: 48px;
+        left: 41.4px;
+        font-size: 11px;
+    }
+    polyline {
+        stroke-width: 7px;
+    }
     .score,
     .win,
     .bet {
         height: 21px;
-        font-size: 9px;
+        font-size: 7px;
     }
     #bet,
     #rebet,
@@ -1470,6 +1544,16 @@
 }
 
 @media only screen and (max-width: 720px) {
+    svg {
+        top: 26.7%;
+        left: 18.7%;
+    }
+    .stopwatch {
+        height: 42px;
+        width: 42px;
+        top: 43px;
+        left: 36px;
+    }
     .score,
     .win,
     .bet {
@@ -1553,6 +1637,23 @@
 }
 
 @media only screen and (max-width: 667px) {
+    svg {
+        top: 26.7%;
+        left: 18.7%;
+    }
+    .stopwatch {
+        height: 42px;
+        width: 42px;
+        top: 40px;
+        left: 33px;
+    }
+    #countdown-number {
+        width: 33px;
+        height: 33px;
+        top: 44.5px;
+        left: 38px;
+        font-size: 11px;
+    }
     .score,
     .win,
     .bet {
@@ -1663,6 +1764,23 @@
 }
 
 @media only screen and (max-width: 653px) {
+    svg {
+        top: 27%;
+        left: 19%;
+    }
+    .stopwatch {
+        height: 42px;
+        width: 42px;
+        top: 40px;
+        left: 33px;
+    }
+    #countdown-number {
+        width: 33px;
+        height: 33px;
+        top: 44.5px;
+        left: 38px;
+        font-size: 11px;
+    }
     .container_buttonLeft {
         margin-top: 15px;
     }
@@ -1720,6 +1838,18 @@
 }
 
 @media only screen and (max-width: 640px) {
+    svg {
+        top: 26.4%;
+        left: 17.9%;
+    }
+    .stopwatch {
+        top: 38px;
+        left: 31px;
+    }
+    #countdown-number {
+        top: 42.5px;
+        left: 36px;
+    }
     .score,
     .win,
     .bet {

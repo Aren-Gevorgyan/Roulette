@@ -53,13 +53,13 @@ $(document).ready(function() {
                 spinSharik(lastDataArray, lastNumberColorArray);
                 opacityTableNumber = 0.2;
                 disabledMoney = false;
-                $("polyline").attr('stroke', '#007bff');
+                $("polyline").css({ 'stroke': '#007bff' });
             } else if (time === 9) {
                 stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
                 deleteSharik();
                 opacityTableNumber = 0;
                 disabledMoney = true;
-                $("polyline").attr('stroke', '#CC2020');
+                $("polyline").css({ 'stroke': '#CC2020' });
             } else if (time === 10 || time === 11 || time === 12 || time === 13 || time === 14 || time === 15) {
                 stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 7px #7E6B5F' })
                 setTimeout(function() {

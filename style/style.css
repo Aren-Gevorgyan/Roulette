@@ -150,7 +150,7 @@ body {
     position: absolute;
     z-index: 2;
     top: 123px;
-    left: 92px;
+    left: 93px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -170,7 +170,7 @@ svg {
     position: absolute;
     width: 40%;
     height: 40%;
-    top: 28.1%;
+    top: 28.2%;
     left: 17.6%;
     z-index: 1;
 }
