@@ -10,9 +10,7 @@ $(document).ready(function() {
 
     function cretaeStopwatch() {
 
-        const stopwatchDiv = $('.stopwatch');
         const lastDataArray = [];
-        const lastNumberColorArray = [];
         let intervalTime = 60 * 1000 / 360;
         let start = Date.now();
         let radius = parseInt($("#clock").css('width')) / 2;
@@ -55,9 +53,11 @@ $(document).ready(function() {
             }
         }
 
+        const stopwatchDiv = $('.stopwatch');
+
         function processConditions(time) {
             if (time === 60) {
-                spinSharik(lastDataArray, lastNumberColorArray);
+                spinSharik(lastDataArray);
                 opacityTableNumber = 0.2;
                 disabledMoney = false;
                 $("polyline").css({ 'stroke': '#007bff' });
@@ -76,7 +76,7 @@ $(document).ready(function() {
         }
     }
 
-    function spinSharik(lastDataArray, lastNumberColorArray) {
+    function spinSharik(lastDataArray) {
 
         plate.css("animation-play-state", "running");
         let randomNumber = Math.floor(Math.random() * 36),
@@ -87,10 +87,10 @@ $(document).ready(function() {
             .prop("checked", "checked");
         $(this).hide();
 
-        getRouletteNumber(randomNumber, lastDataArray, lastNumberColorArray);
+        getRouletteNumber(randomNumber, lastDataArray);
     }
 
-    function getRouletteNumber(randomNumber, lastDataArray, lastNumberColorArray) {
+    function getRouletteNumber(randomNumber, lastDataArray) {
         setTimeout(function() {
             plate.css("animation-play-state", "paused");
 
@@ -105,16 +105,15 @@ $(document).ready(function() {
 
             inner.addClass("rest");
 
-            createLastData(randomNumber, color, lastDataArray, lastNumberColorArray);
+            createLastData(randomNumber, color, lastDataArray);
         }, 9000);
     }
 
-    function createLastData(number, color, lastDataArray, lastNumberColorArray) {
+    function createLastData(number, color, lastDataArray) {
         $('.lastDataNumber').empty();
-        lastNumberColorArray.push(color);
         lastDataArray.push({ number, color });
-
-        if (lastDataArray.oneSecond > 10) {
+        console.log(lastDataArray.length)
+        if (lastDataArray.length > 10) {
             lastDataArray.shift();
         }
 
