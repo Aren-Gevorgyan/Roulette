@@ -13,40 +13,47 @@ $(document).ready(function() {
         const stopwatchDiv = $('.stopwatch');
         const lastDataArray = [];
         const lastNumberColorArray = [];
-        let countdown = 60;
         let intervalTime = 60 * 1000 / 360;
-        let pointnum = "";
+        let start = Date.now();
         let radius = parseInt($("#clock").css('width')) / 2;
+        let pointnum = "";
         let x, y, radian;
-        let angle = 0;
+        let previusSeconds = 0;
 
-        $('#countdown-number').text(countdown);
+        setInterval(interval, intervalTime);
 
-        setInterval(function() {
-            countdown = --countdown <= 0 ? 60 : countdown;
-            $('#countdown-number').text(countdown);
-            processConditions(countdown)
-        }, 1000);
+        function interval() {
+            let oneSecond = 1 * 1000;
+            let seconds = (Date.now() - start) / oneSecond;
 
-        setInterval(function() {
-
-            if (angle >= 360) {
-                intervalTime = 60 * 1000 / 360;
-                pointnum = "";
-                radius = parseInt($("#clock").css('width')) / 2;
-                x, y, radian;
-                angle = 0;
-
-            }
-
+            getSeconds(seconds);
+            newStart(seconds);
+            let angle = seconds * 6;
             radian = angle * (Math.PI / 180);
             x = (radius + Math.sin(radian) * radius + 5).toFixed(1);
             y = (radius - Math.cos(radian) * radius + 5).toFixed(1);
             pointnum += x + ',' + y + ' ';
             $("polyline").attr('points', pointnum);
+        }
 
-            angle++;
-        }, intervalTime);
+        function newStart(seconds) {
+            if (seconds >= 60) {
+                seconds = 60;
+                pointnum = "";
+                x, y, radian;
+                start = Date.now();
+            }
+        }
+
+        function getSeconds(seconds) {
+            if (Math.floor(seconds) !== Math.floor(previusSeconds)) {
+                previusSeconds = seconds;
+                let roundsSeconds = Math.floor(seconds);
+                let countDownSeconds = 60 - roundsSeconds;
+                $('#countdown-number').text(countDownSeconds === 0 ? "" : countDownSeconds);
+                processConditions(countDownSeconds);
+            }
+        }
 
         function processConditions(time) {
             if (time === 60) {
@@ -107,7 +114,7 @@ $(document).ready(function() {
         lastNumberColorArray.push(color);
         lastDataArray.push({ number, color });
 
-        if (lastDataArray.length > 10) {
+        if (lastDataArray.oneSecond > 10) {
             lastDataArray.shift();
         }
 

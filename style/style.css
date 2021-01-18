@@ -159,6 +159,16 @@ body {
     background-color: #140803
 }
 
+.centerRoulette {
+    width: 889px;
+    height: 443px;
+    position: absolute;
+    z-index: 5;
+    top: 36px;
+    left: 70px;
+    background-size: 100%, 100%;
+}
+
 #clock {
     height: 100px;
     width: 100px;
