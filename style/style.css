@@ -102,15 +102,14 @@ body {
     background-color: #140803
 }
 
-
-/* .centerRoulette {
+.centerRoulette {
     width: 889px;
     height: 443px;
     position: absolute;
     z-index: 5;
     top: 36px;
     left: 70px;
-} */
+}
 
 #clock {
     height: 100px;
