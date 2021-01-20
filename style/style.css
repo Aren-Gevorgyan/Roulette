@@ -102,13 +102,23 @@ body {
     background-color: #140803
 }
 
-.centerRoulette {
-    width: 889px;
-    height: 443px;
+.headerCenterRoulette {
+    width: 52%;
+    height: 132%;
     position: absolute;
     z-index: 5;
-    top: 36px;
-    left: 70px;
+    left: 24%;
+    top: -8%;
+}
+
+.centerRoulette {
+    width: 108%;
+    height: 121%;
+    position: absolute;
+    z-index: 5;
+    top: -8.7%;
+    left: -7.5%;
+    transform: rotate3d(1, 1, 1, -5deg);
 }
 
 #clock {
@@ -430,7 +440,7 @@ audio {
     right: 22%;
     content: "";
     color: #fff;
-    font-size: 76px;
+    font-size: 68px;
     z-index: 5;
 }
 

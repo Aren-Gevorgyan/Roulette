@@ -1,4 +1,7 @@
 @media only screen and (max-width: 1680px) {
+    .centerRoulette {
+        transform: rotate3d(1, 1, 1, -5.5deg);
+    }
     .score,
     .win,
     .bet {
@@ -116,6 +119,9 @@
 }
 
 @media only screen and (max-width: 1600px) {
+    .centerRoulette {
+        transform: rotate3d(1, 1, 1, -6.5deg);
+    }
     .score,
     .win,
     .bet {
@@ -212,6 +218,9 @@
 }
 
 @media only screen and (max-width: 1440px) {
+    .centerRoulette {
+        left: -8%;
+    }
     .score,
     .win,
     .bet {
@@ -668,6 +677,9 @@
 }
 
 @media only screen and (max-width: 1152px) {
+    .centerRoulette {
+        left: -8.5%;
+    }
     .stopwatch {
         height: 82px;
         width: 82px;
@@ -801,6 +813,18 @@
 }
 
 @media only screen and (max-width: 1024px) {
+    .headerCenterRoulette {
+        width: 49%;
+        height: 128%;
+        position: absolute;
+        z-index: 5;
+        left: 26%;
+        top: -8%;
+    }
+    .centerRoulette {
+        left: -7.5%;
+        transform: rotate3d(1, 1, 1, -5.5deg);
+    }
     .stopwatch {
         height: 82px;
         width: 82px;
@@ -1031,9 +1055,35 @@
 }
 
 @media only screen and (max-width: 928px) {
+    .centerRoulette {
+        left: -8%;
+        transform: rotate3d(1, 1, 1, -5.5deg);
+    }
+    .headerCenterRoulette {
+        width: 49%;
+        height: 128%;
+        position: absolute;
+        z-index: 5;
+        left: 27%;
+        top: -7%;
+    }
     svg {
         top: 25.3%;
         left: 16%;
+    }
+    .plate {
+        width: 369px;
+        height: 368px;
+        margin-left: 8.48%;
+        margin-top: 19.8%;
+    }
+    .number {
+        width: 34px;
+        height: 181px;
+        left: calc(49% - (32px / 2));
+    }
+    .pit {
+        left: -15px;
     }
     #bet,
     #rebet,
@@ -1094,6 +1144,13 @@
 }
 
 @media only screen and (max-width: 896px) {
+    .centerRoulette {
+        left: -8%;
+        transform: rotate3d(1, 1, 1, -6.5deg);
+    }
+    .headerCenterRoulette {
+        left: 26%;
+    }
     svg {
         top: 25.9%;
         left: 16.5%;
@@ -1126,7 +1183,7 @@
         width: 356px;
         height: 355px;
         margin-left: 8.48%;
-        margin-top: 18.8%;
+        margin-top: 19.8%;
     }
     .number {
         width: 34px;
@@ -1137,6 +1194,9 @@
     .pit {
         font-size: 14px;
         left: -16px;
+    }
+    #clock {
+        margin-top: 10px;
     }
     .inner:before {
         font-size: 33px;
@@ -1426,6 +1486,7 @@
     #clock {
         height: 36px;
         width: 36px;
+        margin-top: 3px;
     }
     .stopwatch {
         height: 44px;
@@ -1557,11 +1618,14 @@
     .score,
     .win,
     .bet {
-        height: 20px;
+        height: 21px;
     }
     .lastData {
         height: 123px;
         border-left: 1px groove white;
+    }
+    .container_buttonLeft {
+        margin-top: 17px;
     }
     .numberData {
         height: 10.5px;
@@ -1690,6 +1754,10 @@
     .plate:before {
         border: 2px groove #BFA923;
     }
+    .centerRoulette {
+        left: -7%;
+        transform: rotate3d(1, 1, 1, -6.5deg);
+    }
     .plate {
         width: 260px;
         height: 259px;
@@ -1697,12 +1765,12 @@
         margin-top: 20.6%;
     }
     .number {
-        width: 28px;
+        width: 25px;
         height: 130px;
         border-top: 125px solid #191919;
         border-left: 10px solid transparent;
         top: -2px;
-        left: calc(50% - (32px / 2));
+        left: calc(51% - (32px / 2));
     }
     .pit {
         font-size: 9.3px;
@@ -1764,6 +1832,10 @@
 }
 
 @media only screen and (max-width: 653px) {
+    .centerRoulette {
+        left: -7.5%;
+        transform: rotate3d(1, 1, 1, -6.5deg);
+    }
     svg {
         top: 27%;
         left: 19%;
@@ -1782,7 +1854,7 @@
         font-size: 11px;
     }
     .container_buttonLeft {
-        margin-top: 15px;
+        margin-top: 16px;
     }
     .lastData {
         height: 111px;
@@ -1876,12 +1948,11 @@
         margin-top: 19.8%;
     }
     .number {
-        width: 28px;
         height: 122px;
         border-top: 125px solid #191919;
-        border-left: 10px solid transparent;
+        border-left: 9px solid transparent;
         top: -2px;
-        left: calc(50% - (32px / 2));
+        left: calc(51% - (32px / 2));
     }
     .pit {
         font-size: 9.3px;
