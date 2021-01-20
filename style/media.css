@@ -25,7 +25,7 @@
         margin-left: 8.5%;
     }
     .inner:before {
-        font-size: 70px;
+        font-size: 60px;
     }
     .number {
         width: 60px;
@@ -344,6 +344,10 @@
 }
 
 @media only screen and (max-width: 1400px) {
+    svg {
+        top: 24.90%;
+        left: 15%;
+    }
     .score,
     .win,
     .bet {
@@ -490,11 +494,15 @@
     .rightMoney>div {
         height: 61px;
     }
+    .tableNumberContainer {
+        margin-top: 16px;
+    }
     #tableNumber0 {
-        height: 130px;
+        height: 128px;
+        margin-top: -2px;
     }
     .container_money {
-        margin-top: -125px;
+        margin-top: -129px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -509,7 +517,7 @@
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 46px;
+        height: 45px;
         margin-top: -3.1%;
     }
     #secondLineNumber,
@@ -618,7 +626,7 @@
         margin-top: 16px;
     }
     .container_money {
-        margin-top: -132px;
+        margin-top: -133px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -633,7 +641,7 @@
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 42px;
+        height: 41px;
         margin-top: -3.1%;
     }
     #tableNumber0 {
@@ -678,7 +686,7 @@
 
 @media only screen and (max-width: 1152px) {
     .centerRoulette {
-        left: -8.5%;
+        left: -7.5%;
     }
     .stopwatch {
         height: 82px;
@@ -696,6 +704,7 @@
     #clock {
         height: 75px;
         width: 75px;
+        margin-top: 5px;
     }
     svg {
         top: 25.5%;
@@ -755,7 +764,7 @@
         height: 56px;
     }
     .tableNumberContainer {
-        margin-top: 10px;
+        margin-top: 12px;
     }
     #tableNumber0 {
         height: 108px;
@@ -822,7 +831,7 @@
         top: -8%;
     }
     .centerRoulette {
-        left: -7.5%;
+        left: -8.5%;
         transform: rotate3d(1, 1, 1, -5.5deg);
     }
     .stopwatch {
@@ -887,7 +896,7 @@
         height: 169px;
     }
     .container_money {
-        margin-top: -141px;
+        margin-top: -143px;
     }
     .leftMoney>div,
     .rightMoney>div {
@@ -1431,6 +1440,9 @@
         height: 77px;
         margin-top: 0px;
     }
+    .tableNumberContainer {
+        margin-top: 8px;
+    }
     #secondLineNumber,
     #firstLineNumber,
     #thirdLineNumber,
@@ -1701,6 +1713,9 @@
 }
 
 @media only screen and (max-width: 667px) {
+    .inner:before {
+        font-size: 23px;
+    }
     svg {
         top: 26.7%;
         left: 18.7%;
@@ -1945,7 +1960,7 @@
         width: 251px;
         height: 250px;
         margin-left: 7.5%;
-        margin-top: 19.8%;
+        margin-top: 20.8%;
     }
     .number {
         height: 122px;
