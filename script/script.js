@@ -93,7 +93,6 @@ $(document).ready(function() {
     function getRouletteNumber(randomNumber, lastDataArray) {
         setTimeout(function() {
             plate.css("animation-play-state", "paused");
-            document.getElementById('audio').pause();
 
             if ($.inArray(randomNumber, red) !== -1) {
                 color = "#D81F24";
