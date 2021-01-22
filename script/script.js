@@ -3,7 +3,6 @@ $(document).ready(function() {
     let plate = $("#plate");
     let opacityTableNumber = 0.2;
     let disabledMoney = false;
-    const progressStopwatch = $('.progressStopwatch');
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
 
     cretaeStopwatch();
@@ -55,13 +54,13 @@ $(document).ready(function() {
 
         const stopwatchDiv = $('.stopwatch');
 
-        function processConditions(time) {
+        async function processConditions(time) {
             if (time === 60) {
                 spinSharik(lastDataArray);
                 opacityTableNumber = 0.2;
                 disabledMoney = false;
                 $("polyline").css({ 'stroke': '#007bff' });
-                document.querySelector('audio').play();
+                await document.getElementById('audio').play();
             } else if (time === 9) {
                 stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
                 deleteSharik();
@@ -94,6 +93,7 @@ $(document).ready(function() {
     function getRouletteNumber(randomNumber, lastDataArray) {
         setTimeout(function() {
             plate.css("animation-play-state", "paused");
+            document.getElementById('audio').pause();
 
             if ($.inArray(randomNumber, red) !== -1) {
                 color = "#D81F24";
@@ -113,7 +113,6 @@ $(document).ready(function() {
     function createLastData(number, color, lastDataArray) {
         $('.lastDataNumber').empty();
         lastDataArray.push({ number, color });
-        console.log(lastDataArray.length)
         if (lastDataArray.length > 10) {
             lastDataArray.shift();
         }
