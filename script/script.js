@@ -131,13 +131,26 @@ $(document).ready(function() {
     plate.css("animation-play-state", "paused");
 
     bindHoverMoneyTable();
-    bindHoverTableNumber();
+    bindClickTableNumber();
 
-    function bindHoverMoneyTable(opacity) {
+    let getChips;
+    let setChips = false;
+    let leftChipNumber0 = 1;
+
+    $('#tableNumber0').click(function() {
+        if (setChips) {
+            $(this).append(`<div id='setMoney${getChips} '
+                value='${getChips}'
+                style ='background-image: url("../images/chip${getChips}.png"); left: ${leftChipNumber0++}px></div>`);
+        }
+    })
+
+    function bindHoverMoneyTable() {
         for (let i = 0; i <= 8; i++) {
             $(`#money${i}`).click(function() {
                 deleteBorderFromMoney();
-
+                getChips = $(this).attr('value')
+                setChips = true;
                 $(this).addClass('borderMoney');
             })
         }
@@ -149,14 +162,17 @@ $(document).ready(function() {
         }
     }
 
-    function bindHoverTableNumber() {
+    function bindClickTableNumber() {
+        let leftChip = 1;
         for (let i = 0; i <= 36; i++) {
 
             $(`#tableNumber${i}`).click(function() {
-                $(this).css({ 'background-color': 'white', 'opacity': `${opacityTableNumber}` });
-            })
-            $(`#tableNumber${i}`).mouseout(function() {
-                $(this).css({ 'background-color': 'white', 'opacity': `0` });
+                if (setChips) {
+                    $(this).css({ 'background-color': '', 'opacity': '1' });
+                    $(this).append(`<div id='setMoney${getChips} '
+                        value='${getChips}'
+                        style ='background-image: url("../images/chip${getChips}.png"); left: ${leftChip++}px'></div>`);
+                }
             })
         }
     }
@@ -165,122 +181,108 @@ $(document).ready(function() {
         setOpacityLine(1, opacityTableNumber, this);
     })
 
-    $('#firstLine').mouseout(function() {
-        setOpacityLine(1, 0);
-    })
-
     $('#secondLine').click(function() {
         setOpacityLine(2, opacityTableNumber, this);
-    })
-
-    $('#secondLine').mouseout(function() {
-        setOpacityLine(2, 0);
     })
 
     $('#thirdLine').click(function() {
         setOpacityLine(3, opacityTableNumber, this);
     })
 
-    $('#thirdLine').mouseout(function() {
-        setOpacityLine(3, 0);
-    })
+    let leftChipLine = 1;
 
     function setOpacityLine(numberChild, opacity, $this) {
+
+        $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`).empty();
         $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
-        $($this).css({ 'background-color': 'white', 'opacity': '0' })
+        $($this).css({ 'background-color': '', 'opacity': '1' });
+        if (setChips) {
+            $($this).append(`<div id='setMoney${getChips} '
+                    value='${getChips}'
+                    style ='background-image: url("../images/chip${getChips}.png"); left: ${leftChipLine++}px'></div>`);
+        }
     }
 
     $('#_1st12').click(function() {
-        opacityFourOrEighLine(1, 12, opacityTableNumber)
-    })
-
-    $('#_1st12').mouseout(function() {
-        opacityFourOrEighLine(1, 12, 0)
+        clickFourOrEighLine(1, 12, opacityTableNumber, this)
     })
 
     $('#_2en12').click(function() {
-        opacityFourOrEighLine(13, 24, opacityTableNumber)
-    })
-
-    $('#_2en12').mouseout(function() {
-        opacityFourOrEighLine(13, 24, 0)
+        clickFourOrEighLine(13, 24, opacityTableNumber, this)
     })
 
     $('#_3rd12').click(function() {
-        opacityFourOrEighLine(25, 36, opacityTableNumber)
-    })
-
-    $('#_3rd12').mouseout(function() {
-        opacityFourOrEighLine(25, 36, 0)
-
+        clickFourOrEighLine(25, 36, opacityTableNumber, this)
     })
 
     $('#_1to18').click(function() {
-        opacityFourOrEighLine(1, 18, opacityTableNumber)
-
-    })
-
-    $('#_1to18').mouseout(function() {
-        opacityFourOrEighLine(1, 18, 0)
+        clickFourOrEighLine(1, 18, opacityTableNumber, this)
 
     })
 
     $('#_19to36').click(function() {
-        opacityFourOrEighLine(19, 36, opacityTableNumber)
+        clickFourOrEighLine(19, 36, opacityTableNumber, this)
     })
 
-    $('#_19to36').mouseout(function() {
-        opacityFourOrEighLine(19, 36, 0)
-    })
+    let leftChipFourLine = 1;
 
-    function opacityFourOrEighLine(startNumber, sizeNumber, opacity) {
+    function clickFourOrEighLine(startNumber, sizeNumber, opacity, $this) {
+        let leftChip = 1;
         for (let i = startNumber; i <= sizeNumber; i++) {
             $(`#tableNumber${i}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
+            $(`#tableNumber${i}`).empty();
         }
+        if (setChips) {
+            $($this).append(`<div id='setMoney${getChips} '
+                    value='${getChips}'
+                    style ='background-image: url("../images/chip${getChips}.png"); left: ${leftChipFourLine++}px'></div>`);
+        }
+
     }
 
     $('#even').click(function() {
-        hoverEvenOrOdd(2, opacityTableNumber);
-    })
-
-    $('#even').mouseout(function() {
-        hoverEvenOrOdd(2, 0);
+        clickEvenOrOdd(2, opacityTableNumber, this);
     })
 
     $('#odd').click(function() {
-        hoverEvenOrOdd(1, opacityTableNumber);
+        clickEvenOrOdd(1, opacityTableNumber, this);
     })
 
-    $('#odd').mouseout(function() {
-        hoverEvenOrOdd(1, 0);
-    })
+    let leftChipEven = 1;
 
-    function hoverEvenOrOdd(startNumber, opacity) {
+    function clickEvenOrOdd(startNumber, opacity, $this) {
         let pairNumber = startNumber;
         for (let i = 0; i <= 18; i++) {
             $(`#tableNumber${pairNumber}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
+            $(`#tableNumber${pairNumber}`).empty();
             pairNumber += 2;
+        }
+
+        if (setChips) {
+            $($this).append(`<div id='setMoney${getChips} '
+                    value='${getChips}'
+                    style ='background-image: url("../images/chip${getChips}.png"); left: ${leftChipEven++}px'></div>`);
         }
     }
 
     $('#highlightColorRed').click(function() {
-        hoverRedOrBlack('red', opacityTableNumber)
-    })
-
-    $('#highlightColorRed').mouseout(function() {
-        hoverRedOrBlack('red', 0)
+        clickRedOrBlack('red', opacityTableNumber, this)
     })
 
     $('#highlightColorBlack').click(function() {
-        hoverRedOrBlack('black', opacityTableNumber)
+        clickRedOrBlack('black', opacityTableNumber, this)
     })
 
-    $('#highlightColorBlack').mouseout(function() {
-        hoverRedOrBlack('black', 0)
-    })
+    let leftChipRed = 1;
 
-    function hoverRedOrBlack(color, opacity) {
-        $(`.${color}`).css({ 'background-color': 'white', 'opacity': `${opacity}` })
+    function clickRedOrBlack(color, opacity, $this) {
+        $(`.${color}`).empty();
+        $(`.${color}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
+        if (setChips) {
+            $($this).append(`<div id='setMoney${getChips} '
+                    value='${getChips}'
+                    style ='background-image: url("../images/chip${getChips}.png"); left: ${leftChipRed++}px'></div>`);
+        }
     }
 
 });

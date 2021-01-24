@@ -910,12 +910,35 @@ audio {
     transform: skewX(12deg);
 }
 
-#setMoney1 {
-    width: 4%;
-    height: 18%;
+#firstLineNumber>div>div,
+#secondLineNumber>div>div,
+#thirdLineNumber>div>div,
+#fourthLineNumber>div>div,
+#fifthLineNumber>div>div,
+#sixthLineNumber>div>div,
+#seventhLineNumber>div>div,
+#eighthLineNumber>div>div,
+#ninethLineNumber>div>div,
+#tenthLineNumber>div>div,
+#eleventhLineNumber>div>div,
+#twelfthLineNumber>div>div,
+#getLines>div>div,
+#firstLine>div,
+#secondLine>div,
+#thirdLine>div,
+#_19to36>div,
+#_1st12>div,
+#_1to18>div,
+#_2en12>div,
+#_3rd12>div,
+#even>div,
+#odd>div,
+#highlightColorRed>div,
+#highlightColorBlack>div,
+#tableNumber0>div {
+    width: 50px;
+    height: 50px;
     position: absolute;
-    z-index: 10;
-    background-image: url('../images/chip1.png');
+    z-index: -4;
     background-size: cover;
-    border: 1px solid black;
 }
