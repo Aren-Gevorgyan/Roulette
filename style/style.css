@@ -909,3 +909,13 @@ audio {
 #_19to36 {
     transform: skewX(12deg);
 }
+
+#setMoney1 {
+    width: 4%;
+    height: 18%;
+    position: absolute;
+    z-index: 10;
+    background-image: url('../images/chip1.png');
+    background-size: cover;
+    border: 1px solid black;
+}

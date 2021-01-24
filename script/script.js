@@ -137,6 +137,7 @@ $(document).ready(function() {
         for (let i = 0; i <= 8; i++) {
             $(`#money${i}`).click(function() {
                 deleteBorderFromMoney();
+
                 $(this).addClass('borderMoney');
             })
         }
@@ -150,7 +151,8 @@ $(document).ready(function() {
 
     function bindHoverTableNumber() {
         for (let i = 0; i <= 36; i++) {
-            $(`#tableNumber${i}`).mouseover(function() {
+
+            $(`#tableNumber${i}`).click(function() {
                 $(this).css({ 'background-color': 'white', 'opacity': `${opacityTableNumber}` });
             })
             $(`#tableNumber${i}`).mouseout(function() {
@@ -159,7 +161,7 @@ $(document).ready(function() {
         }
     }
 
-    $('#firstLine').mouseover(function() {
+    $('#firstLine').click(function() {
         setOpacityLine(1, opacityTableNumber, this);
     })
 
@@ -167,7 +169,7 @@ $(document).ready(function() {
         setOpacityLine(1, 0);
     })
 
-    $('#secondLine').mouseover(function() {
+    $('#secondLine').click(function() {
         setOpacityLine(2, opacityTableNumber, this);
     })
 
@@ -175,7 +177,7 @@ $(document).ready(function() {
         setOpacityLine(2, 0);
     })
 
-    $('#thirdLine').mouseover(function() {
+    $('#thirdLine').click(function() {
         setOpacityLine(3, opacityTableNumber, this);
     })
 
@@ -188,7 +190,7 @@ $(document).ready(function() {
         $($this).css({ 'background-color': 'white', 'opacity': '0' })
     }
 
-    $('#_1st12').mouseover(function() {
+    $('#_1st12').click(function() {
         opacityFourOrEighLine(1, 12, opacityTableNumber)
     })
 
@@ -196,7 +198,7 @@ $(document).ready(function() {
         opacityFourOrEighLine(1, 12, 0)
     })
 
-    $('#_2en12').mouseover(function() {
+    $('#_2en12').click(function() {
         opacityFourOrEighLine(13, 24, opacityTableNumber)
     })
 
@@ -204,7 +206,7 @@ $(document).ready(function() {
         opacityFourOrEighLine(13, 24, 0)
     })
 
-    $('#_3rd12').mouseover(function() {
+    $('#_3rd12').click(function() {
         opacityFourOrEighLine(25, 36, opacityTableNumber)
     })
 
@@ -213,7 +215,7 @@ $(document).ready(function() {
 
     })
 
-    $('#_1to18').mouseover(function() {
+    $('#_1to18').click(function() {
         opacityFourOrEighLine(1, 18, opacityTableNumber)
 
     })
@@ -223,7 +225,7 @@ $(document).ready(function() {
 
     })
 
-    $('#_19to36').mouseover(function() {
+    $('#_19to36').click(function() {
         opacityFourOrEighLine(19, 36, opacityTableNumber)
     })
 
@@ -237,7 +239,7 @@ $(document).ready(function() {
         }
     }
 
-    $('#even').mouseover(function() {
+    $('#even').click(function() {
         hoverEvenOrOdd(2, opacityTableNumber);
     })
 
@@ -245,7 +247,7 @@ $(document).ready(function() {
         hoverEvenOrOdd(2, 0);
     })
 
-    $('#odd').mouseover(function() {
+    $('#odd').click(function() {
         hoverEvenOrOdd(1, opacityTableNumber);
     })
 
@@ -261,7 +263,7 @@ $(document).ready(function() {
         }
     }
 
-    $('#highlightColorRed').mouseover(function() {
+    $('#highlightColorRed').click(function() {
         hoverRedOrBlack('red', opacityTableNumber)
     })
 
@@ -269,7 +271,7 @@ $(document).ready(function() {
         hoverRedOrBlack('red', 0)
     })
 
-    $('#highlightColorBlack').mouseover(function() {
+    $('#highlightColorBlack').click(function() {
         hoverRedOrBlack('black', opacityTableNumber)
     })
 
