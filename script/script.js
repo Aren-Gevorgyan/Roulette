@@ -135,15 +135,6 @@ $(document).ready(function() {
 
     let getChips;
     let setChips = false;
-    let leftChipNumber0 = 1;
-
-    $('#tableNumber0').click(function() {
-        if (setChips) {
-            $(this).append(`<div id='setMoney${getChips} '
-                value='${getChips}'
-                style ='background-image: url("../images/chip${getChips}.png"); left: ${leftChipNumber0++}px></div>`);
-        }
-    })
 
     function bindHoverMoneyTable() {
         for (let i = 0; i <= 8; i++) {
@@ -195,6 +186,7 @@ $(document).ready(function() {
 
         $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`).empty();
         $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
+        $('#tableNumber0 > div').css({ 'background-color': '', 'opacity': `1` });
         $($this).css({ 'background-color': '', 'opacity': '1' });
         if (setChips) {
             $($this).append(`<div id='setMoney${getChips} '
