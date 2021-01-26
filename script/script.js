@@ -162,7 +162,7 @@ $(document).ready(function() {
                     $(this).css({ 'background-color': '', 'opacity': '1' });
                     $(this).append(`<div id='setMoney${getChips} '
                         value='${getChips}'
-                        style ='background-image: url("../images/chip${getChips}.png"); left: ${leftChip++}px'></div>`);
+                        style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChip++}px'></div>`);
                 }
             })
         }
@@ -191,7 +191,7 @@ $(document).ready(function() {
         if (setChips) {
             $($this).append(`<div id='setMoney${getChips} '
                     value='${getChips}'
-                    style ='background-image: url("../images/chip${getChips}.png"); left: ${leftChipLine++}px'></div>`);
+                    style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipLine++}px'></div>`);
         }
     }
 
@@ -227,7 +227,7 @@ $(document).ready(function() {
         if (setChips) {
             $($this).append(`<div id='setMoney${getChips} '
                     value='${getChips}'
-                    style ='background-image: url("../images/chip${getChips}.png"); left: ${leftChipFourLine++}px'></div>`);
+                    style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipFourLine++}px'></div>`);
         }
 
     }
@@ -253,7 +253,7 @@ $(document).ready(function() {
         if (setChips) {
             $($this).append(`<div id='setMoney${getChips} '
                     value='${getChips}'
-                    style ='background-image: url("../images/chip${getChips}.png"); left: ${leftChipEven++}px'></div>`);
+                    style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipEven++}px'></div>`);
         }
     }
 
@@ -273,7 +273,7 @@ $(document).ready(function() {
         if (setChips) {
             $($this).append(`<div id='setMoney${getChips} '
                     value='${getChips}'
-                    style ='background-image: url("../images/chip${getChips}.png"); left: ${leftChipRed++}px'></div>`);
+                    style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipRed++}px'></div>`);
         }
     }
 
