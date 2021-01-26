@@ -903,6 +903,10 @@
         top: 27.5%;
         left: 17%;
     }
+    .numberData {
+        height: 16px;
+        font-size: 12px;
+    }
     #countdown-number {
         top: 71px;
     }
