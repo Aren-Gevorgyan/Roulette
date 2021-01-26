@@ -187,7 +187,7 @@
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 153px;
+        height: 150px;
     }
     .numberData {
         height: 23.5px;
@@ -682,6 +682,35 @@
     #countdown {
         margin-top: 42px;
     }
+    #firstLineNumber>div>div,
+    #secondLineNumber>div>div,
+    #thirdLineNumber>div>div,
+    #fourthLineNumber>div>div,
+    #fifthLineNumber>div>div,
+    #sixthLineNumber>div>div,
+    #seventhLineNumber>div>div,
+    #eighthLineNumber>div>div,
+    #ninethLineNumber>div>div,
+    #tenthLineNumber>div>div,
+    #eleventhLineNumber>div>div,
+    #twelfthLineNumber>div>div,
+    #getLines>div>div,
+    #firstLine>div,
+    #secondLine>div,
+    #thirdLine>div,
+    #_19to36>div,
+    #_1st12>div,
+    #_1to18>div,
+    #_2en12>div,
+    #_3rd12>div,
+    #even>div,
+    #odd>div,
+    #highlightColorRed>div,
+    #highlightColorBlack>div,
+    #tableNumber0>div {
+        width: 35px;
+        height: 35px;
+    }
 }
 
 @media only screen and (max-width: 1152px) {
@@ -951,6 +980,35 @@
     #_19to36 {
         height: 45px;
         margin-top: -57px;
+    }
+    #firstLineNumber>div>div,
+    #secondLineNumber>div>div,
+    #thirdLineNumber>div>div,
+    #fourthLineNumber>div>div,
+    #fifthLineNumber>div>div,
+    #sixthLineNumber>div>div,
+    #seventhLineNumber>div>div,
+    #eighthLineNumber>div>div,
+    #ninethLineNumber>div>div,
+    #tenthLineNumber>div>div,
+    #eleventhLineNumber>div>div,
+    #twelfthLineNumber>div>div,
+    #getLines>div>div,
+    #firstLine>div,
+    #secondLine>div,
+    #thirdLine>div,
+    #_19to36>div,
+    #_1st12>div,
+    #_1to18>div,
+    #_2en12>div,
+    #_3rd12>div,
+    #even>div,
+    #odd>div,
+    #highlightColorRed>div,
+    #highlightColorBlack>div,
+    #tableNumber0>div {
+        width: 27px;
+        height: 27px;
     }
 }
 
@@ -1488,6 +1546,35 @@
         height: 34px;
         margin-top: -61px;
     }
+    #firstLineNumber>div>div,
+    #secondLineNumber>div>div,
+    #thirdLineNumber>div>div,
+    #fourthLineNumber>div>div,
+    #fifthLineNumber>div>div,
+    #sixthLineNumber>div>div,
+    #seventhLineNumber>div>div,
+    #eighthLineNumber>div>div,
+    #ninethLineNumber>div>div,
+    #tenthLineNumber>div>div,
+    #eleventhLineNumber>div>div,
+    #twelfthLineNumber>div>div,
+    #getLines>div>div,
+    #firstLine>div,
+    #secondLine>div,
+    #thirdLine>div,
+    #_19to36>div,
+    #_1st12>div,
+    #_1to18>div,
+    #_2en12>div,
+    #_3rd12>div,
+    #even>div,
+    #odd>div,
+    #highlightColorRed>div,
+    #highlightColorBlack>div,
+    #tableNumber0>div {
+        width: 24px;
+        height: 24px;
+    }
 }
 
 @media only screen and (max-width: 736px) {
@@ -1843,6 +1930,35 @@
     #even,
     #_19to36 {
         margin-top: -63px;
+    }
+    #firstLineNumber>div>div,
+    #secondLineNumber>div>div,
+    #thirdLineNumber>div>div,
+    #fourthLineNumber>div>div,
+    #fifthLineNumber>div>div,
+    #sixthLineNumber>div>div,
+    #seventhLineNumber>div>div,
+    #eighthLineNumber>div>div,
+    #ninethLineNumber>div>div,
+    #tenthLineNumber>div>div,
+    #eleventhLineNumber>div>div,
+    #twelfthLineNumber>div>div,
+    #getLines>div>div,
+    #firstLine>div,
+    #secondLine>div,
+    #thirdLine>div,
+    #_19to36>div,
+    #_1st12>div,
+    #_1to18>div,
+    #_2en12>div,
+    #_3rd12>div,
+    #even>div,
+    #odd>div,
+    #highlightColorRed>div,
+    #highlightColorBlack>div,
+    #tableNumber0>div {
+        width: 20px;
+        height: 20px;
     }
 }
 
