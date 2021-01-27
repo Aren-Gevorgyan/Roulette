@@ -60,7 +60,18 @@ $(document).ready(function() {
                 opacityTableNumber = 0.2;
                 disabledMoney = false;
                 $("polyline").css({ 'stroke': '#007bff' });
-                await document.getElementById('audio').play();
+                // await document.getElementById('audio').play();
+                var promise = await document.querySelector('audio').play();
+                if (promise !== undefined) {
+                    promise.then(audio => {
+                        console.log(audio);
+
+                        audio.play();
+                    }).catch(error => {
+                        audio.play();
+                    });
+                }
+
             } else if (time === 9) {
                 stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
                 deleteSharik();
