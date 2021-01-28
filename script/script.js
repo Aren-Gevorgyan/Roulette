@@ -5,6 +5,24 @@ $(document).ready(function() {
     let disabledMoney = false;
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
 
+    fullScreen();
+
+    async function fullScreen() {
+        if (document.documentElement.requestFullscreen)
+            await document.querySelector(".container").requestFullscreen();
+        else if (document.documentElement.webkitRequestFullScreen)
+            await document.querySelector(".container").webkitRequestFullScreen();
+
+        screen.orientation.lock("landscape-primary")
+            .then(function() {
+                lockButton.style.display = 'none';
+                document.querySelector(".container").style.backgroundColor = 'green';
+            })
+            .catch(function(error) {
+                alert(error);
+            });
+    }
+
     cretaeStopwatch();
 
     function cretaeStopwatch() {
@@ -56,22 +74,11 @@ $(document).ready(function() {
 
         async function processConditions(time) {
             if (time === 60) {
+                $("polyline").css({ 'stroke': '#007bff' });
                 spinSharik(lastDataArray);
                 opacityTableNumber = 0.2;
                 disabledMoney = false;
-                $("polyline").css({ 'stroke': '#007bff' });
-                // await document.getElementById('audio').play();
-                var promise = await document.querySelector('audio').play();
-                if (promise !== undefined) {
-                    promise.then(audio => {
-                        console.log(audio);
-
-                        audio.play();
-                    }).catch(error => {
-                        audio.play();
-                    });
-                }
-
+                await document.getElementById('audio').play();
             } else if (time === 9) {
                 stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
                 deleteSharik();

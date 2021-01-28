@@ -1469,6 +1469,120 @@
     }
 }
 
+@media only screen and (max-width: 823px) {
+    .score,
+    .win,
+    .bet {
+        height: 23px;
+        font-size: 11px;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 19px;
+    }
+    .plate {
+        width: 331px;
+        height: 330px;
+        margin-left: 8.48%;
+        margin-top: 19.8%;
+    }
+    .number {
+        width: 32px;
+        height: 164px;
+        top: 0px;
+        border-top: 164px solid #191919;
+        left: calc(49% - (32px / 2));
+    }
+    .pit {
+        font-size: 12px;
+        left: -16px;
+        top: -167px;
+    }
+    .headerCenterRoulette {
+        top: -5%;
+    }
+    .centerRoulette {
+        left: -7%;
+        transform: rotate3d(1, 1, 1, -6.5deg);
+    }
+    svg {
+        left: 17.9%;
+        top: 28.5%;
+    }
+    .stopwatch {
+        width: 64px;
+        height: 65px;
+    }
+    .lastData {
+        height: 134px;
+    }
+    #clock {
+        margin-top: 25px;
+    }
+    .container_money {
+        margin-top: -146px;
+    }
+    .tableNumberContainer {
+        margin-top: 5px;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninethLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 79px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninethLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 26px;
+        margin-top: 0px;
+    }
+    #tableNumber0 {
+        height: 80px;
+        margin-top: -1px;
+    }
+    .numberData {
+        height: 10.9px;
+        font-size: 8px;
+        border-radius: 4px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 31px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        height: 35px;
+        margin-top: -59px;
+    }
+}
+
 @media only screen and (max-width: 812px) {
     svg {
         top: 23%;
@@ -2115,7 +2229,7 @@
 
 @media only screen and (max-width: 653px) {
     .centerRoulette {
-        left: -7.5%;
+        left: -6.5%;
         transform: rotate3d(1, 1, 1, -6.5deg);
     }
     svg {
