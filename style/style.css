@@ -16,27 +16,27 @@ body,
 #fullscreen {
     width: 400px;
     height: 400px;
-    background-color: #3E1604;
+    background-image: url('../images/backgroundFullscreen.jpg');
+    background-size: 100% 100%;
     background-size: cover;
     color: white;
     position: absolute;
     z-index: 20;
-    border-left: 3px solid gray;
-    border-top: 2px solid gray;
     border-radius: 4px;
 }
 
 #fullscreen button {
     position: absolute;
-    top: 50%;
-    left: 38%;
+    top: 12%;
+    left: 58%;
+    font-weight: bold;
     border-radius: 4px;
+    background-color: #DDDDDD;
 }
 
 #fullscreen h3 {
     position: absolute;
-    top: 40%;
-    left: 20%;
+    text-align: right;
 }
 
 .container-fluid {
