@@ -4,12 +4,6 @@ $(document).ready(function() {
     let opacityTableNumber = 0.2;
     let disabledMoney = false;
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
-    let reloadCount = true;
-
-    $('#ok').mouseover(function() {
-        //refresh the page
-        location.reload();
-    })
 
     $('#ok').click(function() {
         //create fullscreen
@@ -33,10 +27,13 @@ $(document).ready(function() {
     document.addEventListener('MSFullscreenChange', exitHandler);
 
     function exitHandler() {
+        // exit fullscreen
         if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
             $('.container').css({ 'display': 'none' });
             $('.fullscreenContainer').css({ 'display': 'block' });
             $('#fullscreen').css({ 'display': 'block' });
+            //refresh the page
+            location.reload();
         }
     }
 

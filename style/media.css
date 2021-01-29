@@ -3,7 +3,7 @@
         transform: rotate3d(1, 1, 1, -5.5deg);
     }
     .score {
-        margin-top: 37%;
+        margin-top: 36%;
     }
     .score,
     .win,
@@ -40,7 +40,7 @@
     }
     .numberData {
         width: 70%;
-        height: 25px;
+        height: 24px;
     }
     .inner:before {
         font-size: 60px;
@@ -110,44 +110,57 @@
 }
 
 @media only screen and (max-width: 1600px) {
-    .centerRoulette {
-        transform: rotate3d(1, 1, 1, -6.5deg);
+    .score {
+        margin-top: 32%;
     }
     .score,
     .win,
     .bet {
-        height: 46px;
-        font-size: 19px;
+        height: 40px;
+        font-size: 16px;
+        margin-bottom: 5px;
     }
     .container_buttonLeft {
-        margin-top: 40px;
+        margin-top: 45px;
     }
     #bet,
     #rebet,
     #take,
     #quit {
+        height: 35px;
         font-size: 20px;
     }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 60deg);
+    }
     .plate {
-        width: 645px;
-        height: 644px;
+        width: 648px;
+        height: 648px;
         margin-left: 9%;
-        margin-top: 18.6%;
+        margin-top: 19%;
     }
     .number {
+        width: 55px;
         height: 315px;
+    }
+    .centerRoulette {
+        transform: rotate3d(1, 1, 1, -5.5deg);
     }
     .container_buttonRight {
         margin-top: 20px;
     }
     .lastData {
-        height: 272px;
+        height: 252px;
     }
     .container_money {
-        margin-top: -123px;
+        margin-top: -118px;
     }
     #tableNumber0 {
-        height: 152px;
+        height: 148px;
+        margin-top: -9px;
+    }
+    .tableNumberContainer {
+        margin-top: 16px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -162,7 +175,7 @@
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 53px;
+        height: 52px;
         margin-top: -2%;
     }
     #secondLineNumber,
@@ -181,7 +194,7 @@
         height: 150px;
     }
     .numberData {
-        height: 23.5px;
+        height: 21px;
     }
 }
 
@@ -189,14 +202,17 @@
     .centerRoulette {
         left: -8%;
     }
+    .score {
+        margin-top: 35%;
+    }
     .score,
     .win,
     .bet {
         height: 42px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .container_buttonLeft {
-        margin-top: 33px;
+        margin-top: 42px;
         padding: 1px;
     }
     #bet,
@@ -211,36 +227,49 @@
         height: 242px;
     }
     .container_buttonRight {
-        margin-top: 19px;
+        margin-top: 29px;
         padding: 1px;
     }
     .numberData {
         height: 20.5px;
     }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 57deg);
+    }
     .plate {
         width: 582px;
         height: 581px;
         margin-left: 8.9%;
-        margin-top: 18.6%;
+        margin-top: 21%;
     }
     .number {
         width: 51px;
         height: 284px;
-        top: 3px;
+        top: 2px;
     }
     .pit {
         font-size: 23px;
         left: -6px;
     }
+    .numberData {
+        font-size: 14px;
+    }
     .inner:before {
-        font-size: 59px;
+        font-size: 56px;
+    }
+    .container_money {
+        margin-top: -115px;
     }
     .leftMoney>div,
     .rightMoney>div {
         height: 66px;
     }
     #tableNumber0 {
-        height: 136px;
+        height: 148px;
+        margin-top: 3px;
+    }
+    .tableNumberContainer {
+        margin-top: 22px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -255,7 +284,7 @@
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 47px;
+        height: 53px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -270,7 +299,7 @@
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 139px;
+        height: 152px;
     }
     #_3rd12,
     #_1st12,
@@ -284,7 +313,12 @@
     #odd,
     #even {
         height: 63px;
-        margin-top: -35px;
+        margin-top: -27px;
+    }
+    .stopwatchContainer {
+        position: relative;
+        width: 90px;
+        height: 90px;
     }
     #countdown-number {
         font-size: 28px;
@@ -314,9 +348,6 @@
     .number {
         width: 51px;
         height: 276px;
-    }
-    .inner:before {
-        font-size: 56px;
     }
     .container_money {
         margin-top: -127px;
