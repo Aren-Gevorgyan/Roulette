@@ -4,8 +4,15 @@ $(document).ready(function() {
     let opacityTableNumber = 0.2;
     let disabledMoney = false;
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
+    let reloadCount = true;
+
+    $('#ok').mouseover(function() {
+        //refresh the page
+        location.reload();
+    })
 
     $('#ok').click(function() {
+        //create fullscreen
         let elem = document.documentElement;
         if (elem.requestFullscreen) {
             elem.requestFullscreen();
@@ -14,10 +21,10 @@ $(document).ready(function() {
         } else if (elem.msRequestFullscreen) {
             elem.msRequestFullscreen();
         }
-
-        $('.container-fluid').css({ 'opacity': '1' });
+        $('.container').css({ 'display': 'block' });
         $('.fullscreenContainer').css({ 'display': 'none' });
         $('#fullscreen').css({ 'display': 'none' });
+        cretaeStopwatch();
     });
 
     document.addEventListener('fullscreenchange', exitHandler);
@@ -27,13 +34,11 @@ $(document).ready(function() {
 
     function exitHandler() {
         if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
-            $('.container-fluid').css({ 'opacity': '0' });
+            $('.container').css({ 'display': 'none' });
             $('.fullscreenContainer').css({ 'display': 'block' });
             $('#fullscreen').css({ 'display': 'block' });
         }
     }
-
-    cretaeStopwatch();
 
     function cretaeStopwatch() {
 
