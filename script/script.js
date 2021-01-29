@@ -5,23 +5,50 @@ $(document).ready(function() {
     let disabledMoney = false;
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
 
-    fullScreen();
+    // fullScreen();
 
-    async function fullScreen() {
-        if (document.documentElement.requestFullscreen)
-            await document.querySelector(".container").requestFullscreen();
-        else if (document.documentElement.webkitRequestFullScreen)
-            await document.querySelector(".container").webkitRequestFullScreen();
+    // async function fullScreen() {
+    //     if (document.documentElement.requestFullscreen)
+    //         await document.querySelector(".container").requestFullscreen();
+    //     else if (document.documentElement.webkitRequestFullScreen)
+    //         await document.querySelector(".container").webkitRequestFullScreen();
 
-        screen.orientation.lock("landscape-primary")
-            .then(function() {
-                lockButton.style.display = 'none';
-                document.querySelector(".container").style.backgroundColor = 'green';
-            })
-            .catch(function(error) {
-                alert(error);
-            });
+    //     screen.orientation.lock("landscape-primary")
+    //         .then(function() {
+    //             lockButton.style.display = 'none';
+    //             document.querySelector(".container").style.backgroundColor = 'green';
+    //         })
+    //         .catch(function(error) {
+    //             alert(error);
+    //         });
+    // }
+
+    $('#ok').click(function() {
+        let elem = document.documentElement;
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen();
+        } else if (elem.webkitRequestFullscreen) {
+            elem.webkitRequestFullscreen();
+        } else if (elem.msRequestFullscreen) {
+            elem.msRequestFullscreen();
+        }
+
+        $('.container-fluid').css({ 'opacity': '1' });
+        $('#fullscreen').css({ 'display': 'none' });
+    });
+
+    document.addEventListener('fullscreenchange', exitHandler);
+    document.addEventListener('webkitfullscreenchange', exitHandler);
+    document.addEventListener('mozfullscreenchange', exitHandler);
+    document.addEventListener('MSFullscreenChange', exitHandler);
+
+    function exitHandler() {
+        if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
+            $('.container-fluid').css({ 'opacity': '0.1' });
+            $('#fullscreen').css({ 'display': 'block' });
+        }
     }
+
 
     cretaeStopwatch();
 

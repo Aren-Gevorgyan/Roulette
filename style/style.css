@@ -1,21 +1,51 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .row {
     margin: 0;
 }
 
-body {
-    margin: 0;
+#fullscreen {
+    width: 400px;
+    height: 400px;
+    background-color: #3E1604;
+    background-size: cover;
+    color: white;
+    position: absolute;
+    z-index: 20;
+    border-left: 3px solid gray;
+    border-top: 2px solid gray;
+    border-radius: 4px;
+}
+
+#fullscreen button {
+    position: absolute;
+    top: 50%;
+    left: 38%;
+    border-radius: 4px;
+}
+
+#fullscreen h3 {
+    position: absolute;
+    top: 40%;
+    left: 20%;
 }
 
 .container-fluid {
     max-width: 1920px;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin-left: auto;
     margin-right: auto;
     padding: 0;
     background-image: url('../images/background.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-size: 100% 100%;
+    opacity: 0.1;
 }
 
 .containerScore {
@@ -94,6 +124,8 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
 }
 
 .stopwatchContainer #countdown-number {
