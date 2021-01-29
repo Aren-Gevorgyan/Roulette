@@ -5,24 +5,6 @@ $(document).ready(function() {
     let disabledMoney = false;
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
 
-    // fullScreen();
-
-    // async function fullScreen() {
-    //     if (document.documentElement.requestFullscreen)
-    //         await document.querySelector(".container").requestFullscreen();
-    //     else if (document.documentElement.webkitRequestFullScreen)
-    //         await document.querySelector(".container").webkitRequestFullScreen();
-
-    //     screen.orientation.lock("landscape-primary")
-    //         .then(function() {
-    //             lockButton.style.display = 'none';
-    //             document.querySelector(".container").style.backgroundColor = 'green';
-    //         })
-    //         .catch(function(error) {
-    //             alert(error);
-    //         });
-    // }
-
     $('#ok').click(function() {
         let elem = document.documentElement;
         if (elem.requestFullscreen) {
@@ -34,6 +16,7 @@ $(document).ready(function() {
         }
 
         $('.container-fluid').css({ 'opacity': '1' });
+        $('.fullscreenContainer').css({ 'display': 'none' });
         $('#fullscreen').css({ 'display': 'none' });
     });
 
@@ -44,11 +27,11 @@ $(document).ready(function() {
 
     function exitHandler() {
         if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
-            $('.container-fluid').css({ 'opacity': '0.1' });
+            $('.container-fluid').css({ 'opacity': '0' });
+            $('.fullscreenContainer').css({ 'display': 'block' });
             $('#fullscreen').css({ 'display': 'block' });
         }
     }
-
 
     cretaeStopwatch();
 
