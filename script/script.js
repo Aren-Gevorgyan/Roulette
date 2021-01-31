@@ -37,7 +37,7 @@ $(document).ready(function() {
         }
     }
 
-    function createStopwatch(); {
+    function createStopwatch() {
 
         const lastDataArray = [];
         let intervalTime = 60 * 1000 / 360;

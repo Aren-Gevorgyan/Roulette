@@ -501,7 +501,7 @@ audio {
 }
 
 .plate:before {
-    background: green;
+    background: #136303;
     border: 6px groove #BFA923;
     box-shadow: inset 0px 0px 0px 2px #808080;
     top: 12%;
