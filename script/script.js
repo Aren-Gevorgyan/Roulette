@@ -18,7 +18,7 @@ $(document).ready(function() {
         $('.container').css({ 'display': 'block' });
         $('.fullscreenContainer').css({ 'display': 'none' });
         $('#fullscreen').css({ 'display': 'none' });
-        cretaeStopwatch();
+        createStopwatch();
     });
 
     document.addEventListener('fullscreenchange', exitHandler);
@@ -37,15 +37,15 @@ $(document).ready(function() {
         }
     }
 
-    function cretaeStopwatch() {
+    function createStopwatch(); {
 
         const lastDataArray = [];
         let intervalTime = 60 * 1000 / 360;
         let start = Date.now();
         let radius = parseInt($("#clock").css('width')) / 2;
-        let pointnum = "";
+        let pointNum = "";
         let x, y, radian;
-        let previusSeconds = 0;
+        let previousSeconds = 0;
 
         setInterval(interval, intervalTime);
 
@@ -59,22 +59,22 @@ $(document).ready(function() {
             radian = angle * (Math.PI / 180);
             x = (radius + Math.sin(radian) * radius + 5).toFixed(1);
             y = (radius - Math.cos(radian) * radius + 5).toFixed(1);
-            pointnum += x + ',' + y + ' ';
-            $("polyline").attr('points', pointnum);
+            pointNum += x + ',' + y + ' ';
+            $("polyline").attr('points', pointNum);
         }
 
         function newStart(seconds) {
             if (seconds >= 60) {
                 seconds = 60;
-                pointnum = "";
+                pointNum = "";
                 x, y, radian;
                 start = Date.now();
             }
         }
 
         function getSeconds(seconds) {
-            if (Math.floor(seconds) !== Math.floor(previusSeconds)) {
-                previusSeconds = seconds;
+            if (Math.floor(seconds) !== Math.floor(previousSeconds)) {
+                previousSeconds = seconds;
                 let roundsSeconds = Math.floor(seconds);
                 let countDownSeconds = 60 - roundsSeconds;
                 $('#countdown-number').text(countDownSeconds === 0 ? "" : countDownSeconds);
@@ -87,13 +87,13 @@ $(document).ready(function() {
         async function processConditions(time) {
             if (time === 60) {
                 $("polyline").css({ 'stroke': '#007bff' });
-                spinSharik(lastDataArray);
+                spinBall(lastDataArray);
                 opacityTableNumber = 0.2;
                 disabledMoney = false;
                 await document.getElementById('audio').play();
             } else if (time === 9) {
                 stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
-                deleteSharik();
+                deleteBall();
                 opacityTableNumber = 0;
                 disabledMoney = true;
                 $("polyline").css({ 'stroke': '#CC2020' });
@@ -106,7 +106,7 @@ $(document).ready(function() {
         }
     }
 
-    function spinSharik(lastDataArray) {
+    function spinBall(lastDataArray) {
 
         plate.css("animation-play-state", "running");
         let randomNumber = Math.floor(Math.random() * 36),
@@ -153,7 +153,7 @@ $(document).ready(function() {
 
     }
 
-    function deleteSharik() {
+    function deleteBall() {
         inner.attr("data-spinto", "").removeClass("rest");
         $(this).hide();
     }
@@ -226,29 +226,29 @@ $(document).ready(function() {
     }
 
     $('#_1st12').click(function() {
-        clickFourOrEighLine(1, 12, opacityTableNumber, this)
+        clickFourOrEightLine(1, 12, opacityTableNumber, this)
     })
 
     $('#_2en12').click(function() {
-        clickFourOrEighLine(13, 24, opacityTableNumber, this)
+        clickFourOrEightLine(13, 24, opacityTableNumber, this)
     })
 
     $('#_3rd12').click(function() {
-        clickFourOrEighLine(25, 36, opacityTableNumber, this)
+        clickFourOrEightLine(25, 36, opacityTableNumber, this)
     })
 
     $('#_1to18').click(function() {
-        clickFourOrEighLine(1, 18, opacityTableNumber, this)
+        clickFourOrEightLine(1, 18, opacityTableNumber, this)
 
     })
 
     $('#_19to36').click(function() {
-        clickFourOrEighLine(19, 36, opacityTableNumber, this)
+        clickFourOrEightLine(19, 36, opacityTableNumber, this)
     })
 
     let leftChipFourLine = 1;
 
-    function clickFourOrEighLine(startNumber, sizeNumber, opacity, $this) {
+    function clickFourOrEightLine(startNumber, sizeNumber, opacity, $this) {
         let leftChip = 1;
         for (let i = startNumber; i <= sizeNumber; i++) {
             $(`#tableNumber${i}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
