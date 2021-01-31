@@ -1,6 +1,8 @@
 @media only screen and (max-width: 1680px) {
     .centerRoulette {
         transform: rotate3d(1, 1, 1, -5.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -5.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5.5deg);
     }
     .score {
         margin-top: 36%;
@@ -30,6 +32,8 @@
     }
     #rotate3d {
         transform: rotate3d(1, 0, 0, 58deg);
+        -webkit-transform: rotate3d(1, 0, 0, 58deg);
+        -ms-transform: rotate3d(1, 0, 0, 58deg);
     }
     .number {
         width: 60px;
@@ -132,6 +136,8 @@
     }
     #rotate3d {
         transform: rotate3d(1, 0, 0, 60deg);
+        -webkit-transform: rotate3d(1, 0, 0, 60deg);
+        -ms-transform: rotate3d(1, 0, 0, 60deg);
     }
     .plate {
         width: 648px;
@@ -145,6 +151,8 @@
     }
     .centerRoulette {
         transform: rotate3d(1, 1, 1, -5.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -5.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5.5deg);
     }
     .container_buttonRight {
         margin-top: 20px;
@@ -235,6 +243,8 @@
     }
     #rotate3d {
         transform: rotate3d(1, 0, 0, 57deg);
+        -webkit-transform: rotate3d(1, 0, 0, 57deg);
+        -ms-transform: rotate3d(1, 0, 0, 57deg);
     }
     .plate {
         width: 582px;
@@ -351,6 +361,8 @@
     }
     #rotate3d {
         transform: rotate3d(1, 0, 0, 49deg);
+        -webkit-transform: rotate3d(1, 0, 0, 49deg);
+        -ms-transform: rotate3d(1, 0, 0, 49deg);
     }
     .plate {
         width: 565px;
@@ -377,6 +389,8 @@
     }
     #tableNumber0 {
         transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
         height: 180px;
     }
     #firstLineNumber>div,
@@ -396,43 +410,69 @@
     }
     #firstLineNumber {
         transform: skewX(-12deg);
+        -webkit-transform: skewX(-12deg);
+        -ms-transform: skewX(-12deg);
     }
     #secondLineNumber {
         transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
     }
     #thirdLineNumber {
         transform: skewX(-8deg);
+        -webkit-transform: skewX(-8deg);
+        -ms-transform: skewX(-8deg);
     }
     #fourthLineNumber {
         transform: skewX(-6deg);
+        -webkit-transform: skewX(-6deg);
+        -ms-transform: skewX(-6deg);
     }
     #fifthLineNumber {
         transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        -ms-transform: skewX(-4deg);
     }
     #sixthLineNumber {
         transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
     }
     #seventhLineNumber {
         transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
     }
     #eighthLineNumber {
         transform: skewX(4deg);
+        -webkit-transform: skewX(4deg);
+        -ms-transform: skewX(4deg);
     }
     #ninethLineNumber {
         transform: skewX(6deg);
+        -webkit-transform: skewX(6deg);
+        -ms-transform: skewX(6deg);
     }
     #tenthLineNumber {
         transform: skewX(9deg);
+        -webkit-transform: skewX(9deg);
+        -ms-transform: skewX(9deg);
     }
     #eleventhLineNumber {
         transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
     }
     #twelfthLineNumber {
         transform: skewX(13deg);
+        -webkit-transform: skewX(13deg);
+        -ms-transform: skewX(13deg);
     }
     #getLines {
         width: 6.2%;
         transform: skewX(15deg);
+        -webkit-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -504,10 +544,12 @@
     .numberData {
         height: 19px;
         font-size: 14px;
-        border-radius: 4px;
+        border-radius: 3px;
     }
     #rotate3d {
         transform: rotate3d(1, 0, 0, 60deg);
+        -webkit-transform: rotate3d(1, 0, 0, 60deg);
+        -ms-transform: rotate3d(1, 0, 0, 60deg);
     }
     .plate {
         width: 554px;
@@ -517,43 +559,69 @@
     }
     #firstLineNumber {
         transform: skewX(-16deg);
+        -webkit-transform: skewX(-16deg);
+        -ms-transform: skewX(-16deg);
     }
     #secondLineNumber {
         transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
     }
     #thirdLineNumber {
         transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
     }
     #fourthLineNumber {
         transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
     }
     #fifthLineNumber {
         transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        -ms-transform: skewX(-4deg);
     }
     #sixthLineNumber {
         transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
     }
     #seventhLineNumber {
         transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
     }
     #eighthLineNumber {
         transform: skewX(5deg);
+        -webkit-transform: skewX(5deg);
+        -ms-transform: skewX(5deg);
     }
     #ninethLineNumber {
         transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
     }
     #tenthLineNumber {
         transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
     }
     #eleventhLineNumber {
         transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
     }
     #twelfthLineNumber {
         transform: skewX(17deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
     }
     #getLines {
         width: 6.2%;
         transform: skewX(20deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
     }
     .number {
         width: 47px;
@@ -669,6 +737,8 @@
     }
     #rotate3d {
         transform: rotate3d(1, 0, 0, 57deg);
+        -webkit-transform: rotate3d(1, 0, 0, 57deg);
+        -ms-transform: rotate3d(1, 0, 0, 57deg);
     }
     .plate {
         width: 518px;
@@ -730,6 +800,8 @@
         height: 135px;
         margin-top: -3px;
         transform: skewX(-16deg);
+        -webkit-transform: skewX(-16deg);
+        -ms-transform: skewX(-16deg);
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -825,6 +897,8 @@
     }
     #rotate3d {
         transform: rotate3d(1, 0, 0, 48deg);
+        -webkit-transform: rotate3d(1, 0, 0, 48deg);
+        -ms-transform: rotate3d(1, 0, 0, 48deg);
     }
     .plate {
         width: 463px;
@@ -911,25 +985,39 @@
     }
     #firstLineNumber {
         transform: skewX(-12deg);
+        -webkit-transform: skewX(-12deg);
+        -ms-transform: skewX(-12deg);
     }
     #secondLineNumber {
         transform: skewX(-9deg);
+        -webkit-transform: skewX(-9deg);
+        -ms-transform: skewX(-9deg);
     }
     #thirdLineNumber {
         transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
     }
     #tenthLineNumber {
         transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
     }
     #eleventhLineNumber {
         transform: skewX(10deg);
+        -webkit-transform: skewX(10deg);
+        -ms-transform: skewX(10deg);
     }
     #twelfthLineNumber {
         transform: skewX(12deg);
+        -webkit-transform: skewX(12deg);
+        -ms-transform: skewX(12deg);
     }
     #getLines {
         width: 6.2%;
         transform: skewX(15deg);
+        -webkit-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
     }
     #_3rd12,
     #_1st12,
@@ -966,6 +1054,11 @@
     #quit {
         height: 24px;
     }
+    #fullscreen button {
+        height: 28px;
+        font-size: 12px;
+        border-radius: 2px;
+    }
     .plate {
         width: 433px;
         height: 432px;
@@ -997,6 +1090,8 @@
         top: -8.7%;
         left: -7.5%;
         transform: rotate3d(1, 1, 1, -5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5deg);
     }
     .inner:before {
         font-size: 40px;
@@ -1114,6 +1209,8 @@
     .centerRoulette {
         left: -7%;
         transform: rotate3d(1, 1, 1, -5.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -5.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5.5deg);
     }
     .score,
     .win,
@@ -1264,16 +1361,17 @@
         font-size: 13px;
     }
     .lastData {
-        height: 158px;
+        height: 190px;
+        margin-top: 27px;
     }
     .numberData {
-        height: 14px;
+        height: 17px;
     }
     .lastDataNumber {
         margin-top: 8px;
     }
     .container_buttonRight {
-        margin-top: 12px;
+        margin-top: 25px;
     }
     .plate {
         width: 383px;
@@ -1283,7 +1381,7 @@
     }
     .number {
         width: 34px;
-        height: 187px;
+        height: 189px;
         left: calc(49% - (32px / 2));
     }
     .pit {
@@ -1293,14 +1391,20 @@
         font-size: 39px;
     }
     .plate:before {
-        border: 4px groove #BFA923;
+        border: 2px groove #BFA923;
     }
     .leftMoney>div,
     .rightMoney>div {
-        height: 42px;
+        height: 48px;
+    }
+    .container_money {
+        margin-top: -122px;
+    }
+    .tableNumberContainer {
+        margin-top: 20px;
     }
     #tableNumber0 {
-        height: 92px;
+        height: 122px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -1315,7 +1419,7 @@
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 32px;
+        height: 40px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -1330,7 +1434,7 @@
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 94px;
+        height: 122px;
         margin-top: 0px;
     }
     #_1to18,
@@ -1339,23 +1443,26 @@
     #odd,
     #even,
     #_19to36 {
-        height: 40px;
-        margin-top: -59px;
+        height: 53px;
+        margin-top: -50px;
     }
 }
 
 @media only screen and (max-width: 928px) {
+    .score {
+        margin-top: 43%;
+    }
     .centerRoulette {
-        left: -8%;
+        left: -6.8%;
         transform: rotate3d(1, 1, 1, -5.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -5.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5.5deg);
     }
     .headerCenterRoulette {
         width: 49%;
-        height: 128%;
-        position: absolute;
-        z-index: 5;
-        left: 27%;
-        top: -7%;
+        height: 120%;
+        left: 26%;
+        top: 0%;
     }
     .plate {
         width: 369px;
@@ -1379,16 +1486,18 @@
         font-size: 11px;
     }
     .container_buttonLeft {
-        margin-top: 25px;
+        margin-top: 42px;
     }
     .lastData {
-        height: 154px;
+        height: 181px;
+        margin-top: 25px;
+        border-left: 1px groove white;
     }
     .container_buttonRight {
-        margin-top: 11px;
+        margin-top: 30px;
     }
     .container_money {
-        margin-top: -143px;
+        margin-top: -124px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -1403,7 +1512,7 @@
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 89px;
+        height: 116px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -1418,21 +1527,23 @@
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 30px;
+        height: 38px;
     }
     #tableNumber0 {
-        height: 88px;
+        height: 116px;
     }
     .numberData {
-        height: 13.4px;
+        height: 16px;
         font-size: 10px
     }
 }
 
 @media only screen and (max-width: 896px) {
-    .centerRoulette {
-        left: -8%;
-        transform: rotate3d(1, 1, 1, -6.5deg);
+    .container_money {
+        margin-top: -127px;
+    }
+    .tableNumberContainer {
+        margin-top: 17px;
     }
     .headerCenterRoulette {
         left: 26%;
@@ -1444,10 +1555,14 @@
         font-size: 12px;
     }
     .container_buttonLeft {
-        margin-top: 21px;
+        margin-top: 39px;
     }
     .lastData {
-        height: 147px;
+        height: 173px;
+    }
+    .stopwatchContainer #countdown-number {
+        width: calc(100% - 7px);
+        height: calc(100% - 7px);
     }
     #bet,
     #rebet,
@@ -1458,7 +1573,7 @@
         border-radius: 2px;
     }
     .numberData {
-        height: 12.9px;
+        height: 15px;
         font-size: 10px;
     }
     .plate {
@@ -1493,7 +1608,7 @@
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 84px;
+        height: 114px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -1508,16 +1623,16 @@
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 29px;
+        height: 37px;
     }
     #tableNumber0 {
-        height: 84px;
+        height: 114px;
         margin-top: -1px;
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 35px;
+        height: 43px;
     }
     #_1to18,
     #highlightColorBlack,
@@ -1525,36 +1640,54 @@
     #odd,
     #even,
     #_19to36 {
-        height: 38px;
-        margin-top: -59px;
+        height: 49px;
+        margin-top: -53px;
     }
 }
 
 @media only screen and (max-width: 823px) {
+    .score {
+        margin-top: 28%;
+    }
     .score,
     .win,
     .bet {
         height: 23px;
-        font-size: 11px;
+        font-size: 8px;
+        margin-bottom: -2px;
     }
     #bet,
     #rebet,
     #take,
     #quit {
-        height: 19px;
+        height: 16px;
+        font-size: 8px;
+    }
+    .container_buttonLeft {
+        margin-top: 17px;
+    }
+    .container_buttonRight {
+        margin-top: 15px;
     }
     .plate {
-        width: 331px;
-        height: 330px;
-        margin-left: 8.48%;
-        margin-top: 19.8%;
+        width: 329px;
+        height: 329px;
+        margin-left: 7.8%;
+        margin-top: 23%;
+    }
+    .stopwatchContainer {
+        width: 50px;
+        height: 50px;
+    }
+    #countdown-number {
+        font-size: 15px;
     }
     .number {
         width: 32px;
-        height: 164px;
+        height: 163px;
         top: 0px;
-        border-top: 164px solid #191919;
-        left: calc(49% - (32px / 2));
+        border-top: 162px solid #191919;
+        left: calc(50% - (32px / 2));
     }
     .pit {
         font-size: 12px;
@@ -1562,20 +1695,50 @@
         top: -167px;
     }
     .headerCenterRoulette {
-        top: -5%;
+        top: -2%;
+    }
+    #fullscreen {
+        width: 200px;
+        height: 200px;
+    }
+    #fullscreen h3 {
+        font-size: 16px;
     }
     .centerRoulette {
-        left: -7%;
-        transform: rotate3d(1, 1, 1, -6.5deg);
+        width: 109%;
+        height: 122%;
+        left: -8%;
+        transform: rotate3d(1, 1, 1, -5.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -5.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5.5deg);
+    }
+    #fullscreen button {
+        height: 18px;
+        font-size: 10px;
+        border-radius: 2px;
     }
     .lastData {
-        height: 134px;
+        height: 108px;
+        margin-top: 15px;
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 65deg);
+        -webkit-transform: rotate3d(1, 0, 0, 65deg);
+        -ms-transform: rotate3d(1, 0, 0, 65deg);
     }
     .container_money {
-        margin-top: -146px;
+        margin-top: -148px;
+        border-radius: 3px;
+    }
+    .borderMoney {
+        border: 2px solid rgb(65, 238, 5);
+    }
+    .leftMoney>div,
+    .rightMoney>div {
+        height: 31px;
     }
     .tableNumberContainer {
-        margin-top: 5px;
+        margin-top: 9px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -1590,7 +1753,73 @@
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 79px;
+        height: 70px;
+    }
+    #firstLineNumber {
+        transform: skewX(-16deg);
+        -webkit-transform: skewX(-16deg);
+        -ms-transform: skewX(-16deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+    }
+    #fourthLineNumber {
+        transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
+    }
+    #fifthLineNumber {
+        transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        -ms-transform: skewX(-4deg);
+    }
+    #sixthLineNumber {
+        transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
+    }
+    #seventhLineNumber {
+        transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+    }
+    #eighthLineNumber {
+        transform: skewX(5deg);
+        -webkit-transform: skewX(5deg);
+        -ms-transform: skewX(5deg);
+    }
+    #ninethLineNumber {
+        transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(17deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
+    }
+    #getLines {
+        width: 6.2%;
+        transform: skewX(20deg);
+        -webkit-transform: skewX(20deg);
+        -ms-transform: skewX(20deg);
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -1605,22 +1834,25 @@
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 26px;
+        height: 23px;
         margin-top: 0px;
     }
     #tableNumber0 {
-        height: 80px;
+        height: 70px;
         margin-top: -1px;
+        transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
     }
     .numberData {
-        height: 10.9px;
-        font-size: 8px;
-        border-radius: 4px;
+        height: 9px;
+        font-size: 6px;
+        border-radius: 2px;
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 31px;
+        height: 27px;
     }
     #_1to18,
     #highlightColorBlack,
@@ -1628,47 +1860,89 @@
     #odd,
     #even,
     #_19to36 {
-        height: 35px;
-        margin-top: -59px;
+        height: 30px;
+        margin-top: -61px;
+    }
+    #firstLineNumber>div>div,
+    #secondLineNumber>div>div,
+    #thirdLineNumber>div>div,
+    #fourthLineNumber>div>div,
+    #fifthLineNumber>div>div,
+    #sixthLineNumber>div>div,
+    #seventhLineNumber>div>div,
+    #eighthLineNumber>div>div,
+    #ninethLineNumber>div>div,
+    #tenthLineNumber>div>div,
+    #eleventhLineNumber>div>div,
+    #twelfthLineNumber>div>div,
+    #getLines>div>div,
+    #firstLine>div,
+    #secondLine>div,
+    #thirdLine>div,
+    #_19to36>div,
+    #_1st12>div,
+    #_1to18>div,
+    #_2en12>div,
+    #_3rd12>div,
+    #even>div,
+    #odd>div,
+    #highlightColorRed>div,
+    #highlightColorBlack>div,
+    #tableNumber0>div {
+        width: 23px;
+        height: 23px;
     }
 }
 
 @media only screen and (max-width: 812px) {
+    .score {
+        margin-top: 26%;
+    }
     .score,
     .win,
     .bet {
-        height: 24px;
-        font-size: 10px;
+        height: 22px;
+        font-size: 8px;
+        margin-bottom: -4px;
     }
     #bet,
     #rebet,
     #take,
     #quit {
-        height: 18px;
-        font-size: 9px;
+        height: 15px;
+        font-size: 8px;
         border-radius: 2px;
     }
     .container_buttonLeft {
         margin-top: 18px;
     }
     .lastData {
-        height: 140px;
+        height: 111px;
         margin-top: 4px;
     }
     .container_buttonRight {
         margin-top: 9px;
     }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 67deg);
+        -webkit-transform: rotate3d(1, 0, 0, 67deg);
+        -ms-transform: rotate3d(1, 0, 0, 67deg);
+    }
     .plate {
-        width: 323px;
+        width: 322px;
         height: 322px;
-        margin-left: 7.9%;
-        margin-top: 18.8%;
+        margin-left: 8.2%;
+        margin-top: 23.8%;
     }
     .plate:after {
         border: 2px solid #BFA923;
     }
     .plate:before {
         border: 3px groove #BFA923;
+    }
+    .stopwatchContainer {
+        width: 47px;
+        height: 47px;
     }
     .number {
         height: 159px;
@@ -1681,15 +1955,18 @@
         left: -16px;
     }
     .numberData {
-        height: 12.2px;
-        font-size: 8px;
+        height: 9.4px;
+        font-size: 7px;
+    }
+    .inner:before {
+        font-size: 30px;
     }
     .container_money {
-        margin-top: -147px;
+        margin-top: -151px;
     }
     .leftMoney>div,
     .rightMoney>div {
-        height: 39px;
+        height: 30px;
     }
     .tableNumberContainer {
         margin-top: 7px;
@@ -1707,7 +1984,7 @@
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 78px;
+        height: 65px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -1722,16 +1999,16 @@
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 27px;
+        height: 21px;
     }
     #tableNumber0 {
-        height: 80px;
+        height: 65px;
         margin-top: -1px;
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 30px;
+        height: 25px;
     }
     #_1to18,
     #highlightColorBlack,
@@ -1739,37 +2016,62 @@
     #odd,
     #even,
     #_19to36 {
-        height: 36px;
-        margin-top: -61px;
+        height: 27px;
+        margin-top: -62px;
     }
 }
 
 @media only screen and (max-width: 800px) {
+    .score {
+        margin-top: 42%;
+    }
     .score,
     .win,
     .bet {
-        height: 23px;
+        height: 35px;
         font-size: 11px;
     }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 18px;
+        font-size: 7px;
+    }
+    .container_buttonLeft {
+        margin-top: 25px;
+    }
     .lastData {
-        height: 131px;
-        border-left: 1px groove white;
+        height: 164px;
+        margin-top: 17px;
     }
     .numberData {
-        height: 11.3px;
-        border-radius: 3px;
+        height: 14px;
+        border-radius: 1px;
+        font-size: 9px;
+    }
+    .inner:before {
+        font-size: 27px;
+    }
+    .headerCenterRoulette {
+        top: 0%;
     }
     .container_buttonRight {
-        margin-top: 14px;
+        margin-top: 20px;
     }
     .container_money {
-        margin-top: -146px;
+        margin-top: -127px;
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 49deg);
+        -webkit-transform: rotate3d(1, 0, 0, 49deg);
+        -ms-transform: rotate3d(1, 0, 0, 49deg);
     }
     .plate {
         width: 318px;
-        height: 317px;
-        margin-left: 7.8%;
-        margin-top: 18.8%;
+        height: 318px;
+        margin-left: 8%;
+        margin-top: 21%;
     }
     .number {
         width: 32px;
@@ -1783,17 +2085,20 @@
     }
     .leftMoney>div,
     .rightMoney>div {
-        height: 38px;
+        height: 41px;
     }
     .borderMoney {
         border: 2px solid rgb(65, 238, 5);
     }
     #tableNumber0 {
-        height: 77px;
+        height: 99px;
         margin-top: 0px;
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
     }
     .tableNumberContainer {
-        margin-top: 8px;
+        margin-top: 15px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -1808,7 +2113,7 @@
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 76px;
+        height: 99px;
         margin-top: 0px;
     }
     #firstLineNumber>div,
@@ -1824,12 +2129,13 @@
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 26px;
+        height: 33px;
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 30px;
+        height: 38px;
+        margin-top: 1px;
     }
     #_1to18,
     #highlightColorBlack,
@@ -1837,8 +2143,8 @@
     #odd,
     #even,
     #_19to36 {
-        height: 34px;
-        margin-top: -61px;
+        height: 44px;
+        margin-top: -52px;
     }
     #firstLineNumber>div>div,
     #secondLineNumber>div>div,
@@ -1869,36 +2175,115 @@
         width: 24px;
         height: 24px;
     }
+    #firstLineNumber {
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
+    }
+    #fourthLineNumber {
+        transform: skewX(-6deg);
+        -webkit-transform: skewX(-6deg);
+        -ms-transform: skewX(-6deg);
+    }
+    #fifthLineNumber {
+        transform: skewX(-3deg);
+        -webkit-transform: skewX(-3deg);
+        -ms-transform: skewX(-3deg);
+    }
+    #sixthLineNumber {
+        transform: skewX(-0deg);
+        -webkit-transform: skewX(-0deg);
+        -ms-transform: skewX(-0deg);
+    }
+    #seventhLineNumber {
+        transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
+    }
+    #eighthLineNumber {
+        transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+    }
+    #ninethLineNumber {
+        transform: skewX(5deg);
+        -webkit-transform: skewX(5deg);
+        -ms-transform: skewX(5deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
+    }
+    #getLines {
+        width: 6.2%;
+        transform: skewX(17deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
+    }
 }
 
 @media only screen and (max-width: 736px) {
     #countdown-number {
         font-size: 11px;
     }
+    .score {
+        margin-top: 32%;
+    }
     .score,
     .win,
     .bet {
-        height: 21px;
-        font-size: 7px;
+        height: 22px;
+        font-size: 8px;
+        margin-bottom: 0;
     }
     #bet,
     #rebet,
     #take,
     #quit {
-        height: 17px;
-        font-size: 9px;
+        height: 15px;
+        font-size: 8px;
     }
     .lastData {
-        height: 126px;
+        height: 117px;
+        margin-top: 12px;
+    }
+    .container_buttonLeft {
+        margin-top: 14px;
     }
     .container_buttonRight {
         margin-top: 8px;
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 62deg);
+        -webkit-transform: rotate3d(1, 0, 0, 62deg);
+        -ms-transform: rotate3d(1, 0, 0, 62deg);
     }
     .plate {
         width: 294px;
         height: 293px;
         margin-left: 7.8%;
-        margin-top: 18.8%;
+        margin-top: 25%;
     }
     .number {
         width: 28px;
@@ -1909,7 +2294,11 @@
         left: calc(50% - (32px / 2));
     }
     .numberData {
-        height: 10.9px;
+        height: 10px;
+        font-size: 7px;
+    }
+    .tableNumberContainer {
+        margin-top: 9px;
     }
     .inner:before {
         font-size: 26px;
@@ -1925,6 +2314,11 @@
     .leftMoney>div,
     .rightMoney>div {
         height: 34px;
+    }
+    #tableNumber0 {
+        transform: skewX( -18deg);
+        -webkit-transform: skewX( -18deg);
+        -ms-transform: skewX( -18deg);
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -1954,7 +2348,7 @@
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 24px;
+        height: 23px;
     }
     #tableNumber0 {
         height: 71px;
@@ -1962,7 +2356,8 @@
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 28px;
+        height: 25px;
+        margin-top: -1px;
     }
     #_1to18,
     #highlightColorBlack,
@@ -1972,6 +2367,101 @@
     #_19to36 {
         height: 32px;
         margin-top: -62px;
+    }
+    #firstLineNumber {
+        transform: skewX(-16deg);
+        -webkit-transform: skewX(-16deg);
+        -ms-transform: skewX(-16deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+    }
+    #fourthLineNumber {
+        transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
+    }
+    #fifthLineNumber {
+        transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        -ms-transform: skewX(-4deg);
+    }
+    #sixthLineNumber {
+        transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
+    }
+    #seventhLineNumber {
+        transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+    }
+    #eighthLineNumber {
+        transform: skewX(5deg);
+        -webkit-transform: skewX(5deg);
+        -ms-transform: skewX(5deg);
+    }
+    #ninethLineNumber {
+        transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(17deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
+    }
+    #getLines {
+        width: 6.2%;
+        transform: skewX(20deg);
+        -webkit-transform: skewX(20deg);
+        -ms-transform: skewX(20deg);
+    }
+    #firstLineNumber>div>div,
+    #secondLineNumber>div>div,
+    #thirdLineNumber>div>div,
+    #fourthLineNumber>div>div,
+    #fifthLineNumber>div>div,
+    #sixthLineNumber>div>div,
+    #seventhLineNumber>div>div,
+    #eighthLineNumber>div>div,
+    #ninethLineNumber>div>div,
+    #tenthLineNumber>div>div,
+    #eleventhLineNumber>div>div,
+    #twelfthLineNumber>div>div,
+    #getLines>div>div,
+    #firstLine>div,
+    #secondLine>div,
+    #thirdLine>div,
+    #_19to36>div,
+    #_1st12>div,
+    #_1to18>div,
+    #_2en12>div,
+    #_3rd12>div,
+    #even>div,
+    #odd>div,
+    #highlightColorRed>div,
+    #highlightColorBlack>div,
+    #tableNumber0>div {
+        width: 20px;
+        height: 20px;
     }
 }
 
@@ -2104,6 +2594,8 @@
     .centerRoulette {
         left: -7%;
         transform: rotate3d(1, 1, 1, -6.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -6.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -6.5deg);
     }
     .plate {
         width: 260px;
@@ -2211,6 +2703,8 @@
     .centerRoulette {
         left: -6.5%;
         transform: rotate3d(1, 1, 1, -6.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -6.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -6.5deg);
     }
     .container_buttonLeft {
         margin-top: 16px;
