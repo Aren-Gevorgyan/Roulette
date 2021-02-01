@@ -2780,6 +2780,8 @@
     #tableNumber0 {
         height: 64px;
         transform: skewX(-18deg);
+        -webkit-transform: skewX(-18deg);
+        -ms-transform: skewX(-18deg);
     }
     #_3rd12,
     #_1st12,
@@ -2826,43 +2828,69 @@
     }
     #firstLineNumber {
         transform: skewX(-16deg);
+        -webkit-transform: skewX(-16deg);
+        -ms-transform: skewX(-16deg);
     }
     #secondLineNumber {
         transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
     }
     #thirdLineNumber {
         transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
     }
     #fourthLineNumber {
         transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
     }
     #fifthLineNumber {
         transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        -ms-transform: skewX(-4deg);
     }
     #sixthLineNumber {
         transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
     }
     #seventhLineNumber {
         transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
     }
     #eighthLineNumber {
         transform: skewX(5deg);
+        -webkit-transform: skewX(5deg);
+        -ms-transform: skewX(5deg);
     }
     #ninthLineNumber {
         transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
     }
     #tenthLineNumber {
         transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
     }
     #eleventhLineNumber {
         transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
     }
     #twelfthLineNumber {
         transform: skewX(17deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
     }
     #getLines {
         width: 6.2%;
         transform: skewX(20deg);
+        -webkit-transform: skewX(20deg);
+        -ms-transform: skewX(20deg);
     }
 }
 
@@ -2976,6 +3004,8 @@
     #tableNumber0 {
         height: 47px;
         transform: skewX(-23deg);
+        -webkit-transform: skewX(-23deg);
+        -ms-transform: skewX(-23deg);
     }
     #_3rd12,
     #_1st12,
@@ -2994,25 +3024,39 @@
     }
     #firstLineNumber {
         transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
     }
     #secondLineNumber {
         transform: skewX(-17deg);
+        -webkit-transform: skewX(-17deg);
+        -ms-transform: skewX(-17deg);
     }
     #thirdLineNumber {
         transform: skewX(-14deg);
+        -webkit-transform: skewX(-14deg);
+        -ms-transform: skewX(-14deg);
     }
     #tenthLineNumber {
         transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
     }
     #eleventhLineNumber {
         transform: skewX(18deg);
+        -webkit-transform: skewX(18deg);
+        -ms-transform: skewX(18deg);
     }
     #twelfthLineNumber {
         transform: skewX(21deg);
+        -webkit-transform: skewX(21deg);
+        -ms-transform: skewX(21deg);
     }
     #getLines {
         width: 6%;
         transform: skewX(26deg);
+        -webkit-transform: skewX(26deg);
+        -ms-transform: skewX(26deg);
     }
     #firstLineNumber>div>div,
     #secondLineNumber>div>div,
