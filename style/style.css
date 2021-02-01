@@ -1058,7 +1058,7 @@ audio {
 #thirdLineNumber {
     transform: skewX(-10deg);
     -webkit-transform: skewX(-10deg);
-    transform: skewX(-10deg);
+    -ms-transform: skewX(-10deg);
 }
 
 #fourthLineNumber {

@@ -2271,6 +2271,175 @@
     }
 }
 
+@media only screen and (max-width: 768px) {
+    .score {
+        margin-top: 26%;
+    }
+    .score,
+    .win,
+    .bet {
+        height: 22px;
+        font-size: 8px;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 14px;
+        font-size: 7px;
+    }
+    .container_buttonLeft {
+        margin-top: 14px;
+    }
+    .lastData {
+        height: 103px;
+        margin-top: 6px;
+    }
+    .container_buttonRight {
+        margin-top: 9px;
+    }
+    .stopwatchContainer {
+        width: 44px;
+        height: 44px;
+        margin-top: 33px;
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 67deg);
+        -webkit-transform: rotate3d(1, 0, 0, 67deg);
+        -ms-transform: rotate3d(1, 0, 0, 67deg);
+    }
+    .plate {
+        width: 308px;
+        height: 308px;
+        margin-left: 7.4%;
+        margin-top: 23%;
+    }
+    .number {
+        width: 27px;
+        height: 147px;
+        border-left: 13px solid transparent;
+        border-top: 154px solid #191919;
+    }
+    .pit {
+        top: -155px;
+    }
+    #countdown-number {
+        font-size: 12px;
+    }
+    .numberData {
+        height: 8.5px;
+        font-size: 6px;
+    }
+    .container_money {
+        margin-top: -153px;
+    }
+    .leftMoney>div,
+    .rightMoney>div {
+        height: 30px;
+    }
+    .tableNumberContainer {
+        margin-top: 6px;
+    }
+    #tableNumber0 {
+        height: 60px;
+        margin-top: 0px;
+        transform: skewX( -23deg);
+        -webkit-transform: skewX( -23deg);
+        -ms-transform: skewX(-23deg);
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninthLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 60px;
+        margin-top: 0px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninthLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 20px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 22px;
+    }
+    #firstLineNumber {
+        transform: skewX(-18deg);
+        -webkit-transform: skewX(-18deg);
+        -ms-transform: skewX(-18deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-16deg);
+        -webkit-transform: skewX(-16deg);
+        -ms-transform: skewX(-16deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
+    }
+    #eighthLineNumber {
+        transform: skewX( 5deg);
+        -webkit-transform: skewX( 5deg);
+        -ms-transform: skewX(5deg);
+    }
+    #ninthLineNumber {
+        transform: skewX(9deg);
+        -webkit-transform: skewX(9deg);
+        -ms-transform: skewX(9deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(14deg);
+        -webkit-transform: skewX( 14deg);
+        -ms-transform: skewX(14deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(17deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(20deg);
+        -webkit-transform: skewX(20deg);
+        -ms-transform: skewX(20deg);
+    }
+    #getLines {
+        width: 6%;
+        transform: skewX(23deg);
+        -webkit-transform: skewX(23deg);
+        -ms-transform: skewX(23deg);
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        height: 27px;
+        margin-top: -63px;
+    }
+}
+
 @media only screen and (max-width: 736px) {
     #countdown-number {
         font-size: 11px;
