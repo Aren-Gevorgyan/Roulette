@@ -15,6 +15,7 @@ $(document).ready(function() {
         } else if (elem.msRequestFullscreen) {
             elem.msRequestFullscreen();
         }
+        screen.orientation.lock("landscape-primary");
         $('.container').css({ 'display': 'block' });
         $('.fullscreenContainer').css({ 'display': 'none' });
         $('#fullscreen').css({ 'display': 'none' });
