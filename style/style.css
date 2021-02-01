@@ -197,6 +197,7 @@ body,
     left: -7.5%;
     transform: rotate3d(1, 1, 1, -5deg);
     -webkit-transform: rotate3d(1, 1, 1, -5deg);
+    -ms-transform: rotate3d(1, 1, 1, -5deg);
 }
 
 #clock {
@@ -825,24 +826,36 @@ audio {
     height: 100%;
     text-align: center;
     transition: transform 0.72s;
+    -webkit-transition: transform 0.72s;
+    -ms-transition: transform 0.72s;
     transform-style: preserve-3d;
+    -webkit-transform-style: preserve-3d;
+    -ms-transform-style: preserve-3d;
 }
 
 @-webkit-keyframes flipin {
     0% {
         transform: rotateX(90deg);
+        -webkit-transform: rotateX(90deg);
+        -ms-transform: rotateX(90deg);
     }
     100% {
         transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
     }
 }
 
 @keyframes flipin {
     0% {
         transform: rotateX(90deg);
+        -webkit-transform: rotateX(90deg);
+        -ms-transform: rotateX(90deg);
     }
     100% {
         transform: rotateX(0deg);
+        -webkit-transform: rotateX(0deg);
+        -ms-transform: rotateX(0deg);
     }
 }
 
@@ -897,6 +910,8 @@ audio {
     width: 3.4%;
     height: 180px;
     transform: skewX(-18deg);
+    -webkit-transform: skewX(-18deg);
+    -ms-transform: skewX(-18deg);
 }
 
 #firstLineNumber>div,
@@ -907,7 +922,7 @@ audio {
 #sixthLineNumber>div,
 #seventhLineNumber>div,
 #eighthLineNumber>div,
-#ninethLineNumber>div,
+#ninthLineNumber>div,
 #tenthLineNumber>div,
 #eleventhLineNumber>div,
 #twelfthLineNumber>div,
@@ -923,7 +938,7 @@ audio {
 #sixthLineNumber,
 #seventhLineNumber,
 #eighthLineNumber,
-#ninethLineNumber,
+#ninthLineNumber,
 #tenthLineNumber,
 #eleventhLineNumber,
 #twelfthLineNumber,
@@ -934,55 +949,81 @@ audio {
 
 #firstLineNumber {
     transform: skewX(-16deg);
+    -webkit-transform: skewX(-16deg);
+    -ms-transform: skewX(-16deg);
 }
 
 #secondLineNumber {
     transform: skewX(-13deg);
+    -webkit-transform: skewX(-13deg);
+    -ms-transform: skewX(-13deg);
 }
 
 #thirdLineNumber {
+    transform: skewX(-10deg);
+    -webkit-transform: skewX(-10deg);
     transform: skewX(-10deg);
 }
 
 #fourthLineNumber {
     transform: skewX(-7deg);
+    -webkit-transform: skewX(-7deg);
+    -ms-transform: skewX(-7deg);
 }
 
 #fifthLineNumber {
     transform: skewX(-4deg);
+    -webkit-transform: skewX(-4deg);
+    -ms-transform: skewX(-4deg);
 }
 
 #sixthLineNumber {
     transform: skewX(-1deg);
+    -webkit-transform: skewX(-1deg);
+    -ms-transform: skewX(-1deg);
 }
 
 #seventhLineNumber {
     transform: skewX(2deg);
+    -webkit-transform: skewX(2deg);
+    -ms-transform: skewX(2deg);
 }
 
 #eighthLineNumber {
     transform: skewX(5deg);
+    -webkit-transform: skewX(5deg);
+    -ms-transform: skewX(5deg);
 }
 
-#ninethLineNumber {
+#ninthLineNumber {
     transform: skewX(8deg);
+    -webkit-transform: skewX(8deg);
+    -ms-transform: skewX(8deg);
 }
 
 #tenthLineNumber {
     transform: skewX(11deg);
+    -webkit-transform: skewX(11deg);
+    -ms-transform: skewX(11deg);
 }
 
 #eleventhLineNumber {
     transform: skewX(14deg);
+    -webkit-transform: skewX(14deg);
+    -ms-transform: skewX(14deg);
 }
 
 #twelfthLineNumber {
     transform: skewX(17deg);
+    -webkit-transform: skewX(17deg);
+    -ms-transform: skewX(17deg);
 }
 
 #getLines {
     width: 6.2%;
     transform: skewX(20deg);
+    -webkit-transform: skewX(20deg);
+    -ms-transform: skewX(20deg);
 }
 
 #container_logic {
@@ -1011,6 +1052,8 @@ audio {
     width: 98%;
     height: 69px;
     transform: skewX(-9deg);
+    -webkit-transform: skewX(-9deg);
+    -ms-transform: skewX(-9deg);
 }
 
 #_1to18,
@@ -1020,6 +1063,8 @@ audio {
     height: 52%;
     margin-left: -4%;
     transform: skewX(-14deg);
+    -webkit-transform: skewX(-14deg);
+    -ms-transform: skewX(-14deg);
 }
 
 #even,
@@ -1029,6 +1074,8 @@ audio {
     height: 52%;
     margin-left: -1%;
     transform: skewX(-12deg);
+    -webkit-transform: skewX(-12deg);
+    -ms-transform: skewX(-12deg);
 }
 
 #_2en12 {
@@ -1036,14 +1083,20 @@ audio {
     height: 69px;
     margin-left: -2%;
     transform: skewX(-3deg);
+    -webkit-transform: skewX(-3deg);
+    -ms-transform: skewX(-3deg);
 }
 
 #highlightColorBlack {
     transform: skewX(-3deg);
+    -webkit-transform: skewX(-3deg);
+    -ms-transform: skewX(-3deg);
 }
 
 #highlightColorRed {
     transform: skewX(4deg);
+    -webkit-transform: skewX(4deg);
+    -ms-transform: skewX(4deg);
 }
 
 #_3rd12 {
@@ -1051,11 +1104,15 @@ audio {
     height: 69px;
     margin-left: -5%;
     transform: skewX(12deg);
+    -webkit-transform: skewX(12deg);
+    -ms-transform: skewX(12deg);
 }
 
 #odd,
 #_19to36 {
     transform: skewX(12deg);
+    -webkit-transform: skewX(12deg);
+    -ms-transform: skewX(12deg);
 }
 
 #firstLineNumber>div>div,
@@ -1066,7 +1123,7 @@ audio {
 #sixthLineNumber>div>div,
 #seventhLineNumber>div>div,
 #eighthLineNumber>div>div,
-#ninethLineNumber>div>div,
+#ninthLineNumber>div>div,
 #tenthLineNumber>div>div,
 #eleventhLineNumber>div>div,
 #twelfthLineNumber>div>div,
