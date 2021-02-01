@@ -96,12 +96,14 @@ $(document).ready(function() {
             }
         }
 
-        async function isIfSixtySecond() {
+        function isIfSixtySecond() {
             $("polyline").css({ 'stroke': '#007bff' });
             spinBall(lastDataArray);
             opacityTableNumber = 0.2;
             disabledMoney = false;
-            await document.getElementById('audio').play();
+            let musicBoll = document.getElementById('audio');
+            musicBoll.play();
+            musicBoll.crossOrigin = 'anonymous';
         }
 
         function ifRemainedNineSecond() {
