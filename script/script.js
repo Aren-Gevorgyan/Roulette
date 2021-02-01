@@ -1,7 +1,6 @@
 $(document).ready(function() {
     let inner = $(".inner");
     let plate = $("#plate");
-    let opacityTableNumber = 0.2;
     let disabledMoney = false;
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
 
@@ -99,7 +98,6 @@ $(document).ready(function() {
         function isIfSixtySecond() {
             $("polyline").css({ 'stroke': '#007bff' });
             spinBall(lastDataArray);
-            opacityTableNumber = 0.2;
             disabledMoney = false;
             let musicBoll = document.getElementById('audio');
             musicBoll.play();
@@ -109,7 +107,6 @@ $(document).ready(function() {
         function ifRemainedNineSecond() {
             stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
             deleteBall();
-            opacityTableNumber = 0;
             disabledMoney = true;
             $("polyline").css({ 'stroke': '#CC2020' });
         }
@@ -200,6 +197,7 @@ $(document).ready(function() {
         }
     }
     let tableChip = 1;
+    let opacity = 0.2;
 
     function bindClickTableNumber() {
         for (let i = 0; i <= 36; i++) {
@@ -207,7 +205,7 @@ $(document).ready(function() {
             $(`#tableNumber${i}`).click(function() {
                 if (setChips && !disabledMoney) {
                     $(this).css({ 'background-color': '', 'opacity': '1' });
-                    $(this).append(`<div id='setMoney${getChips} '
+                    $(this).append(`<div class='setMoney${getChips} '
                         value='${getChips}'
                         style ='background-image: url("./images/chip${getChips}.png"); left: ${tableChip++}px'></div>`);
                 }
@@ -216,79 +214,89 @@ $(document).ready(function() {
     }
 
     $('#firstLine').click(function() {
-        setOpacityLine(1, opacityTableNumber, this);
+        setOpacityLine(1, this);
     })
 
     $('#secondLine').click(function() {
-        setOpacityLine(2, opacityTableNumber, this);
+        setOpacityLine(2, this);
     })
 
     $('#thirdLine').click(function() {
-        setOpacityLine(3, opacityTableNumber, this);
+        setOpacityLine(3, this);
     })
 
     let leftChipLine = 1;
 
-    function setOpacityLine(numberChild, opacity, $this) {
-
-        $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`).empty();
-        $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
+    function setOpacityLine(numberChild, $this) {
+        deleteChipClick2to1(numberChild, 1);
+        $('.tableNumberContainer > div')
+            .children(`:nth-child(${numberChild})`)
+            .css({ 'background-color': 'white', 'opacity': `${opacity}` });
         $('#tableNumber0 > div').css({ 'background-color': '', 'opacity': `1` });
         $($this).css({ 'background-color': '', 'opacity': '1' });
 
         if (setChips && !disabledMoney) {
-            $($this).append(`<div id='setMoney${getChips} '
+            $($this).append(`<div class='setMoney${getChips} '
                     value='${getChips}'
                     style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipLine++}px'></div>`);
         }
     }
 
+    function deleteChipClick2to1(numberChild, deleteLast) {
+        let arrayLine = $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`);
+        for (let i = 0; i < arrayLine.length - deleteLast; i++) {
+            let element = arrayLine[i];
+            console.log(element);
+            $(element).empty();
+        }
+    }
+
     $('#_1st12').click(function() {
-        clickFourOrEightLine(1, 12, opacityTableNumber, this)
+        clickFourOrEightLine(1, 12, this)
     })
 
     $('#_2en12').click(function() {
-        clickFourOrEightLine(13, 24, opacityTableNumber, this)
+        clickFourOrEightLine(13, 24, this)
     })
 
     $('#_3rd12').click(function() {
-        clickFourOrEightLine(25, 36, opacityTableNumber, this)
+        clickFourOrEightLine(25, 36, this)
     })
 
     $('#_1to18').click(function() {
-        clickFourOrEightLine(1, 18, opacityTableNumber, this)
+        clickFourOrEightLine(1, 18, this)
 
     })
 
     $('#_19to36').click(function() {
-        clickFourOrEightLine(19, 36, opacityTableNumber, this)
+        clickFourOrEightLine(19, 36, this)
     })
 
     let leftChipFourLine = 1;
 
-    function clickFourOrEightLine(startNumber, sizeNumber, opacity, $this) {
+    function clickFourOrEightLine(startNumber, sizeNumber, $this) {
         for (let i = startNumber; i <= sizeNumber; i++) {
             $(`#tableNumber${i}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
             $(`#tableNumber${i}`).empty();
         }
         if (setChips && !disabledMoney) {
-            $($this).append(`<div id='setMoney${getChips} '
+            $($this).append(`<div class='setMoney${getChips} '
                     value='${getChips}'
                     style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipFourLine++}px'></div>`);
         }
     }
 
     $('#even').click(function() {
-        clickEvenOrOdd(2, opacityTableNumber, this);
+        clickEvenOrOdd(2, this);
     })
 
     $('#odd').click(function() {
-        clickEvenOrOdd(1, opacityTableNumber, this);
+        clickEvenOrOdd(1, this);
     })
 
     let leftChipEven = 1;
 
-    function clickEvenOrOdd(startNumber, opacity, $this) {
+    function clickEvenOrOdd(startNumber, $this) {
         let pairNumber = startNumber;
         for (let i = 0; i <= 18; i++) {
             $(`#tableNumber${pairNumber}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
@@ -297,27 +305,27 @@ $(document).ready(function() {
         }
 
         if (setChips && !disabledMoney) {
-            $($this).append(`<div id='setMoney${getChips} '
+            $($this).append(`<div class='setMoney${getChips} '
                     value='${getChips}'
                     style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipEven++}px'></div>`);
         }
     }
 
     $('#highlightColorRed').click(function() {
-        clickRedOrBlack('red', opacityTableNumber, this)
+        clickRedOrBlack('red', this)
     })
 
     $('#highlightColorBlack').click(function() {
-        clickRedOrBlack('black', opacityTableNumber, this)
+        clickRedOrBlack('black', this)
     })
 
     let leftChipRed = 1;
 
-    function clickRedOrBlack(color, opacity, $this) {
+    function clickRedOrBlack(color, $this) {
         $(`.${color}`).empty();
         $(`.${color}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
         if (setChips && !disabledMoney) {
-            $($this).append(`<div id='setMoney${getChips} '
+            $($this).append(`<div class='setMoney${getChips} '
                     value='${getChips}'
                     style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipRed++}px'></div>`);
         }

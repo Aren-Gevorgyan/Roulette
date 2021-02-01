@@ -2438,6 +2438,35 @@
         height: 27px;
         margin-top: -63px;
     }
+    #firstLineNumber>div>div,
+    #secondLineNumber>div>div,
+    #thirdLineNumber>div>div,
+    #fourthLineNumber>div>div,
+    #fifthLineNumber>div>div,
+    #sixthLineNumber>div>div,
+    #seventhLineNumber>div>div,
+    #eighthLineNumber>div>div,
+    #ninthLineNumber>div>div,
+    #tenthLineNumber>div>div,
+    #eleventhLineNumber>div>div,
+    #twelfthLineNumber>div>div,
+    #getLines>div>div,
+    #firstLine>div,
+    #secondLine>div,
+    #thirdLine>div,
+    #_19to36>div,
+    #_1st12>div,
+    #_1to18>div,
+    #_2en12>div,
+    #_3rd12>div,
+    #even>div,
+    #odd>div,
+    #highlightColorRed>div,
+    #highlightColorBlack>div,
+    #tableNumber0>div {
+        width: 20px;
+        height: 20px;
+    }
 }
 
 @media only screen and (max-width: 736px) {
@@ -2630,35 +2659,6 @@
         transform: skewX(20deg);
         -webkit-transform: skewX(20deg);
         -ms-transform: skewX(20deg);
-    }
-    #firstLineNumber>div>div,
-    #secondLineNumber>div>div,
-    #thirdLineNumber>div>div,
-    #fourthLineNumber>div>div,
-    #fifthLineNumber>div>div,
-    #sixthLineNumber>div>div,
-    #seventhLineNumber>div>div,
-    #eighthLineNumber>div>div,
-    #ninthLineNumber>div>div,
-    #tenthLineNumber>div>div,
-    #eleventhLineNumber>div>div,
-    #twelfthLineNumber>div>div,
-    #getLines>div>div,
-    #firstLine>div,
-    #secondLine>div,
-    #thirdLine>div,
-    #_19to36>div,
-    #_1st12>div,
-    #_1to18>div,
-    #_2en12>div,
-    #_3rd12>div,
-    #even>div,
-    #odd>div,
-    #highlightColorRed>div,
-    #highlightColorBlack>div,
-    #tableNumber0>div {
-        width: 20px;
-        height: 20px;
     }
 }
 
@@ -2992,35 +2992,6 @@
     #_19to36 {
         height: 28px;
         margin-top: -63px;
-    }
-    #firstLineNumber>div>div,
-    #secondLineNumber>div>div,
-    #thirdLineNumber>div>div,
-    #fourthLineNumber>div>div,
-    #fifthLineNumber>div>div,
-    #sixthLineNumber>div>div,
-    #seventhLineNumber>div>div,
-    #eighthLineNumber>div>div,
-    #ninthLineNumber>div>div,
-    #tenthLineNumber>div>div,
-    #eleventhLineNumber>div>div,
-    #twelfthLineNumber>div>div,
-    #getLines>div>div,
-    #firstLine>div,
-    #secondLine>div,
-    #thirdLine>div,
-    #_19to36>div,
-    #_1st12>div,
-    #_1to18>div,
-    #_2en12>div,
-    #_3rd12>div,
-    #even>div,
-    #odd>div,
-    #highlightColorRed>div,
-    #highlightColorBlack>div,
-    #tableNumber0>div {
-        width: 20px;
-        height: 20px;
     }
     #firstLineNumber {
         transform: skewX(-16deg);
