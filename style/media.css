@@ -1744,7 +1744,6 @@
     #fullscreen button {
         height: 18px;
         font-size: 10px;
-        border-radius: 2px;
     }
     .lastData {
         height: 108px;
@@ -2680,7 +2679,6 @@
     #fullscreen button {
         height: 15px;
         font-size: 8px;
-        border-radius: 2px;
     }
     #fullscreen h3 {
         font-size: 14px;

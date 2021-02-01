@@ -15,6 +15,7 @@ $(document).ready(function() {
         } else if (elem.msRequestFullscreen) {
             elem.msRequestFullscreen();
         }
+        //rotate window
         screen.orientation.lock("landscape-primary");
         $('.container').css({ 'display': 'block' });
         $('.fullscreenContainer').css({ 'display': 'none' });
@@ -85,27 +86,40 @@ $(document).ready(function() {
 
         const stopwatchDiv = $('.stopwatch');
 
-        async function processConditions(time) {
+        function processConditions(time) {
             if (time === 60) {
-                $("polyline").css({ 'stroke': '#007bff' });
-                spinBall(lastDataArray);
-                opacityTableNumber = 0.2;
-                disabledMoney = false;
-                await document.getElementById('audio').play();
+                isIfSixtySecond();
             } else if (time === 9) {
-                stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
-                deleteBall();
-                opacityTableNumber = 0;
-                disabledMoney = true;
-                $("polyline").css({ 'stroke': '#CC2020' });
+                ifRemainedNineSecond();
             } else if (time === 10 || time === 11 || time === 12 || time === 13 || time === 14 || time === 15) {
-                stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 7px #7E6B5F' })
-                setTimeout(function() {
-                    stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' })
-                }, 300)
+                ifRemainedFifteenSecond();
             }
         }
+
+        async function isIfSixtySecond() {
+            $("polyline").css({ 'stroke': '#007bff' });
+            spinBall(lastDataArray);
+            opacityTableNumber = 0.2;
+            disabledMoney = false;
+            await document.getElementById('audio').play();
+        }
+
+        function ifRemainedNineSecond() {
+            stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' });
+            deleteBall();
+            opacityTableNumber = 0;
+            disabledMoney = true;
+            $("polyline").css({ 'stroke': '#CC2020' });
+        }
+
+        function ifRemainedFifteenSecond() {
+            stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 7px #7E6B5F' })
+            setTimeout(function() {
+                stopwatchDiv.css({ 'box-shadow': '1px 1px 15px 10px #140803' })
+            }, 300)
+        }
     }
+
 
     function spinBall(lastDataArray) {
 
@@ -183,17 +197,17 @@ $(document).ready(function() {
             $(`#money${j}`).removeClass('borderMoney').click(disabledMoney);
         }
     }
+    let tableChip = 1;
 
     function bindClickTableNumber() {
-        let leftChip = 1;
         for (let i = 0; i <= 36; i++) {
 
             $(`#tableNumber${i}`).click(function() {
-                if (setChips) {
+                if (setChips && !disabledMoney) {
                     $(this).css({ 'background-color': '', 'opacity': '1' });
                     $(this).append(`<div id='setMoney${getChips} '
                         value='${getChips}'
-                        style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChip++}px'></div>`);
+                        style ='background-image: url("./images/chip${getChips}.png"); left: ${tableChip++}px'></div>`);
                 }
             })
         }
@@ -219,7 +233,8 @@ $(document).ready(function() {
         $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
         $('#tableNumber0 > div').css({ 'background-color': '', 'opacity': `1` });
         $($this).css({ 'background-color': '', 'opacity': '1' });
-        if (setChips) {
+
+        if (setChips && !disabledMoney) {
             $($this).append(`<div id='setMoney${getChips} '
                     value='${getChips}'
                     style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipLine++}px'></div>`);
@@ -254,12 +269,11 @@ $(document).ready(function() {
             $(`#tableNumber${i}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
             $(`#tableNumber${i}`).empty();
         }
-        if (setChips) {
+        if (setChips && !disabledMoney) {
             $($this).append(`<div id='setMoney${getChips} '
                     value='${getChips}'
                     style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipFourLine++}px'></div>`);
         }
-
     }
 
     $('#even').click(function() {
@@ -280,7 +294,7 @@ $(document).ready(function() {
             pairNumber += 2;
         }
 
-        if (setChips) {
+        if (setChips && !disabledMoney) {
             $($this).append(`<div id='setMoney${getChips} '
                     value='${getChips}'
                     style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipEven++}px'></div>`);
@@ -300,7 +314,7 @@ $(document).ready(function() {
     function clickRedOrBlack(color, opacity, $this) {
         $(`.${color}`).empty();
         $(`.${color}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
-        if (setChips) {
+        if (setChips && !disabledMoney) {
             $($this).append(`<div id='setMoney${getChips} '
                     value='${getChips}'
                     style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipRed++}px'></div>`);
