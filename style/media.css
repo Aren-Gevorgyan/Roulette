@@ -1520,7 +1520,7 @@
     .lastData {
         height: 181px;
         margin-top: 25px;
-        border-left: 1px groove white;
+        border-left: 1px groove darkgray;
     }
     .container_buttonRight {
         margin-top: 30px;
@@ -3188,6 +3188,9 @@
     }
     #tableNumber0 {
         height: 61px;
+        transform: skewX( -18deg);
+        -webkit-transform: skewX( -18deg);
+        -ms-transform: skewX(-18deg);
     }
     #secondLineNumber,
     #firstLineNumber,

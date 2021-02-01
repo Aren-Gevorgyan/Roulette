@@ -1,9 +1,13 @@
-body,
+body {
+    display: flex;
+    justify-content: center;
+}
+
 .row {
     margin: 0;
 }
 
-.fullscreenConatiner {
+.fullscreenContainer {
     max-width: 1920px;
     width: 100%;
     height: 100vh;
@@ -97,10 +101,9 @@ body,
 .lastData {
     width: 14%;
     height: 326px;
-    border-left: 2px groove white;
-    border-top: 1px groove white;
-    border-bottom: 1px groove white;
-    background-color: #232221;
+    border-left: 2px groove darkgray;
+    border-top: 1px groove darkgray;
+    border-bottom: 1px groove darkgray background-color: #232221;
     margin-top: 10px;
 }
 

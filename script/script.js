@@ -249,7 +249,6 @@ $(document).ready(function() {
     let leftChipFourLine = 1;
 
     function clickFourOrEightLine(startNumber, sizeNumber, opacity, $this) {
-        let leftChip = 1;
         for (let i = startNumber; i <= sizeNumber; i++) {
             $(`#tableNumber${i}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
             $(`#tableNumber${i}`).empty();
