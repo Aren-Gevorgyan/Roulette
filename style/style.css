@@ -1243,3 +1243,13 @@ audio {
     z-index: -4;
     background-size: cover;
 }
+
+footer {
+    height: 5%;
+    background-color: #260C00;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
