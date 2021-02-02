@@ -335,24 +335,6 @@
     }
 }
 
-@media only screen and (max-width: 1440px) {
-    #rotate3d {
-        transform: rotate3d(1, 0, 0, 64deg);
-        -webkit-transform: rotate3d(1, 0, 0, 64deg);
-        -ms-transform: rotate3d(1, 0, 0, 64deg);
-    }
-    .plate {
-        width: 582px;
-        height: 581px;
-        margin-left: 8.9%;
-        margin-top: 20%;
-    }
-    .lastData {
-        height: 212px;
-        margin-top: -8px;
-    }
-}
-
 @media only screen and (max-width: 1400px) {
     .score {
         margin-top: 43%;
