@@ -102,6 +102,7 @@ $(document).ready(function() {
             let musicBoll = document.getElementById('audio');
             musicBoll.play();
             musicBoll.crossOrigin = 'anonymous';
+            emptyTable();
         }
 
         function ifRemainedNineSecond() {
@@ -196,6 +197,7 @@ $(document).ready(function() {
             $(`#money${j}`).removeClass('borderMoney').click(disabledMoney);
         }
     }
+
     let tableChip = 1;
     let opacity = 0.2;
 
@@ -228,11 +230,12 @@ $(document).ready(function() {
     let leftChipLine = 1;
 
     function setOpacityLine(numberChild, $this) {
+
         deleteChipClick2to1(numberChild, 1);
         $('.tableNumberContainer > div')
             .children(`:nth-child(${numberChild})`)
             .css({ 'background-color': 'white', 'opacity': `${opacity}` });
-        $('#tableNumber0 > div').css({ 'background-color': '', 'opacity': `1` });
+        $('#tableNumber0 > div').css({ 'background-color': '', 'opacity': '1' });
         $($this).css({ 'background-color': '', 'opacity': '1' });
 
         if (setChips && !disabledMoney) {
@@ -246,7 +249,6 @@ $(document).ready(function() {
         let arrayLine = $('.tableNumberContainer > div').children(`:nth-child(${numberChild})`);
         for (let i = 0; i < arrayLine.length - deleteLast; i++) {
             let element = arrayLine[i];
-            console.log(element);
             $(element).empty();
         }
     }
@@ -328,6 +330,30 @@ $(document).ready(function() {
             $($this).append(`<div class='setMoney${getChips} '
                     value='${getChips}'
                     style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipRed++}px'></div>`);
+        }
+    }
+
+    function emptyTable() {
+
+        deleteLineChips();
+        $('#tableNumber0').empty();
+        $('#_1st12').empty();
+        $('#_2en12').empty();
+        $('#_3rd12').empty();
+        $('#_1to18').empty();
+        $('#_19to36').empty();
+        $('#even').empty();
+        $('#odd').empty();
+        $('#highlightColorRed').empty();
+        $('#highlightColorBlack').empty();
+    }
+
+    function deleteLineChips() {
+        for (let i = 1; i < 4; i++) {
+            deleteChipClick2to1(i, 0);
+            $('.tableNumberContainer > div')
+                .children(`:nth-child(${i})`)
+                .css({ 'background-color': '', 'opacity': `1` });
         }
     }
 
