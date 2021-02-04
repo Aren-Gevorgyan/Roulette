@@ -16,6 +16,7 @@ body {
     background-size: 100% 100%;
     position: absolute;
     opacity: 0.3;
+    -webkit-opacity: 0.3;
 }
 
 #fullscreen {
@@ -249,6 +250,7 @@ polyline {
 audio {
     position: absolute;
     opacity: 0;
+    -webkit-opacity: 0;
 }
 
 .number:nth-child(1) {

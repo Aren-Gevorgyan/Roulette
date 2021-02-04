@@ -2322,7 +2322,7 @@
     }
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .score {
         margin-top: 26%;
     }
@@ -2355,9 +2355,9 @@
         margin-top: 33px;
     }
     #rotate3d {
-        transform: rotate3d(1, 0, 0, 67deg);
-        -webkit-transform: rotate3d(1, 0, 0, 67deg);
-        -ms-transform: rotate3d(1, 0, 0, 67deg);
+        transform: rotate3d(1, 0, 0, 62deg);
+        -webkit-transform: rotate3d(1, 0, 0, 62deg);
+        -ms-transform: rotate3d(1, 0, 0, 62deg);
     }
     .plate {
         width: 308px;
