@@ -84,10 +84,18 @@ $(document).ready(function() {
         }
 
         const stopwatchDiv = $('.stopwatch');
+        let deleteBet = false;
 
         function processConditions(time) {
+
             if (time === 60) {
                 isIfSixtySecond();
+                deleteBet = true;
+            } else if (time === 48) {
+                if (deleteBet) {
+                    emptyTable();
+                }
+                disabledMoney = false;
             } else if (time === 9) {
                 ifRemainedNineSecond();
             } else if (time === 10 || time === 11 || time === 12 || time === 13 || time === 14 || time === 15) {
@@ -98,11 +106,9 @@ $(document).ready(function() {
         function isIfSixtySecond() {
             $("polyline").css({ 'stroke': '#007bff' });
             spinBall(lastDataArray);
-            disabledMoney = false;
             let musicBoll = document.getElementById('audio');
             musicBoll.play();
             musicBoll.crossOrigin = 'anonymous';
-            emptyTable();
         }
 
         function ifRemainedNineSecond() {
@@ -153,6 +159,8 @@ $(document).ready(function() {
             createLastData(randomNumber, color, lastDataArray);
         }, 9000);
     }
+
+
 
     function createLastData(number, color, lastDataArray) {
         $('.lastDataNumber').empty();
@@ -231,14 +239,13 @@ $(document).ready(function() {
 
     function setOpacityLine(numberChild, $this) {
 
-        deleteChipClick2to1(numberChild, 1);
-        $('.tableNumberContainer > div')
-            .children(`:nth-child(${numberChild})`)
-            .css({ 'background-color': 'white', 'opacity': `${opacity}` });
-        $('#tableNumber0 > div').css({ 'background-color': '', 'opacity': '1' });
-        $($this).css({ 'background-color': '', 'opacity': '1' });
-
         if (setChips && !disabledMoney) {
+            deleteChipClick2to1(numberChild, 1);
+            $('.tableNumberContainer > div')
+                .children(`:nth-child(${numberChild})`)
+                .css({ 'background-color': 'white', 'opacity': `${opacity}` });
+            $('#tableNumber0 > div').css({ 'background-color': '', 'opacity': '1' });
+            $($this).css({ 'background-color': '', 'opacity': '1' });
             $($this).append(`<div class='setMoney${getChips} '
                     value='${getChips}'
                     style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipLine++}px'></div>`);
@@ -277,11 +284,12 @@ $(document).ready(function() {
     let leftChipFourLine = 1;
 
     function clickFourOrEightLine(startNumber, sizeNumber, $this) {
-        for (let i = startNumber; i <= sizeNumber; i++) {
-            $(`#tableNumber${i}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
-            $(`#tableNumber${i}`).empty();
-        }
+
         if (setChips && !disabledMoney) {
+            for (let i = startNumber; i <= sizeNumber; i++) {
+                $(`#tableNumber${i}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
+                $(`#tableNumber${i}`).empty();
+            }
             $($this).append(`<div class='setMoney${getChips} '
                     value='${getChips}'
                     style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipFourLine++}px'></div>`);
@@ -300,13 +308,12 @@ $(document).ready(function() {
 
     function clickEvenOrOdd(startNumber, $this) {
         let pairNumber = startNumber;
-        for (let i = 0; i <= 18; i++) {
-            $(`#tableNumber${pairNumber}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
-            $(`#tableNumber${pairNumber}`).empty();
-            pairNumber += 2;
-        }
-
         if (setChips && !disabledMoney) {
+            for (let i = 0; i <= 18; i++) {
+                $(`#tableNumber${pairNumber}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
+                $(`#tableNumber${pairNumber}`).empty();
+                pairNumber += 2;
+            }
             $($this).append(`<div class='setMoney${getChips} '
                     value='${getChips}'
                     style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipEven++}px'></div>`);
@@ -324,9 +331,10 @@ $(document).ready(function() {
     let leftChipRed = 1;
 
     function clickRedOrBlack(color, $this) {
-        $(`.${color}`).empty();
-        $(`.${color}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
+
         if (setChips && !disabledMoney) {
+            $(`.${color}`).empty();
+            $(`.${color}`).css({ 'background-color': 'white', 'opacity': `${opacity}` });
             $($this).append(`<div class='setMoney${getChips} '
                     value='${getChips}'
                     style ='background-image: url("./images/chip${getChips}.png"); left: ${leftChipRed++}px'></div>`);
