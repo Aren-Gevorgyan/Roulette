@@ -103,6 +103,10 @@ $(document).ready(function() {
             }
         }
 
+        $('#rebet').click(() => {
+            emptyTable();
+        })
+
         function isIfSixtySecond() {
             $("polyline").css({ 'stroke': '#007bff' });
             spinBall(lastDataArray);
@@ -181,7 +185,7 @@ $(document).ready(function() {
         }, 400)
     }
 
-    function steBorderPx(borderPx) {
+    function steBorderPx() {
         if (window.innerWidth > 1400) {
             return 4;
         } else if (window.innerWidth > 800) {
