@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1680px) {
+@media screen and (max-width: 1680px) {
     .centerRoulette {
         transform: rotate3d(1, 1, 1, -5.5deg);
         -webkit-transform: rotate3d(1, 1, 1, -5.5deg);
@@ -113,7 +113,7 @@
     }
 }
 
-@media only screen and (max-width: 1600px) {
+@media screen and (max-width: 1600px) {
     .score {
         margin-top: 32%;
     }
@@ -212,7 +212,7 @@
     }
 }
 
-@media only screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
     .centerRoulette {
         left: -8%;
     }
@@ -341,7 +341,7 @@
     }
 }
 
-@media only screen and (max-width: 1400px) {
+@media screen and (max-width: 1400px) {
     .score {
         margin-top: 43%;
     }
@@ -515,7 +515,7 @@
     }
 }
 
-@media only screen and (max-width: 1366px) {
+@media screen and (max-width: 1366px) {
     #countdown-number {
         font-size: 24px
     }
@@ -752,7 +752,7 @@
     }
 }
 
-@media only screen and (max-width: 1280px) {
+@media screen and (max-width: 1280px) {
     .stopwatchContainer {
         width: 70px;
         height: 70px;
@@ -918,7 +918,7 @@
     }
 }
 
-@media only screen and (max-width: 1152px) {
+@media screen and (max-width: 1152px) {
     .centerRoulette {
         left: -7.5%;
     }
@@ -1091,7 +1091,7 @@
     }
 }
 
-@media only screen and (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
     .score {
         margin-top: 114px;
     }
@@ -1247,7 +1247,7 @@
     }
 }
 
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
     .score {
         margin-top: 42%;
     }
@@ -1406,7 +1406,7 @@
     }
 }
 
-@media only screen and (max-width: 960px) {
+@media screen and (max-width: 960px) {
     #countdown-number {
         font-size: 20px;
     }
@@ -1510,7 +1510,7 @@
     }
 }
 
-@media only screen and (max-width: 928px) {
+@media screen and (max-width: 928px) {
     .score {
         margin-top: 43%;
     }
@@ -1603,7 +1603,7 @@
     }
 }
 
-@media only screen and (max-width: 896px) {
+@media screen and (max-width: 896px) {
     .container_money {
         margin-top: -127px;
     }
@@ -1716,7 +1716,7 @@
     }
 }
 
-@media only screen and (max-width: 823px) {
+@media screen and (max-width: 823px) {
     .score {
         margin-top: 28%;
     }
@@ -1967,7 +1967,7 @@
     }
 }
 
-@media only screen and (max-width: 812px) {
+@media screen and (max-width: 812px) {
     .score {
         margin-top: 26%;
     }
@@ -2097,7 +2097,7 @@
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .score {
         margin-top: 42%;
     }
@@ -2526,7 +2526,7 @@
     }
 }
 
-@media only screen and (max-width: 736px) {
+@media screen and (max-width: 736px) {
     footer {
         margin-top: -56px;
     }
@@ -2722,7 +2722,7 @@
     }
 }
 
-@media only screen and (max-width: 720px) {
+@media screen and (max-width: 720px) {
     .score {
         margin-top: 44%;
     }
@@ -2910,7 +2910,7 @@
     }
 }
 
-@media only screen and (max-width: 667px) {
+@media screen and (max-width: 667px) {
     #fullscreen button {
         height: 15px;
         font-size: 8px;
@@ -3133,7 +3133,7 @@
     }
 }
 
-@media only screen and (max-width: 653px) {
+@media screen and (max-width: 653px) {
     .score {
         margin-top: 24%;
     }
@@ -3334,7 +3334,7 @@
     }
 }
 
-@media only screen and (max-width: 640px) {
+@media screen and (max-width: 640px) {
     .score {
         margin-top: 33%;
     }
