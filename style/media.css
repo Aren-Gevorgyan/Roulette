@@ -1257,8 +1257,6 @@
     .headerCenterRoulette {
         width: 49%;
         height: 115%;
-        position: absolute;
-        z-index: 5;
         left: 26%;
         top: 3%;
     }

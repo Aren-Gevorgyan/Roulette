@@ -28,6 +28,7 @@ body {
     color: white;
     position: absolute;
     z-index: 20;
+    -webkit-z-index: 20;
     border-radius: 4px;
     display: flex;
     justify-content: center;
@@ -179,6 +180,7 @@ body {
     color: white;
     position: absolute;
     z-index: 2;
+    -webkit-z-index: 2;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -192,6 +194,7 @@ body {
     height: 132%;
     position: absolute;
     z-index: 5;
+    -webkit-z-index: 5;
     left: 24%;
     top: -8%;
 }
@@ -201,6 +204,7 @@ body {
     height: 121%;
     position: absolute;
     z-index: 5;
+    -webkit-z-index: 5;
     top: -8.7%;
     left: -7.5%;
     transform: rotate3d(1, 1, 1, -5deg);
@@ -216,6 +220,7 @@ body {
 svg {
     position: absolute;
     z-index: 1;
+    -webkit-z-index: 1;
 }
 
 polyline {
@@ -521,6 +526,7 @@ audio {
     right: 12%;
     bottom: 12%;
     z-index: 1;
+    -webkit-z-index: 1;
 }
 
 .number {
@@ -586,6 +592,7 @@ audio {
 
 .inner:after {
     z-index: 3;
+    -webkit-z-index: 3;
     top: 24%;
     right: 24%;
     bottom: 24%;
@@ -602,6 +609,7 @@ audio {
     color: #fff;
     font-size: 68px;
     z-index: 5;
+    -webkit-z-index: 5;
 }
 
 .inner[data-spinto="0"]:before,
@@ -916,6 +924,7 @@ audio {
     animation: rotate 24s reverse linear infinite;
     perspective: 2000px;
     z-index: 100;
+    -webkit-z-index: 100;
 }
 
 .data .data-inner {
@@ -1243,6 +1252,7 @@ audio {
     height: 50px;
     position: absolute;
     z-index: -4;
+    -webkit-z-index: -4;
     background-size: cover;
 }
 
