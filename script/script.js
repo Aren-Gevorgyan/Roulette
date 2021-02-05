@@ -157,10 +157,39 @@ $(document).ready(function() {
             inner.addClass("rest");
 
             createLastData(randomNumber, color, lastDataArray);
+            showNumber(randomNumber);
         }, 9000);
     }
 
+    function showNumber(number) {
+        let count = 0;
+        let borderPx = steBorderPx();
 
+        $(`#tableNumber${number}`).css({ 'border': `${borderPx}px solid red`, 'background-color': '', 'opacity': '1' });
+
+        let stopTime = setInterval(() => {
+            count++;
+            $(`#tableNumber${number}`).css({ 'border': 'none' });
+            setTimeout(() => {
+                $(`#tableNumber${number}`).css({ 'border': `${borderPx}px solid red` });
+                if (count === 6) {
+                    $(`#tableNumber${number}`).css({ 'border': 'none' });
+                    clearInterval(stopTime);
+                }
+            }, 600)
+
+        }, 400)
+    }
+
+    function steBorderPx(borderPx) {
+        if (window.innerWidth > 1400) {
+            return 4;
+        } else if (window.innerWidth > 800) {
+            return 3;
+        } else {
+            return 2
+        }
+    }
 
     function createLastData(number, color, lastDataArray) {
         $('.lastDataNumber').empty();
