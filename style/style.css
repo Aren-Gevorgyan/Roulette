@@ -125,7 +125,7 @@ body {
 .numberData {
     width: 74%;
     height: 28px;
-    border: 1px solid white;
+    border: 1px solid darkgray;
     border-radius: 6px;
     color: white;
     display: flex;
