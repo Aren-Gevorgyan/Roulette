@@ -1,7 +1,7 @@
 $(document).ready(function() {
     let inner = $(".inner");
     let plate = $("#plate");
-    let disabledMoney = false;
+    let disabledMoney = true;
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
 
     $('#ok').click(function() {
@@ -105,6 +105,9 @@ $(document).ready(function() {
 
         $('#rebet').click(() => {
             emptyTable();
+        })
+        $('#bet').click(() => {
+            disabledMoney = false;
         })
 
         function isIfSixtySecond() {

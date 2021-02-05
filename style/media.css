@@ -2568,8 +2568,8 @@
     .plate {
         width: 294px;
         height: 293px;
-        margin-left: 7.8%;
-        margin-top: 25%;
+        margin-left: 7.2%;
+        margin-top: 24%;
     }
     .number {
         width: 28px;
@@ -3520,5 +3520,127 @@
     }
     footer {
         margin-top: -67px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 61deg);
+        -webkit-transform: rotate3d(1, 0, 0, 61deg);
+        -ms-transform: rotate3d(1, 0, 0, 61deg);
+    }
+    .plate {
+        width: 223px;
+        height: 223px;
+        margin-left: 7%;
+        margin-top: 23%;
+    }
+    .number {
+        width: 21px;
+        height: 111px;
+        border-top: 110px solid #191919;
+        border-left: 6px solid transparent;
+        top: -2px;
+        left: calc(52% - (32px / 2));
+    }
+    .pit {
+        font-size: 8px;
+        left: -12px;
+        padding-top: 37px;
+    }
+    .inner.rest:before {
+        right: 21%;
+    }
+    .centerRoulette {
+        left: -7%;
+        transform: rotate3d(1, 1, 1, -7.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -7.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -7.5deg);
+    }
+    .score {
+        margin-top: 32%;
+    }
+    .score,
+    .win,
+    .bet {
+        height: 17px;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 11px;
+        font-size: 5px;
+    }
+    .container_buttonLeft {
+        margin-top: 11px;
+    }
+    .lastData {
+        width: 19%;
+        height: 85px;
+        margin-top: 11px;
+    }
+    .numberData {
+        height: 7.4px;
+        font-size: 5px;
+        margin-left: 1px;
+    }
+    .container_buttonRight {
+        margin-top: 10px;
+    }
+    .container_money {
+        margin-top: -155px;
+    }
+    .tableNumberContainer {
+        margin-top: 4px;
+    }
+    #tableNumber0,
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninthLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 54px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 21px;
+        margin-top: 0px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        height: 25px;
+        margin-top: -64px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninthLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 18px;
+    }
+    footer {
+        margin-top: -74px;
     }
 }
