@@ -110,6 +110,17 @@ $(document).ready(function() {
             disabledMoney = false;
         })
 
+        $('#quit').click(() => {
+            //exit from fullscreen
+            if (document.cancelFullScreen) {
+                document.cancelFullScreen();
+            } else if (document.mozCancelFullScreen) {
+                document.mozCancelFullScreen();
+            } else if (document.webkitCancelFullScreen) {
+                document.webkitCancelFullScreen();
+            }
+        })
+
         function isIfSixtySecond() {
             $("polyline").css({ 'stroke': '#007bff' });
             spinBall(lastDataArray);
@@ -172,7 +183,11 @@ $(document).ready(function() {
         let count = 0;
         let borderPx = steBorderPx();
 
-        $(`#tableNumber${number}`).css({ 'border': `${borderPx}px solid red`, 'background-color': '', 'opacity': '1' });
+        $(`#tableNumber${number}`).css({
+            'border': `${borderPx}px solid red`,
+            'background-color': '',
+            'opacity': '1',
+        });
 
         let stopTime = setInterval(() => {
             count++;
