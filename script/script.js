@@ -5,17 +5,17 @@ $(document).ready(function() {
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
 
     $('#ok').click(function() {
-        //create fullscreen
-        let elem = document.documentElement;
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen();
-        } else if (elem.webkitRequestFullscreen) {
-            elem.webkitRequestFullscreen();
-        } else if (elem.msRequestFullscreen) {
-            elem.msRequestFullscreen();
-        }
-        //rotate window
-        screen.orientation.lock("landscape-primary");
+        // //create fullscreen
+        // let elem = document.documentElement;
+        // if (elem.requestFullscreen) {
+        //     elem.requestFullscreen();
+        // } else if (elem.webkitRequestFullscreen) {
+        //     elem.webkitRequestFullscreen();
+        // } else if (elem.msRequestFullscreen) {
+        //     elem.msRequestFullscreen();
+        // }
+        // //rotate window
+        // screen.orientation.lock("landscape-primary");
         $('.container').css({ 'display': 'block' });
         $('.fullscreenContainer').css({ 'display': 'none' });
         $('#fullscreen').css({ 'display': 'none' });
