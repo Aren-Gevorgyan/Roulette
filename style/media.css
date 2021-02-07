@@ -2508,6 +2508,12 @@
         height: 30px;
         margin-top: -62px;
     }
+    footer {
+        margin-top: -57px;
+    }
+    footer>h3 {
+        font-size: 8px;
+    }
 }
 
 @media screen and (max-width: 736px) {
@@ -3110,10 +3116,10 @@
         -ms-transform: skewX(20deg);
     }
     footer {
-        margin-top: -57px;
+        margin-top: -62px;
     }
     footer>h3 {
-        font-size: 8px;
+        font-size: 10px;
     }
 }
 
