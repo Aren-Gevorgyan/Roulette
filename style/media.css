@@ -2322,12 +2322,12 @@
 
 @media screen and (max-width: 780px) {
     .score {
-        margin-top: 25%;
+        margin-top: 29%;
     }
     .score,
     .win,
     .bet {
-        height: 22px;
+        height: 24px;
         font-size: 8px;
     }
     #bet,
@@ -2341,19 +2341,22 @@
         margin-top: 18px;
     }
     .lastData {
-        height: 105px;
+        height: 119px;
         margin-top: 6px;
     }
     .container_buttonRight {
         margin-top: 9px;
     }
     .plate {
-        margin-left: 7%;
+        width: 308px;
+        height: 308px;
+        margin-left: 8%;
+        margin-top: 21%;
     }
     #rotate3d {
-        transform: rotate3d(1, 0, 0, 64deg);
-        -webkit-transform: rotate3d(1, 0, 0, 64deg);
-        -ms-transform: rotate3d(1, 0, 0, 64deg);
+        transform: rotate3d(1, 0, 0, 63deg);
+        -webkit-transform: rotate3d(1, 0, 0, 63deg);
+        -ms-transform: rotate3d(1, 0, 0, 63deg);
     }
     .numberData {
         height: 8px;
@@ -2361,9 +2364,9 @@
         font-size: 6px;
     }
     .centerRoulette {
-        transform: rotate3d(1, 1, 1, -6.5deg);
-        -webkit-transform: rotate3d(1, 1, 1, -6.5deg);
-        -ms-transform: rotate3d(1, 1, 1, -6.5deg);
+        transform: rotate3d(1, 1, 1, -5.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -5.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5.5deg);
     }
     .stopwatchContainer {
         width: 42px;
@@ -2373,17 +2376,20 @@
         font-size: 12px;
     }
     .number {
-        height: 158px;
+        width: 28px;
+        border-left: 12px solid transparent;
+        height: 154px;
+        border-top: 154px solid #191919;
     }
     .container_money {
-        margin-top: -151px;
+        margin-top: -146px;
     }
     .leftMoney>div,
     .rightMoney>div {
         height: 29px;
     }
     .tableNumberContainer {
-        margin-top: 6px;
+        margin-top: 9px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -2398,7 +2404,7 @@
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 61px;
+        height: 68px;
     }
     #firstLineNumber {
         transform: skewX(-19deg);
@@ -2462,15 +2468,15 @@
     }
     #getLines {
         width: 6.2%;
-        transform: skewX(24deg);
-        -webkit-transform: skewX(24deg);
-        -ms-transform: skewX(24deg);
+        transform: skewX(21deg);
+        -webkit-transform: skewX(21deg);
+        -ms-transform: skewX(21deg);
     }
     #tableNumber0 {
-        height: 62px;
-        transform: skewX( -13deg);
-        -webkit-transform: skewX( -21deg);
-        -ms-transform: skewX(-13deg);
+        height: 68px;
+        transform: skewX( -20deg);
+        -webkit-transform: skewX( -20deg);
+        -ms-transform: skewX(-20deg);
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -2485,12 +2491,12 @@
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 20px;
+        height: 23px;
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 22px;
+        height: 24px;
         margin-top: 1px;
     }
     #_1to18,
@@ -2499,8 +2505,8 @@
     #odd,
     #even,
     #_19to36 {
-        height: 26px;
-        margin-top: -63px;
+        height: 30px;
+        margin-top: -61px;
     }
 }
 
