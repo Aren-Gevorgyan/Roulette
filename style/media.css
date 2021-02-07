@@ -2359,7 +2359,7 @@
         -ms-transform: rotate3d(1, 0, 0, 64deg);
     }
     .numberData {
-        height: 8px;
+        height: 10px;
         border-radius: 1px;
         font-size: 6px;
     }
