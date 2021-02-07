@@ -2341,11 +2341,11 @@
         margin-top: 16px;
     }
     .lastData {
-        height: 116px;
+        height: 117px;
         margin-top: 6px;
     }
     .container_buttonRight {
-        margin-top: 7px;
+        margin-top: 9px;
     }
     .plate {
         width: 308px;
@@ -3110,10 +3110,10 @@
         -ms-transform: skewX(20deg);
     }
     footer {
-        margin-top: -62px;
+        margin-top: -57px;
     }
     footer>h3 {
-        font-size: 10px;
+        font-size: 8px;
     }
 }
 
