@@ -2338,7 +2338,7 @@
         font-size: 7px;
     }
     .container_buttonLeft {
-        margin-top: 18px;
+        margin-top: 16px;
     }
     .lastData {
         height: 119px;
@@ -2350,13 +2350,13 @@
     .plate {
         width: 308px;
         height: 308px;
-        margin-left: 8%;
+        margin-left: 7.5%;
         margin-top: 21%;
     }
     #rotate3d {
-        transform: rotate3d(1, 0, 0, 63deg);
-        -webkit-transform: rotate3d(1, 0, 0, 63deg);
-        -ms-transform: rotate3d(1, 0, 0, 63deg);
+        transform: rotate3d(1, 0, 0, 64deg);
+        -webkit-transform: rotate3d(1, 0, 0, 64deg);
+        -ms-transform: rotate3d(1, 0, 0, 64deg);
     }
     .numberData {
         height: 8px;
@@ -2382,14 +2382,14 @@
         border-top: 154px solid #191919;
     }
     .container_money {
-        margin-top: -146px;
+        margin-top: -149px;
     }
     .leftMoney>div,
     .rightMoney>div {
         height: 29px;
     }
     .tableNumberContainer {
-        margin-top: 9px;
+        margin-top: 8px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -2404,7 +2404,7 @@
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 68px;
+        height: 66px;
     }
     #firstLineNumber {
         transform: skewX(-19deg);
@@ -2473,7 +2473,7 @@
         -ms-transform: skewX(21deg);
     }
     #tableNumber0 {
-        height: 68px;
+        height: 66px;
         transform: skewX( -20deg);
         -webkit-transform: skewX( -20deg);
         -ms-transform: skewX(-20deg);
@@ -2491,7 +2491,7 @@
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 23px;
+        height: 22px;
     }
     #_3rd12,
     #_1st12,
@@ -2506,7 +2506,7 @@
     #even,
     #_19to36 {
         height: 30px;
-        margin-top: -61px;
+        margin-top: -62px;
     }
 }
 
