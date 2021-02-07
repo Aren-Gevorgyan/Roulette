@@ -2340,10 +2340,6 @@
     .container_buttonLeft {
         margin-top: 16px;
     }
-    .stopwatchContainer {
-        width: 50px;
-        height: 50px;
-    }
     .lastData {
         height: 117px;
         margin-top: 6px;
@@ -2386,14 +2382,14 @@
         border-top: 154px solid #191919;
     }
     .container_money {
-        margin-top: -149px;
+        margin-top: -146px;
     }
     .leftMoney>div,
     .rightMoney>div {
         height: 29px;
     }
     .tableNumberContainer {
-        margin-top: 8px;
+        margin-top: 10px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -2517,6 +2513,35 @@
     }
     footer>h3 {
         font-size: 8px;
+    }
+    #firstLineNumber>div>div,
+    #secondLineNumber>div>div,
+    #thirdLineNumber>div>div,
+    #fourthLineNumber>div>div,
+    #fifthLineNumber>div>div,
+    #sixthLineNumber>div>div,
+    #seventhLineNumber>div>div,
+    #eighthLineNumber>div>div,
+    #ninthLineNumber>div>div,
+    #tenthLineNumber>div>div,
+    #eleventhLineNumber>div>div,
+    #twelfthLineNumber>div>div,
+    #getLines>div>div,
+    #firstLine>div,
+    #secondLine>div,
+    #thirdLine>div,
+    #_19to36>div,
+    #_1st12>div,
+    #_1to18>div,
+    #_2en12>div,
+    #_3rd12>div,
+    #even>div,
+    #odd>div,
+    #highlightColorRed>div,
+    #highlightColorBlack>div,
+    #tableNumber0>div {
+        width: 19px;
+        height: 19px;
     }
 }
 
