@@ -2350,7 +2350,7 @@
     .plate {
         width: 308px;
         height: 308px;
-        margin-left: 7.5%;
+        margin-left: 8%;
         margin-top: 21%;
     }
     #rotate3d {
@@ -2382,14 +2382,14 @@
         border-top: 154px solid #191919;
     }
     .container_money {
-        margin-top: -149px;
+        margin-top: -147px;
     }
     .leftMoney>div,
     .rightMoney>div {
         height: 29px;
     }
     .tableNumberContainer {
-        margin-top: 8px;
+        margin-top: 10px;
     }
     #secondLineNumber,
     #firstLineNumber,
