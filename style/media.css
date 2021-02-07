@@ -2506,7 +2506,7 @@
 
 @media screen and (max-width: 768px) {
     .score {
-        margin-top: 26%;
+        margin-top: 29%;
     }
     .score,
     .win,
@@ -2537,9 +2537,9 @@
         margin-top: 33px;
     }
     #rotate3d {
-        transform: rotate3d(1, 0, 0, 62deg);
-        -webkit-transform: rotate3d(1, 0, 0, 62deg);
-        -ms-transform: rotate3d(1, 0, 0, 62deg);
+        transform: rotate3d(1, 0, 0, 58deg);
+        -webkit-transform: rotate3d(1, 0, 0, 58deg);
+        -ms-transform: rotate3d(1, 0, 0, 58deg);
     }
     .plate {
         width: 308px;
