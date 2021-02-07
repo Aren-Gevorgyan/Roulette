@@ -2382,14 +2382,14 @@
         border-top: 154px solid #191919;
     }
     .container_money {
-        margin-top: -146px;
+        margin-top: -149px;
     }
     .leftMoney>div,
     .rightMoney>div {
         height: 29px;
     }
     .tableNumberContainer {
-        margin-top: 10px;
+        margin-top: 8px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -2540,8 +2540,8 @@
     #highlightColorRed>div,
     #highlightColorBlack>div,
     #tableNumber0>div {
-        width: 19px;
-        height: 19px;
+        width: 17px;
+        height: 17px;
     }
 }
 
