@@ -182,25 +182,41 @@ $(document).ready(function() {
     function showNumber(number) {
         let count = 0;
         let borderPx = steBorderPx();
+        let winnerNumber = $(`#tableNumber${number}`);
 
-        $(`#tableNumber${number}`).css({
+        winnerNumber.css({
             'border': `${borderPx}px solid red`,
             'background-color': '',
             'opacity': '1',
         });
 
+        setBorderNumbers(count, borderPx, winnerNumber);
+        getMoneysFromWinnerNumber(winnerNumber)
+    }
+
+    function setBorderNumbers(count, borderPx, winnerNumber) {
         let stopTime = setInterval(() => {
             count++;
-            $(`#tableNumber${number}`).css({ 'border': 'none' });
+            winnerNumber.css({ 'border': 'none' });
             setTimeout(() => {
-                $(`#tableNumber${number}`).css({ 'border': `${borderPx}px solid red` });
+                winnerNumber.css({ 'border': `${borderPx}px solid red` });
                 if (count === 6) {
-                    $(`#tableNumber${number}`).css({ 'border': 'none' });
+                    winnerNumber.css({ 'border': 'none' });
                     clearInterval(stopTime);
                 }
             }, 600)
 
         }, 400)
+    }
+
+    function getMoneysFromWinnerNumber(winnerNumber) {
+        let getChildren = winnerNumber.contents();
+        let money = parseFloat($('#score').text());
+        for (let i = 0; i < getChildren.length; i++) {
+            console.log(money)
+            money += parseInt($(getChildren[i]).attr('value'));
+        }
+        $('#score').text(money);
     }
 
     function steBorderPx() {
