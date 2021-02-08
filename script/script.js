@@ -2,6 +2,7 @@ $(document).ready(function() {
     let inner = $(".inner");
     let plate = $("#plate");
     let disabledMoney = true;
+    let disabledChip = true;
     let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
 
     $('#ok').click(function() {
@@ -37,6 +38,25 @@ $(document).ready(function() {
             location.reload();
         }
     }
+
+    $('#rebet').click(() => {
+        emptyTable();
+    })
+    $('#bet').click(() => {
+        disabledMoney = false;
+        disabledChip = false;
+    })
+
+    $('#quit').click(() => {
+        //exit from fullscreen
+        if (document.cancelFullScreen) {
+            document.cancelFullScreen();
+        } else if (document.mozCancelFullScreen) {
+            document.mozCancelFullScreen();
+        } else if (document.webkitCancelFullScreen) {
+            document.webkitCancelFullScreen();
+        }
+    })
 
     function createStopwatch() {
 
@@ -103,23 +123,6 @@ $(document).ready(function() {
             }
         }
 
-        $('#rebet').click(() => {
-            emptyTable();
-        })
-        $('#bet').click(() => {
-            disabledMoney = false;
-        })
-
-        $('#quit').click(() => {
-            //exit from fullscreen
-            if (document.cancelFullScreen) {
-                document.cancelFullScreen();
-            } else if (document.mozCancelFullScreen) {
-                document.mozCancelFullScreen();
-            } else if (document.webkitCancelFullScreen) {
-                document.webkitCancelFullScreen();
-            }
-        })
 
         function isIfSixtySecond() {
             $("polyline").css({ 'stroke': '#007bff' });
@@ -175,11 +178,11 @@ $(document).ready(function() {
             inner.addClass("rest");
 
             createLastData(randomNumber, color, lastDataArray);
-            showNumber(randomNumber);
+            showWinnerNumber(randomNumber);
         }, 9000);
     }
 
-    function showNumber(number) {
+    function showWinnerNumber(number) {
         let count = 0;
         let borderPx = steBorderPx();
         let winnerNumber = $(`#tableNumber${number}`);
@@ -257,19 +260,35 @@ $(document).ready(function() {
     let setChips = false;
 
     function bindHoverMoneyTable() {
+
         for (let i = 0; i <= 8; i++) {
+
             $(`#money${i}`).click(function() {
-                deleteBorderFromMoney();
+
+                deleteBorderFromMoney(disabledChip);
                 getChips = $(this).attr('value')
                 setChips = true;
                 $(this).addClass('borderMoney');
+                checkTheAvailabilityOfMoney(getChips);
             })
         }
     }
 
-    function deleteBorderFromMoney() {
+    function checkTheAvailabilityOfMoney(getChips) {
+        if (getChips > parseFloat($('#score').text())) {
+            disabledMoney = true;
+            $('footer > h3').text('THE AMOUNT IS IESS THAN PLANNED');
+            $('footer > h3').css({ 'color': 'red' });
+        } else {
+            disabledMoney = false;
+            $('footer > h3').css({ 'color': 'white' });
+            $('footer > h3').text('FOR AMUSEMENT ONLYI!');
+        }
+    }
+
+    function deleteBorderFromMoney(disabledChip) {
         for (let j = 1; j <= 8; j++) {
-            $(`#money${j}`).removeClass('borderMoney').click(disabledMoney);
+            $(`#money${j}`).removeClass('borderMoney').click(disabledChip);
         }
     }
 
