@@ -28,7 +28,8 @@ $(document).ready(function() {
     document.addEventListener('mozfullscreenchange', exitHandler);
     document.addEventListener('MSFullscreenChange', exitHandler);
 
-    function exitHandler() {
+    //change to a arrow fun
+    let exitHandler = () => {
         // exit fullscreen
         if (!document.fullscreenElement && !document.webkitIsFullScreen && !document.mozFullScreen && !document.msFullscreenElement) {
             $('.container').css({ 'display': 'none' });
