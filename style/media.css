@@ -1,6 +1,11 @@
-@media only screen and (max-width: 1680px) {
+@media screen and (max-width: 1680px) {
     .centerRoulette {
         transform: rotate3d(1, 1, 1, -5.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -5.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5.5deg);
+    }
+    .score {
+        margin-top: 36%;
     }
     .score,
     .win,
@@ -8,38 +13,48 @@
         height: 51px;
     }
     .container_buttonLeft {
-        margin-top: 34px;
+        margin-top: 48px;
+    }
+    .container_buttonRight {
+        margin-top: 45px;
     }
     .lastData {
         width: 19%;
         height: 284px;
-    }
-    .numberData {
-        width: 70%;
-        height: 25px;
+        margin-top: 28px;
     }
     .plate {
-        width: 685px;
-        height: 684px;
+        width: 690px;
+        height: 690px;
         border-radius: 50%;
         margin-left: 8.5%;
+        margin-top: 21%;
     }
-    .inner:before {
-        font-size: 60px;
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 58deg);
+        -webkit-transform: rotate3d(1, 0, 0, 58deg);
+        -ms-transform: rotate3d(1, 0, 0, 58deg);
     }
     .number {
         width: 60px;
         height: 334px;
     }
+    .container_money {
+        margin-top: -105px;
+    }
+    .numberData {
+        width: 70%;
+        height: 24px;
+    }
+    .inner:before {
+        font-size: 60px;
+    }
     .pit {
         font-size: 25px;
         left: -1px;
     }
-    .container_money {
-        margin-top: -116px;
-    }
     .tableNumberContainer {
-        margin-top: 14px;
+        margin-top: 26px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -49,12 +64,12 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 163px;
+        height: 175px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -64,12 +79,12 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 55px;
+        height: 58px;
         margin-top: -1px;
     }
     #tableNumber0 {
@@ -93,70 +108,67 @@
     #countdown {
         margin-top: 60px;
     }
-    .stopwatch {
-        height: 110px;
-        width: 110px;
-        top: 94px;
-        left: 66px;
-    }
     #countdown-number {
-        width: 93px;
-        height: 93px;
-        top: 103px;
-        left: 75px;
         font-size: 32px;
-    }
-    #clock {
-        height: 100px;
-        width: 100px;
-    }
-    svg {
-        width: 40%;
-        height: 40%;
-        top: 26.1%;
-        left: 15.6%;
     }
 }
 
-@media only screen and (max-width: 1600px) {
-    .centerRoulette {
-        transform: rotate3d(1, 1, 1, -6.5deg);
+@media screen and (max-width: 1600px) {
+    .score {
+        margin-top: 32%;
     }
     .score,
     .win,
     .bet {
-        height: 46px;
-        font-size: 19px;
+        height: 40px;
+        font-size: 16px;
+        margin-bottom: 5px;
     }
     .container_buttonLeft {
-        margin-top: 40px;
+        margin-top: 45px;
     }
     #bet,
     #rebet,
     #take,
     #quit {
+        height: 35px;
         font-size: 20px;
     }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 60deg);
+        -webkit-transform: rotate3d(1, 0, 0, 60deg);
+        -ms-transform: rotate3d(1, 0, 0, 60deg);
+    }
     .plate {
-        width: 645px;
-        height: 644px;
+        width: 648px;
+        height: 648px;
         margin-left: 9%;
-        margin-top: 18.6%;
+        margin-top: 19%;
     }
     .number {
+        width: 55px;
         height: 315px;
+    }
+    .centerRoulette {
+        transform: rotate3d(1, 1, 1, -5.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -5.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5.5deg);
     }
     .container_buttonRight {
         margin-top: 20px;
     }
     .lastData {
-        height: 272px;
+        height: 252px;
     }
     .container_money {
-        margin-top: -123px;
+        margin-top: -118px;
     }
     #tableNumber0 {
-        height: 152px;
+        height: 148px;
+        margin-top: -9px;
+    }
+    .tableNumberContainer {
+        margin-top: 16px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -166,12 +178,12 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 53px;
+        height: 52px;
         margin-top: -2%;
     }
     #secondLineNumber,
@@ -182,7 +194,7 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
@@ -190,45 +202,31 @@
         height: 150px;
     }
     .numberData {
-        height: 23.5px;
+        height: 21px;
     }
-    .stopwatch {
-        height: 110px;
-        width: 110px;
-        top: 90px;
-        left: 63px;
+    footer {
+        margin-top: 56px;
     }
-    #countdown-number {
-        width: 93px;
-        height: 93px;
-        top: 99px;
-        left: 71px;
-        font-size: 32px;
-    }
-    #clock {
-        height: 100px;
-        width: 100px;
-    }
-    svg {
-        width: 40%;
-        height: 40%;
-        top: 26.1%;
-        left: 15.7%;
+    footer>h3 {
+        font-size: 24px;
     }
 }
 
-@media only screen and (max-width: 1440px) {
+@media screen and (max-width: 1440px) {
     .centerRoulette {
         left: -8%;
+    }
+    .score {
+        margin-top: 35%;
     }
     .score,
     .win,
     .bet {
         height: 42px;
-        font-size: 18px;
+        font-size: 16px;
     }
     .container_buttonLeft {
-        margin-top: 33px;
+        margin-top: 42px;
         padding: 1px;
     }
     #bet,
@@ -243,36 +241,51 @@
         height: 242px;
     }
     .container_buttonRight {
-        margin-top: 19px;
+        margin-top: 29px;
         padding: 1px;
     }
     .numberData {
         height: 20.5px;
     }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 57deg);
+        -webkit-transform: rotate3d(1, 0, 0, 57deg);
+        -ms-transform: rotate3d(1, 0, 0, 57deg);
+    }
     .plate {
         width: 582px;
         height: 581px;
         margin-left: 8.9%;
-        margin-top: 18.6%;
+        margin-top: 21%;
     }
     .number {
         width: 51px;
         height: 284px;
-        top: 3px;
+        top: 2px;
     }
     .pit {
         font-size: 23px;
         left: -6px;
     }
+    .numberData {
+        font-size: 14px;
+    }
     .inner:before {
-        font-size: 59px;
+        font-size: 56px;
+    }
+    .container_money {
+        margin-top: -115px;
     }
     .leftMoney>div,
     .rightMoney>div {
         height: 66px;
     }
     #tableNumber0 {
-        height: 136px;
+        height: 148px;
+        margin-top: 3px;
+    }
+    .tableNumberContainer {
+        margin-top: 22px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -282,12 +295,12 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 47px;
+        height: 53px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -297,12 +310,12 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 139px;
+        height: 152px;
     }
     #_3rd12,
     #_1st12,
@@ -316,66 +329,75 @@
     #odd,
     #even {
         height: 63px;
-        margin-top: -35px;
+        margin-top: -27px;
     }
-    .stopwatch {
-        height: 99px;
-        width: 99px;
-        top: 74px;
-        left: 54px;
+    .stopwatchContainer {
+        position: relative;
+        width: 90px;
+        height: 90px;
     }
     #countdown-number {
-        width: 80px;
-        height: 80px;
-        top: 84px;
-        left: 63px;
         font-size: 28px;
-    }
-    #clock {
-        height: 90px;
-        width: 90px;
-    }
-    svg {
-        width: 40%;
-        height: 40%;
-        top: 24.1%;
-        left: 14.7%;
     }
 }
 
-@media only screen and (max-width: 1400px) {
-    svg {
-        top: 24.90%;
-        left: 15%;
+@media screen and (max-width: 1400px) {
+    .score {
+        margin-top: 43%;
     }
     .score,
     .win,
     .bet {
         height: 41px;
         font-size: 17px;
+        margin-bottom: 10px;
     }
     .container_buttonLeft {
-        margin-top: 30px;
+        margin-top: 60px;
+    }
+    .container_buttonRight {
+        margin-top: 50px;
+    }
+    .stopwatchContainer {
+        margin-top: 40px;
     }
     .lastData {
-        height: 234px;
-        margin-top: 8px;
+        height: 264px;
+        margin-top: 40px;
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 49deg);
+        -webkit-transform: rotate3d(1, 0, 0, 49deg);
+        -ms-transform: rotate3d(1, 0, 0, 49deg);
     }
     .plate {
         width: 565px;
         height: 564px;
         margin-left: 8.8%;
-        margin-top: 18.6%;
+        margin-top: 20%;
+    }
+    .inner:before {
+        font-size: 52px;
     }
     .number {
         width: 51px;
         height: 276px;
     }
-    .inner:before {
-        font-size: 56px;
-    }
     .container_money {
-        margin-top: -127px;
+        margin-top: -92px;
+    }
+    .tableNumberContainer {
+        margin-top: 30px;
+    }
+    .numberData {
+        height: 22px;
+        font-size: 16px;
+    }
+    #tableNumber0 {
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
+        height: 180px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -385,17 +407,98 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 46px;
+        height: 61px;
+    }
+    #firstLineNumber {
+        transform: skewX(-12deg);
+        -webkit-transform: skewX(-12deg);
+        -ms-transform: skewX(-12deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-8deg);
+        -webkit-transform: skewX(-8deg);
+        -ms-transform: skewX(-8deg);
+    }
+    #fourthLineNumber {
+        transform: skewX(-6deg);
+        -webkit-transform: skewX(-6deg);
+        -ms-transform: skewX(-6deg);
+    }
+    #fifthLineNumber {
+        transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        -ms-transform: skewX(-4deg);
+    }
+    #sixthLineNumber {
+        transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
+    }
+    #seventhLineNumber {
+        transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+    }
+    #eighthLineNumber {
+        transform: skewX(4deg);
+        -webkit-transform: skewX(4deg);
+        -ms-transform: skewX(4deg);
+    }
+    #ninthLineNumber {
+        transform: skewX(6deg);
+        -webkit-transform: skewX(6deg);
+        -ms-transform: skewX(6deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(9deg);
+        -webkit-transform: skewX(9deg);
+        -ms-transform: skewX(9deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(13deg);
+        -webkit-transform: skewX(13deg);
+        -ms-transform: skewX(13deg);
+    }
+    #getLines {
+        width: 6.2%;
+        transform: skewX(15deg);
+        -webkit-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninthLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 180px;
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 49px;
+        height: 69px;
         margin-top: -5px;
     }
     #_1to18,
@@ -404,41 +507,27 @@
     #_19to36,
     #odd,
     #even {
-        height: 60px;
-        margin-top: -43px;
+        height: 80px;
+        margin-top: -17px;
+    }
+    footer {
+        margin-top: 80px;
     }
 }
 
-@media only screen and (max-width: 1366px) {
-    .stopwatch {
-        height: 82px;
-        width: 82px;
-        top: 77px;
-        left: 56px;
-    }
+@media screen and (max-width: 1366px) {
     #countdown-number {
-        width: 68px;
-        height: 68px;
-        top: 84px;
-        left: 63px;
         font-size: 24px
     }
-    #clock {
-        height: 75px;
-        width: 75px;
-    }
-    svg {
-        top: 25.8%;
-        left: 16%;
-    }
-    polyline {
-        stroke-width: 8px;
+    .score {
+        margin-top: 110px;
     }
     .score,
     .win,
     .bet {
         height: 39px;
-        font-size: 17px;
+        font-size: 15px;
+        margin-bottom: 1px;
     }
     #bet,
     #rebet,
@@ -455,21 +544,93 @@
         color: #B1AE9A;
     }
     .container_buttonLeft {
-        margin-top: 36px;
+        margin-top: 30px;
     }
     .lastData {
         height: 229px;
+        margin-top: 10px;
     }
     .numberData {
-        height: 19.4px;
+        height: 19px;
         font-size: 14px;
-        border-radius: 4px;
+        border-radius: 3px;
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 60deg);
+        -webkit-transform: rotate3d(1, 0, 0, 60deg);
+        -ms-transform: rotate3d(1, 0, 0, 60deg);
     }
     .plate {
-        width: 551px;
-        height: 550px;
+        width: 554px;
+        height: 554px;
         margin-left: 8.6%;
         margin-top: 18%;
+    }
+    #firstLineNumber {
+        transform: skewX(-16deg);
+        -webkit-transform: skewX(-16deg);
+        -ms-transform: skewX(-16deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+    }
+    #fourthLineNumber {
+        transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
+    }
+    #fifthLineNumber {
+        transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        -ms-transform: skewX(-4deg);
+    }
+    #sixthLineNumber {
+        transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
+    }
+    #seventhLineNumber {
+        transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+    }
+    #eighthLineNumber {
+        transform: skewX(5deg);
+        -webkit-transform: skewX(5deg);
+        -ms-transform: skewX(5deg);
+    }
+    #ninthLineNumber {
+        transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(17deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
+    }
+    #getLines {
+        width: 6.2%;
+        transform: skewX(20deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
     }
     .number {
         width: 47px;
@@ -480,9 +641,6 @@
     .pit {
         font-size: 21px;
         left: -7px;
-    }
-    .inner:before {
-        font-size: 59px;
     }
     .container_buttonRight {
         margin-top: 15px;
@@ -512,7 +670,7 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
@@ -528,7 +686,7 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
@@ -557,38 +715,61 @@
     .leftMoney {
         margin-left: 13.9%;
     }
+    #firstLineNumber>div>div,
+    #secondLineNumber>div>div,
+    #thirdLineNumber>div>div,
+    #fourthLineNumber>div>div,
+    #fifthLineNumber>div>div,
+    #sixthLineNumber>div>div,
+    #seventhLineNumber>div>div,
+    #eighthLineNumber>div>div,
+    #ninthLineNumber>div>div,
+    #tenthLineNumber>div>div,
+    #eleventhLineNumber>div>div,
+    #twelfthLineNumber>div>div,
+    #getLines>div>div,
+    #firstLine>div,
+    #secondLine>div,
+    #thirdLine>div,
+    #_19to36>div,
+    #_1st12>div,
+    #_1to18>div,
+    #_2en12>div,
+    #_3rd12>div,
+    #even>div,
+    #odd>div,
+    #highlightColorRed>div,
+    #highlightColorBlack>div,
+    #tableNumber0>div {
+        width: 40px;
+        height: 40px;
+    }
+    footer {
+        margin-top: 18px;
+    }
+    footer>h3 {
+        font-size: 20px;
+    }
 }
 
-@media only screen and (max-width: 1280px) {
-    .stopwatch {
-        height: 82px;
-        width: 82px;
-        top: 73px;
-        left: 53px;
+@media screen and (max-width: 1280px) {
+    .stopwatchContainer {
+        width: 70px;
+        height: 70px;
     }
-    #countdown-number {
-        width: 68px;
-        height: 68px;
-        top: 80px;
-        left: 60px;
-        font-size: 24px
+    #fullscreen {
+        width: 300px;
+        height: 300px;
     }
-    #clock {
-        height: 75px;
-        width: 75px;
-    }
-    svg {
-        top: 25.8%;
-        left: 16%;
-    }
-    polyline {
-        stroke-width: 8px;
+    .score {
+        margin-top: 114px;
     }
     .score,
     .win,
     .bet {
         height: 36px;
         font-size: 16px;
+        margin-bottom: 3px;
     }
     #bet,
     #rebet,
@@ -598,35 +779,50 @@
         font-size: 15px;
         padding: 1px;
     }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 57deg);
+        -webkit-transform: rotate3d(1, 0, 0, 57deg);
+        -ms-transform: rotate3d(1, 0, 0, 57deg);
+    }
     .plate {
-        width: 514px;
-        height: 513px;
-        margin-left: 8.8%;
-        margin-top: 19%;
+        width: 518px;
+        height: 518px;
+        margin-left: 8.6%;
+        margin-top: 20%;
     }
     .number {
         width: 45px;
-        height: 248px;
+        height: 251px;
         top: 2px;
         left: calc(48% - (32px / 2));
     }
+    .numberData {
+        height: 21px;
+    }
+    .inner:before {
+        font-size: 48px;
+    }
     .pit {
+        left: -10px;
         font-size: 18px;
     }
     .borderMoney {
         border: 3px solid rgb(65, 238, 5);
     }
     .lastData {
-        height: 216px;
+        height: 237px;
     }
     .lastDataNumber {
         margin-top: 10px;
     }
+    .container_buttonLeft {
+        margin-top: 42px;
+    }
     .container_buttonRight {
-        margin-top: 16px;
+        margin-top: 21px;
     }
     .container_money {
-        margin-top: -133px;
+        margin-top: -122px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -636,17 +832,20 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 41px;
+        height: 46px;
         margin-top: -3.1%;
     }
     #tableNumber0 {
-        height: 121px;
+        height: 135px;
         margin-top: -3px;
+        transform: skewX(-16deg);
+        -webkit-transform: skewX(-16deg);
+        -ms-transform: skewX(-16deg);
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -656,12 +855,12 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 121px;
+        height: 133px;
         margin-top: 0px;
     }
     #_1to18,
@@ -670,13 +869,13 @@
     #odd,
     #even,
     #_19to36 {
-        height: 55px;
-        margin-top: -50px;
+        height: 60px;
+        margin-top: -39px;
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 47px;
+        height: 52px;
         margin-top: -2px;
     }
     #countdown {
@@ -690,7 +889,7 @@
     #sixthLineNumber>div>div,
     #seventhLineNumber>div>div,
     #eighthLineNumber>div>div,
-    #ninethLineNumber>div>div,
+    #ninthLineNumber>div>div,
     #tenthLineNumber>div>div,
     #eleventhLineNumber>div>div,
     #twelfthLineNumber>div>div,
@@ -711,42 +910,27 @@
         width: 35px;
         height: 35px;
     }
+    footer {
+        margin-top: 28px;
+    }
+    footer>h3 {
+        font-size: 18px;
+    }
 }
 
-@media only screen and (max-width: 1152px) {
+@media screen and (max-width: 1152px) {
     .centerRoulette {
         left: -7.5%;
     }
-    .stopwatch {
-        height: 82px;
-        width: 82px;
-        top: 64px;
-        left: 47px;
-    }
-    #countdown-number {
-        width: 68px;
-        height: 68px;
-        top: 72px;
-        left: 54px;
-        font-size: 24px
-    }
-    #clock {
-        height: 75px;
-        width: 75px;
-        margin-top: 5px;
-    }
-    svg {
-        top: 25.5%;
-        left: 16%;
-    }
-    polyline {
-        stroke-width: 8px;
+    .score {
+        margin-top: 124px;
     }
     .score,
     .win,
     .bet {
         height: 33px;
         font-size: 15px;
+        margin-bottom: 8px;
     }
     #bet,
     #rebet,
@@ -756,20 +940,37 @@
         font-size: 15px;
     }
     .container_buttonLeft {
-        margin-top: 28px;
+        margin-top: 52px;
     }
     .container_buttonRight {
-        margin-top: 13px;
+        margin-top: 33px;
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 48deg);
+        -webkit-transform: rotate3d(1, 0, 0, 48deg);
+        -ms-transform: rotate3d(1, 0, 0, 48deg);
     }
     .plate {
-        width: 462px;
-        height: 461px;
+        width: 463px;
+        height: 463px;
         margin-left: 8.6%;
         margin-top: 18.8%;
     }
+    .plate:before {
+        border: 4px groove #BFA923;
+    }
+    .inner:before {
+        font-size: 46px;
+    }
+    .headerCenterRoulette {
+        width: 51%;
+        height: 128%;
+        left: 25%;
+        top: -6%;
+    }
     .number {
         width: 45px;
-        height: 222px;
+        height: 226px;
         top: 2px;
         left: calc(48% - (32px / 2));
     }
@@ -779,24 +980,25 @@
     }
     .lastData {
         width: 18%;
-        height: 192px;
+        height: 230px;
+        margin-top: 29px;
     }
     .numberData {
-        height: 17px;
+        height: 20px;
         font-size: 13px;
     }
     .container_money {
-        margin-top: -135px;
+        margin-top: -108px;
     }
     .leftMoney>div,
     .rightMoney>div {
         height: 56px;
     }
     .tableNumberContainer {
-        margin-top: 12px;
+        margin-top: 24px;
     }
     #tableNumber0 {
-        height: 108px;
+        height: 145px;
         margin-top: 1px;
     }
     #firstLineNumber>div,
@@ -807,13 +1009,13 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 38px;
-        margin-top: -1px;
+        height: 48px;
+        margin-top: 1px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -823,18 +1025,54 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 112px;
+        height: 147px;
         margin-top: -2px;
+    }
+    #firstLineNumber {
+        transform: skewX(-12deg);
+        -webkit-transform: skewX(-12deg);
+        -ms-transform: skewX(-12deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-9deg);
+        -webkit-transform: skewX(-9deg);
+        -ms-transform: skewX(-9deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(10deg);
+        -webkit-transform: skewX(10deg);
+        -ms-transform: skewX(10deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(12deg);
+        -webkit-transform: skewX(12deg);
+        -ms-transform: skewX(12deg);
+    }
+    #getLines {
+        width: 6.2%;
+        transform: skewX(15deg);
+        -webkit-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 43px;
+        height: 55px;
     }
     #_1to18,
     #highlightColorBlack,
@@ -842,15 +1080,21 @@
     #odd,
     #even,
     #_19to36 {
-        height: 49px;
-        margin-top: -55px;
+        height: 66px;
+        margin-top: -27px;
     }
     #countdown {
         margin-top: 36px;
     }
+    footer {
+        margin-top: 44px;
+    }
 }
 
-@media only screen and (max-width: 1080px) {
+@media screen and (max-width: 1080px) {
+    .score {
+        margin-top: 114px;
+    }
     .score,
     .win,
     .bet {
@@ -862,6 +1106,11 @@
     #take,
     #quit {
         height: 24px;
+    }
+    #fullscreen button {
+        height: 28px;
+        font-size: 12px;
+        border-radius: 2px;
     }
     .plate {
         width: 433px;
@@ -881,9 +1130,12 @@
     }
     .headerCenterRoulette {
         width: 52%;
-        height: 129%;
+        height: 123%;
         left: 24%;
-        top: -10%;
+        top: -1%;
+    }
+    .container_money {
+        margin-top: -113px;
     }
     .centerRoulette {
         width: 106%;
@@ -891,34 +1143,25 @@
         top: -8.7%;
         left: -7.5%;
         transform: rotate3d(1, 1, 1, -5deg);
-    }
-    #clock {
-        margin-top: 17px;
-        margin-left: 3px;
+        -webkit-transform: rotate3d(1, 1, 1, -5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5deg);
     }
     .inner:before {
-        font-size: 44px;
-    }
-    svg {
-        top: 27.5%;
-        left: 17%;
+        font-size: 40px;
     }
     .numberData {
-        height: 16px;
+        height: 18px;
         font-size: 12px;
     }
-    #countdown-number {
-        top: 71px;
-    }
     .lastData {
-        height: 181px;
+        height: 209px;
     }
     .leftMoney>div,
     .rightMoney>div {
         height: 53px;
     }
     .tableNumberContainer {
-        margin-top: 9px;
+        margin-top: 21px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -928,12 +1171,12 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 106px;
+        height: 136px;
         margin-top: -2px;
     }
     #firstLineNumber>div,
@@ -944,22 +1187,22 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 36px;
-        margin-top: -1px;
+        height: 42px;
+        margin-top: 3px;
     }
     #tableNumber0 {
-        height: 103px;
+        height: 135px;
         margin-top: 0px;
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 40px;
+        height: 53px;
     }
     #_1to18,
     #highlightColorBlack,
@@ -967,8 +1210,8 @@
     #odd,
     #even,
     #_19to36 {
-        height: 47px;
-        margin-top: -58px;
+        height: 61px;
+        margin-top: -38px;
     }
     #firstLineNumber>div>div,
     #secondLineNumber>div>div,
@@ -978,7 +1221,7 @@
     #sixthLineNumber>div>div,
     #seventhLineNumber>div>div,
     #eighthLineNumber>div>div,
-    #ninethLineNumber>div>div,
+    #ninthLineNumber>div>div,
     #tenthLineNumber>div>div,
     #eleventhLineNumber>div>div,
     #twelfthLineNumber>div>div,
@@ -999,44 +1242,29 @@
         width: 32px;
         height: 32px;
     }
+    footer {
+        margin-top: 29px;
+    }
 }
 
-@media only screen and (max-width: 1024px) {
+@media screen and (max-width: 1024px) {
+    .score {
+        margin-top: 42%;
+    }
+    .container_buttonLeft {
+        margin-top: 49px;
+    }
     .headerCenterRoulette {
         width: 49%;
-        height: 128%;
-        position: absolute;
-        z-index: 5;
+        height: 115%;
         left: 26%;
-        top: -8%;
+        top: 3%;
     }
     .centerRoulette {
-        left: -8.5%;
+        left: -7%;
         transform: rotate3d(1, 1, 1, -5.5deg);
-    }
-    .stopwatch {
-        height: 82px;
-        width: 82px;
-        top: 48px;
-        left: 36px;
-    }
-    #countdown-number {
-        width: 68px;
-        height: 68px;
-        top: 55px;
-        left: 43px;
-        font-size: 24px
-    }
-    #clock {
-        height: 75px;
-        width: 75px;
-    }
-    svg {
-        top: 21.3%;
-        left: 13.5%;
-    }
-    polyline {
-        stroke-width: 8px;
+        -webkit-transform: rotate3d(1, 1, 1, -5.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5.5deg);
     }
     .score,
     .win,
@@ -1056,34 +1284,46 @@
         width: 410px;
         height: 409px;
         margin-left: 8.48%;
-        margin-top: 18.8%;
+        margin-top: 19%;
+    }
+    .plate:after {
+        border: 3px solid #BFA923;
+    }
+    .plate:before {
+        border: 3px groove #BFA923;
     }
     .number {
         width: 37px;
-        height: 201px;
+        height: 202px;
+        top: -4px;
+        left: calc(49% - (32px / 2));
     }
     .inner:before {
         font-size: 47px;
     }
     .pit {
         font-size: 15px;
+        left: -14px;
     }
     .numberData {
-        height: 15px;
+        height: 17px;
         font-size: 11px;
     }
     .lastData {
-        height: 169px;
+        height: 198px;
     }
     .container_money {
-        margin-top: -143px;
+        margin-top: -116px;
+    }
+    .tableNumberContainer {
+        margin-top: 23px;
     }
     .leftMoney>div,
     .rightMoney>div {
         height: 50px;
     }
     #tableNumber0 {
-        height: 94px;
+        height: 127px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -1093,12 +1333,13 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 34px;
+        height: 43px;
+        margin-top: 0px;
     }
     .inner:before {
         font-size: 36px;
@@ -1111,17 +1352,17 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 99px;
+        height: 129px;
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 37px;
+        height: 50px;
     }
     #_1to18,
     #highlightColorBlack,
@@ -1129,8 +1370,8 @@
     #odd,
     #even,
     #_19to36 {
-        height: 45px;
-        margin-top: -57px;
+        height: 55px;
+        margin-top: -35px;
     }
     #firstLineNumber>div>div,
     #secondLineNumber>div>div,
@@ -1140,7 +1381,7 @@
     #sixthLineNumber>div>div,
     #seventhLineNumber>div>div,
     #eighthLineNumber>div>div,
-    #ninethLineNumber>div>div,
+    #ninthLineNumber>div>div,
     #tenthLineNumber>div>div,
     #eleventhLineNumber>div>div,
     #twelfthLineNumber>div>div,
@@ -1163,26 +1404,8 @@
     }
 }
 
-@media only screen and (max-width: 960px) {
-    #clock {
-        height: 57px;
-        width: 57px;
-    }
-    svg {
-        top: 24.3%;
-        left: 15.5%;
-    }
-    .stopwatch {
-        height: 65px;
-        width: 65px;
-        top: 51px;
-        left: 38px;
-    }
+@media screen and (max-width: 960px) {
     #countdown-number {
-        width: 49px;
-        height: 49px;
-        top: 59px;
-        left: 46px;
         font-size: 20px;
     }
     .score,
@@ -1192,16 +1415,17 @@
         font-size: 13px;
     }
     .lastData {
-        height: 158px;
+        height: 190px;
+        margin-top: 27px;
     }
     .numberData {
-        height: 14px;
+        height: 17px;
     }
     .lastDataNumber {
         margin-top: 8px;
     }
     .container_buttonRight {
-        margin-top: 12px;
+        margin-top: 25px;
     }
     .plate {
         width: 383px;
@@ -1211,7 +1435,7 @@
     }
     .number {
         width: 34px;
-        height: 187px;
+        height: 189px;
         left: calc(49% - (32px / 2));
     }
     .pit {
@@ -1221,14 +1445,20 @@
         font-size: 39px;
     }
     .plate:before {
-        border: 4px groove #BFA923;
+        border: 2px groove #BFA923;
     }
     .leftMoney>div,
     .rightMoney>div {
-        height: 42px;
+        height: 48px;
+    }
+    .container_money {
+        margin-top: -122px;
+    }
+    .tableNumberContainer {
+        margin-top: 20px;
     }
     #tableNumber0 {
-        height: 92px;
+        height: 122px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -1238,12 +1468,12 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 32px;
+        height: 40px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -1253,12 +1483,12 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 94px;
+        height: 122px;
         margin-top: 0px;
     }
     #_1to18,
@@ -1267,27 +1497,32 @@
     #odd,
     #even,
     #_19to36 {
-        height: 40px;
-        margin-top: -59px;
+        height: 53px;
+        margin-top: -50px;
+    }
+    footer {
+        margin-top: 17px;
+    }
+    footer>h3 {
+        font-size: 16px;
     }
 }
 
-@media only screen and (max-width: 928px) {
+@media screen and (max-width: 928px) {
+    .score {
+        margin-top: 43%;
+    }
     .centerRoulette {
-        left: -8%;
+        left: -6.8%;
         transform: rotate3d(1, 1, 1, -5.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -5.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5.5deg);
     }
     .headerCenterRoulette {
         width: 49%;
-        height: 128%;
-        position: absolute;
-        z-index: 5;
-        left: 27%;
-        top: -7%;
-    }
-    svg {
-        top: 25.3%;
-        left: 16%;
+        height: 120%;
+        left: 26%;
+        top: 0%;
     }
     .plate {
         width: 369px;
@@ -1311,16 +1546,18 @@
         font-size: 11px;
     }
     .container_buttonLeft {
-        margin-top: 25px;
+        margin-top: 42px;
     }
     .lastData {
-        height: 154px;
+        height: 181px;
+        margin-top: 25px;
+        border-left: 1px groove darkgray;
     }
     .container_buttonRight {
-        margin-top: 11px;
+        margin-top: 30px;
     }
     .container_money {
-        margin-top: -143px;
+        margin-top: -124px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -1330,12 +1567,12 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 89px;
+        height: 116px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -1345,33 +1582,34 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 30px;
+        height: 38px;
     }
     #tableNumber0 {
-        height: 88px;
+        height: 116px;
     }
     .numberData {
-        height: 13.4px;
+        height: 16px;
         font-size: 10px
+    }
+    footer {
+        margin-top: 10px;
     }
 }
 
-@media only screen and (max-width: 896px) {
-    .centerRoulette {
-        left: -8%;
-        transform: rotate3d(1, 1, 1, -6.5deg);
+@media screen and (max-width: 896px) {
+    .container_money {
+        margin-top: -127px;
+    }
+    .tableNumberContainer {
+        margin-top: 17px;
     }
     .headerCenterRoulette {
         left: 26%;
-    }
-    svg {
-        top: 25.9%;
-        left: 16.5%;
     }
     .score,
     .win,
@@ -1380,10 +1618,14 @@
         font-size: 12px;
     }
     .container_buttonLeft {
-        margin-top: 21px;
+        margin-top: 39px;
     }
     .lastData {
-        height: 147px;
+        height: 173px;
+    }
+    .stopwatchContainer #countdown-number {
+        width: calc(100% - 7px);
+        height: calc(100% - 7px);
     }
     #bet,
     #rebet,
@@ -1394,7 +1636,7 @@
         border-radius: 2px;
     }
     .numberData {
-        height: 12.9px;
+        height: 15px;
         font-size: 10px;
     }
     .plate {
@@ -1413,9 +1655,6 @@
         font-size: 14px;
         left: -16px;
     }
-    #clock {
-        margin-top: 10px;
-    }
     .inner:before {
         font-size: 33px;
     }
@@ -1427,12 +1666,12 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 84px;
+        height: 114px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -1442,21 +1681,21 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 29px;
+        height: 37px;
     }
     #tableNumber0 {
-        height: 84px;
+        height: 114px;
         margin-top: -1px;
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 35px;
+        height: 43px;
     }
     #_1to18,
     #highlightColorBlack,
@@ -1464,64 +1703,317 @@
     #odd,
     #even,
     #_19to36 {
-        height: 38px;
-        margin-top: -59px;
+        height: 49px;
+        margin-top: -53px;
+    }
+    footer {
+        margin-top: 5px;
+    }
+    footer>h3 {
+        font-size: 14px;
     }
 }
 
-@media only screen and (max-width: 812px) {
-    svg {
-        top: 23%;
-        left: 16.5%;
-    }
-    .stopwatch {
-        height: 65px;
-        width: 65px;
-        top: 41px;
-        left: 34px;
-    }
-    #countdown-number {
-        width: 49px;
-        height: 49px;
-        top: 49px;
-        left: 42.4px;
-        font-size: 20px;
+@media screen and (max-width: 823px) {
+    .score {
+        margin-top: 28%;
     }
     .score,
     .win,
     .bet {
-        height: 24px;
-        font-size: 10px;
+        height: 23px;
+        font-size: 8px;
+        margin-bottom: -2px;
     }
     #bet,
     #rebet,
     #take,
     #quit {
+        height: 16px;
+        font-size: 8px;
+    }
+    .container_buttonLeft {
+        margin-top: 17px;
+    }
+    .container_buttonRight {
+        margin-top: 15px;
+    }
+    .plate {
+        width: 329px;
+        height: 329px;
+        margin-left: 7.8%;
+        margin-top: 23%;
+    }
+    .stopwatchContainer {
+        width: 50px;
+        height: 50px;
+    }
+    #countdown-number {
+        font-size: 15px;
+    }
+    .number {
+        width: 32px;
+        height: 163px;
+        top: 0px;
+        border-top: 162px solid #191919;
+        left: calc(50% - (32px / 2));
+    }
+    .pit {
+        font-size: 12px;
+        left: -16px;
+        top: -167px;
+    }
+    .headerCenterRoulette {
+        top: -2%;
+    }
+    #fullscreen {
+        width: 200px;
+        height: 200px;
+    }
+    #fullscreen h3 {
+        font-size: 16px;
+    }
+    .centerRoulette {
+        width: 109%;
+        height: 122%;
+        left: -8%;
+        transform: rotate3d(1, 1, 1, -5.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -5.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5.5deg);
+    }
+    #fullscreen button {
         height: 18px;
-        font-size: 9px;
+        font-size: 10px;
+    }
+    .lastData {
+        height: 108px;
+        margin-top: 15px;
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 65deg);
+        -webkit-transform: rotate3d(1, 0, 0, 65deg);
+        -ms-transform: rotate3d(1, 0, 0, 65deg);
+    }
+    .container_money {
+        margin-top: -148px;
+        border-radius: 3px;
+    }
+    .borderMoney {
+        border: 2px solid rgb(65, 238, 5);
+    }
+    .leftMoney>div,
+    .rightMoney>div {
+        height: 31px;
+    }
+    .tableNumberContainer {
+        margin-top: 9px;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninthLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 70px;
+    }
+    #firstLineNumber {
+        transform: skewX(-16deg);
+        -webkit-transform: skewX(-16deg);
+        -ms-transform: skewX(-16deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+    }
+    #fourthLineNumber {
+        transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
+    }
+    #fifthLineNumber {
+        transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        -ms-transform: skewX(-4deg);
+    }
+    #sixthLineNumber {
+        transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
+    }
+    #seventhLineNumber {
+        transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+    }
+    #eighthLineNumber {
+        transform: skewX(5deg);
+        -webkit-transform: skewX(5deg);
+        -ms-transform: skewX(5deg);
+    }
+    #ninthLineNumber {
+        transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(17deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
+    }
+    #getLines {
+        width: 6.2%;
+        transform: skewX(20deg);
+        -webkit-transform: skewX(20deg);
+        -ms-transform: skewX(20deg);
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninthLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 23px;
+        margin-top: 0px;
+    }
+    #tableNumber0 {
+        height: 70px;
+        margin-top: -1px;
+        transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+    }
+    .numberData {
+        height: 9px;
+        font-size: 6px;
+        border-radius: 2px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 27px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        height: 30px;
+        margin-top: -61px;
+    }
+    #firstLineNumber>div>div,
+    #secondLineNumber>div>div,
+    #thirdLineNumber>div>div,
+    #fourthLineNumber>div>div,
+    #fifthLineNumber>div>div,
+    #sixthLineNumber>div>div,
+    #seventhLineNumber>div>div,
+    #eighthLineNumber>div>div,
+    #ninthLineNumber>div>div,
+    #tenthLineNumber>div>div,
+    #eleventhLineNumber>div>div,
+    #twelfthLineNumber>div>div,
+    #getLines>div>div,
+    #firstLine>div,
+    #secondLine>div,
+    #thirdLine>div,
+    #_19to36>div,
+    #_1st12>div,
+    #_1to18>div,
+    #_2en12>div,
+    #_3rd12>div,
+    #even>div,
+    #odd>div,
+    #highlightColorRed>div,
+    #highlightColorBlack>div,
+    #tableNumber0>div {
+        width: 23px;
+        height: 23px;
+    }
+    footer {
+        margin-top: -55px;
+    }
+}
+
+@media screen and (max-width: 812px) {
+    .score {
+        margin-top: 26%;
+    }
+    .score,
+    .win,
+    .bet {
+        height: 22px;
+        font-size: 8px;
+        margin-bottom: -4px;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 15px;
+        font-size: 8px;
         border-radius: 2px;
     }
     .container_buttonLeft {
         margin-top: 18px;
     }
     .lastData {
-        height: 140px;
+        height: 111px;
         margin-top: 4px;
     }
     .container_buttonRight {
         margin-top: 9px;
     }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 67deg);
+        -webkit-transform: rotate3d(1, 0, 0, 67deg);
+        -ms-transform: rotate3d(1, 0, 0, 67deg);
+    }
     .plate {
-        width: 323px;
+        width: 322px;
         height: 322px;
-        margin-left: 7.9%;
-        margin-top: 18.8%;
+        margin-left: 8.2%;
+        margin-top: 23.8%;
     }
     .plate:after {
         border: 2px solid #BFA923;
     }
     .plate:before {
-        border: 3px groove #BFA923;
+        border: 2px groove #BFA923;
+    }
+    .stopwatchContainer {
+        width: 47px;
+        height: 47px;
     }
     .number {
         height: 159px;
@@ -1534,15 +2026,18 @@
         left: -16px;
     }
     .numberData {
-        height: 12.2px;
-        font-size: 8px;
+        height: 12px;
+        font-size: 7px;
+    }
+    .inner:before {
+        font-size: 30px;
     }
     .container_money {
-        margin-top: -147px;
+        margin-top: -151px;
     }
     .leftMoney>div,
     .rightMoney>div {
-        height: 39px;
+        height: 30px;
     }
     .tableNumberContainer {
         margin-top: 7px;
@@ -1555,12 +2050,12 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 78px;
+        height: 65px;
     }
     #firstLineNumber>div,
     #secondLineNumber>div,
@@ -1570,21 +2065,21 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 27px;
+        height: 21px;
     }
     #tableNumber0 {
-        height: 80px;
+        height: 65px;
         margin-top: -1px;
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 30px;
+        height: 25px;
     }
     #_1to18,
     #highlightColorBlack,
@@ -1592,41 +2087,65 @@
     #odd,
     #even,
     #_19to36 {
-        height: 36px;
-        margin-top: -61px;
+        height: 27px;
+        margin-top: -62px;
+    }
+    footer {
+        margin-top: -64px;
     }
 }
 
-@media only screen and (max-width: 800px) {
-    svg {
-        top: 23.5%;
-        left: 16.5%;
+@media screen and (max-width: 800px) {
+    .score {
+        margin-top: 42%;
     }
     .score,
     .win,
     .bet {
-        height: 23px;
+        height: 35px;
         font-size: 11px;
     }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 18px;
+        font-size: 7px;
+    }
+    .container_buttonLeft {
+        margin-top: 25px;
+    }
     .lastData {
-        height: 131px;
-        border-left: 1px groove white;
+        height: 164px;
+        margin-top: 17px;
     }
     .numberData {
-        height: 11.3px;
-        border-radius: 3px;
+        height: 14px;
+        border-radius: 1px;
+        font-size: 9px;
+    }
+    .inner:before {
+        font-size: 27px;
+    }
+    .headerCenterRoulette {
+        top: 0%;
     }
     .container_buttonRight {
-        margin-top: 14px;
+        margin-top: 20px;
     }
     .container_money {
-        margin-top: -146px;
+        margin-top: -127px;
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 49deg);
+        -webkit-transform: rotate3d(1, 0, 0, 49deg);
+        -ms-transform: rotate3d(1, 0, 0, 49deg);
     }
     .plate {
         width: 318px;
-        height: 317px;
-        margin-left: 7.8%;
-        margin-top: 18.8%;
+        height: 318px;
+        margin-left: 8%;
+        margin-top: 21%;
     }
     .number {
         width: 32px;
@@ -1640,17 +2159,20 @@
     }
     .leftMoney>div,
     .rightMoney>div {
-        height: 38px;
+        height: 41px;
     }
     .borderMoney {
         border: 2px solid rgb(65, 238, 5);
     }
     #tableNumber0 {
-        height: 77px;
+        height: 99px;
         margin-top: 0px;
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
     }
     .tableNumberContainer {
-        margin-top: 8px;
+        margin-top: 15px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -1660,12 +2182,12 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 76px;
+        height: 99px;
         margin-top: 0px;
     }
     #firstLineNumber>div,
@@ -1676,17 +2198,18 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 26px;
+        height: 33px;
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 30px;
+        height: 38px;
+        margin-top: 1px;
     }
     #_1to18,
     #highlightColorBlack,
@@ -1694,8 +2217,8 @@
     #odd,
     #even,
     #_19to36 {
-        height: 34px;
-        margin-top: -61px;
+        height: 44px;
+        margin-top: -52px;
     }
     #firstLineNumber>div>div,
     #secondLineNumber>div>div,
@@ -1705,7 +2228,7 @@
     #sixthLineNumber>div>div,
     #seventhLineNumber>div>div,
     #eighthLineNumber>div>div,
-    #ninethLineNumber>div>div,
+    #ninthLineNumber>div>div,
     #tenthLineNumber>div>div,
     #eleventhLineNumber>div>div,
     #twelfthLineNumber>div>div,
@@ -1726,58 +2249,346 @@
         width: 24px;
         height: 24px;
     }
+    #firstLineNumber {
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
+    }
+    #fourthLineNumber {
+        transform: skewX(-6deg);
+        -webkit-transform: skewX(-6deg);
+        -ms-transform: skewX(-6deg);
+    }
+    #fifthLineNumber {
+        transform: skewX(-3deg);
+        -webkit-transform: skewX(-3deg);
+        -ms-transform: skewX(-3deg);
+    }
+    #sixthLineNumber {
+        transform: skewX(-0deg);
+        -webkit-transform: skewX(-0deg);
+        -ms-transform: skewX(-0deg);
+    }
+    #seventhLineNumber {
+        transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
+    }
+    #eighthLineNumber {
+        transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+    }
+    #ninthLineNumber {
+        transform: skewX(5deg);
+        -webkit-transform: skewX(5deg);
+        -ms-transform: skewX(5deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
+    }
+    #getLines {
+        width: 6.2%;
+        transform: skewX(17deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
+    }
+    footer {
+        margin-top: -10px;
+    }
 }
 
-@media only screen and (max-width: 736px) {
-    svg {
-        top: 26%;
-        left: 18.5%;
-    }
-    #clock {
-        height: 36px;
-        width: 36px;
-        margin-top: 3px;
-    }
-    .stopwatch {
-        height: 44px;
-        width: 44px;
-        top: 42px;
-        left: 34.9px;
-    }
-    #countdown-number {
-        width: 32px;
-        height: 32px;
-        top: 48px;
-        left: 41.4px;
-        font-size: 11px;
-    }
-    polyline {
-        stroke-width: 7px;
+@media screen and (max-width: 780px) {
+    .score {
+        margin-top: 29%;
     }
     .score,
     .win,
     .bet {
-        height: 21px;
-        font-size: 7px;
+        height: 24px;
+        font-size: 8px;
     }
     #bet,
     #rebet,
     #take,
     #quit {
-        height: 17px;
-        font-size: 9px;
+        height: 13px;
+        font-size: 7px;
+    }
+    .container_buttonLeft {
+        margin-top: 16px;
     }
     .lastData {
-        height: 126px;
+        height: 117px;
+        margin-top: 6px;
+    }
+    .container_buttonRight {
+        margin-top: 9px;
+    }
+    .plate {
+        width: 308px;
+        height: 308px;
+        margin-left: 7.8%;
+        margin-top: 22%;
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 64deg);
+        -webkit-transform: rotate3d(1, 0, 0, 64deg);
+        -ms-transform: rotate3d(1, 0, 0, 64deg);
+    }
+    .numberData {
+        height: 10px;
+        border-radius: 1px;
+        font-size: 6px;
+    }
+    .centerRoulette {
+        transform: rotate3d(1, 1, 1, -5.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -5.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -5.5deg);
+    }
+    .stopwatchContainer {
+        width: 42px;
+        height: 42px;
+    }
+    #countdown-number {
+        font-size: 12px;
+    }
+    .number {
+        width: 28px;
+        border-left: 12px solid transparent;
+        height: 154px;
+        border-top: 154px solid #191919;
+    }
+    .container_money {
+        margin-top: -147px;
+    }
+    .leftMoney>div,
+    .rightMoney>div {
+        height: 29px;
+    }
+    .tableNumberContainer {
+        margin-top: 10px;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninthLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 66px;
+    }
+    #firstLineNumber {
+        transform: skewX(-19deg);
+        -webkit-transform: skewX(-19deg);
+        -ms-transform: skewX(-19deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+    }
+    #fourthLineNumber {
+        transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
+    }
+    #fifthLineNumber {
+        transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        -ms-transform: skewX(-4deg);
+    }
+    #sixthLineNumber {
+        transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
+    }
+    #seventhLineNumber {
+        transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+    }
+    #eighthLineNumber {
+        transform: skewX(5deg);
+        -webkit-transform: skewX(5deg);
+        -ms-transform: skewX(5deg);
+    }
+    #ninthLineNumber {
+        transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(17deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
+    }
+    #getLines {
+        width: 6.2%;
+        transform: skewX(21deg);
+        -webkit-transform: skewX(21deg);
+        -ms-transform: skewX(21deg);
+    }
+    #tableNumber0 {
+        height: 66px;
+        transform: skewX( -20deg);
+        -webkit-transform: skewX( -20deg);
+        -ms-transform: skewX(-20deg);
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninthLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 22px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 24px;
+        margin-top: 1px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        height: 30px;
+        margin-top: -62px;
+    }
+    footer {
+        margin-top: -57px;
+    }
+    footer>h3 {
+        font-size: 8px;
+    }
+    #firstLineNumber>div>div,
+    #secondLineNumber>div>div,
+    #thirdLineNumber>div>div,
+    #fourthLineNumber>div>div,
+    #fifthLineNumber>div>div,
+    #sixthLineNumber>div>div,
+    #seventhLineNumber>div>div,
+    #eighthLineNumber>div>div,
+    #ninthLineNumber>div>div,
+    #tenthLineNumber>div>div,
+    #eleventhLineNumber>div>div,
+    #twelfthLineNumber>div>div,
+    #getLines>div>div,
+    #firstLine>div,
+    #secondLine>div,
+    #thirdLine>div,
+    #_19to36>div,
+    #_1st12>div,
+    #_1to18>div,
+    #_2en12>div,
+    #_3rd12>div,
+    #even>div,
+    #odd>div,
+    #highlightColorRed>div,
+    #highlightColorBlack>div,
+    #tableNumber0>div {
+        width: 17px;
+        height: 17px;
+    }
+}
+
+@media screen and (max-width: 736px) {
+    footer {
+        margin-top: -56px;
+    }
+    #countdown-number {
+        font-size: 11px;
+    }
+    .score {
+        margin-top: 32%;
+    }
+    .score,
+    .win,
+    .bet {
+        height: 22px;
+        font-size: 8px;
+        margin-bottom: 0;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 15px;
+        font-size: 8px;
+    }
+    .lastData {
+        height: 117px;
+        margin-top: 12px;
+    }
+    .container_buttonLeft {
+        margin-top: 14px;
     }
     .container_buttonRight {
         margin-top: 8px;
     }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 62deg);
+        -webkit-transform: rotate3d(1, 0, 0, 62deg);
+        -ms-transform: rotate3d(1, 0, 0, 62deg);
+    }
     .plate {
         width: 294px;
         height: 293px;
-        margin-left: 7.8%;
-        margin-top: 18.8%;
+        margin-left: 7.2%;
+        margin-top: 24%;
     }
     .number {
         width: 28px;
@@ -1788,7 +2599,11 @@
         left: calc(50% - (32px / 2));
     }
     .numberData {
-        height: 10.9px;
+        height: 10px;
+        font-size: 7px;
+    }
+    .tableNumberContainer {
+        margin-top: 9px;
     }
     .inner:before {
         font-size: 26px;
@@ -1805,6 +2620,11 @@
     .rightMoney>div {
         height: 34px;
     }
+    #tableNumber0 {
+        transform: skewX( -18deg);
+        -webkit-transform: skewX( -18deg);
+        -ms-transform: skewX( -18deg);
+    }
     #secondLineNumber,
     #firstLineNumber,
     #thirdLineNumber,
@@ -1813,7 +2633,7 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
@@ -1828,12 +2648,12 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
     #getLines>div {
-        height: 24px;
+        height: 23px;
     }
     #tableNumber0 {
         height: 71px;
@@ -1841,7 +2661,8 @@
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 28px;
+        height: 25px;
+        margin-top: -1px;
     }
     #_1to18,
     #highlightColorBlack,
@@ -1852,38 +2673,106 @@
         height: 32px;
         margin-top: -62px;
     }
+    #firstLineNumber {
+        transform: skewX(-16deg);
+        -webkit-transform: skewX(-16deg);
+        -ms-transform: skewX(-16deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+    }
+    #fourthLineNumber {
+        transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
+    }
+    #fifthLineNumber {
+        transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        -ms-transform: skewX(-4deg);
+    }
+    #sixthLineNumber {
+        transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
+    }
+    #seventhLineNumber {
+        transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+    }
+    #eighthLineNumber {
+        transform: skewX(5deg);
+        -webkit-transform: skewX(5deg);
+        -ms-transform: skewX(5deg);
+    }
+    #ninthLineNumber {
+        transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(17deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
+    }
+    #getLines {
+        width: 6.2%;
+        transform: skewX(20deg);
+        -webkit-transform: skewX(20deg);
+        -ms-transform: skewX(20deg);
+    }
 }
 
-@media only screen and (max-width: 720px) {
-    svg {
-        top: 26.7%;
-        left: 18.7%;
-    }
-    .stopwatch {
-        height: 42px;
-        width: 42px;
-        top: 43px;
-        left: 36px;
+@media screen and (max-width: 720px) {
+    .score {
+        margin-top: 44%;
     }
     .score,
     .win,
     .bet {
-        height: 21px;
+        height: 27px;
+        font-size: 9px;
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 48deg);
+        -webkit-transform: rotate3d(1, 0, 0, 48deg);
+        -ms-transform: rotate3d(1, 0, 0, 48deg);
     }
     .lastData {
-        height: 123px;
-        border-left: 1px groove white;
+        height: 139px;
+        margin-top: 19px;
     }
     .container_buttonLeft {
-        margin-top: 17px;
+        margin-top: 23px;
+    }
+    .container_buttonRight {
+        margin-top: 25px;
     }
     .numberData {
         height: 10.5px;
         font-size: 7px;
     }
     .plate {
-        width: 284px;
-        height: 283px;
+        width: 285px;
+        height: 285px;
         margin-left: 7.8%;
         margin-top: 19.8%;
     }
@@ -1908,13 +2797,13 @@
     }
     .leftMoney>div,
     .rightMoney>div {
-        height: 32px;
+        height: 36px;
     }
     .tableNumberContainer {
-        margin-top: 8px;
+        margin-top: 14px;
     }
     .container_money {
-        margin-top: -150px;
+        margin-top: -132px;
     }
     #secondLineNumber,
     #firstLineNumber,
@@ -1924,20 +2813,23 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
     #getLines {
-        height: 70px;
+        height: 92px;
     }
     #tableNumber0 {
-        height: 70px;
+        height: 90px;
+        transform: skewX( -14deg);
+        -webkit-transform: skewX( -14deg);
+        -ms-transform: skewX( -14deg);
     }
     #_3rd12,
     #_1st12,
     #_2en12 {
-        height: 27px;
+        height: 34px;
     }
     #_1to18,
     #highlightColorBlack,
@@ -1945,31 +2837,111 @@
     #odd,
     #even,
     #_19to36 {
-        height: 29px;
-        margin-top: -61px;
+        height: 40px;
+        margin-top: -57px;
+    }
+    #firstLineNumber {
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
+    }
+    #fourthLineNumber {
+        transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        -ms-transform: skewX(-4deg);
+    }
+    #fifthLineNumber {
+        transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
+    }
+    #sixthLineNumber {
+        transform: skewX(0deg);
+        -webkit-transform: skewX(deg);
+        -ms-transform: skewX(0deg);
+    }
+    #seventhLineNumber {
+        transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+    }
+    #eighthLineNumber {
+        transform: skewX(4deg);
+        -webkit-transform: skewX(4deg);
+        -ms-transform: skewX(4deg);
+    }
+    #ninthLineNumber {
+        transform: skewX(7deg);
+        -webkit-transform: skewX(7deg);
+        -ms-transform: skewX(7deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(9deg);
+        -webkit-transform: skewX(9deg);
+        -ms-transform: skewX(9deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(10deg);
+        -webkit-transform: skewX(10deg);
+        -ms-transform: skewX(10deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(13deg);
+        -webkit-transform: skewX(13deg);
+        -ms-transform: skewX(13deg);
+    }
+    #getLines {
+        width: 6.2%;
+        transform: skewX(15deg);
+        -webkit-transform: skewX(15deg);
+        -ms-transform: skewX(15deg);
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninthLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 30px;
+    }
+    footer {
+        margin-top: -26px;
+    }
+    footer>h3 {
+        font-size: 12px;
     }
 }
 
-@media only screen and (max-width: 667px) {
+@media screen and (max-width: 667px) {
+    #fullscreen button {
+        height: 15px;
+        font-size: 8px;
+    }
+    #fullscreen h3 {
+        font-size: 14px;
+    }
     .inner:before {
         font-size: 23px;
     }
-    svg {
-        top: 26.7%;
-        left: 18.7%;
-    }
-    .stopwatch {
-        height: 42px;
-        width: 42px;
-        top: 40px;
-        left: 33px;
-    }
-    #countdown-number {
-        width: 33px;
-        height: 33px;
-        top: 44.5px;
-        left: 38px;
-        font-size: 11px;
+    .score {
+        margin-top: 32%;
     }
     .score,
     .win,
@@ -1981,21 +2953,30 @@
     #rebet,
     #take,
     #quit {
-        height: 15px;
-        font-size: 8px;
+        height: 14px;
+        font-size: 7px;
+    }
+    .stopwatchContainer {
+        width: 41px;
+        height: 41px;
     }
     .container_buttonLeft {
         margin-top: 16px;
     }
+    .container_buttonRight {
+        margin-top: 14px;
+    }
     .lastData {
-        height: 113px;
+        height: 102px;
+        margin-top: 10px;
     }
     .lastDataNumber {
         margin-top: 4px;
+        margin-left: 0;
     }
     .numberData {
-        height: 10.2px;
-        font-size: 7px;
+        height: 9px;
+        font-size: 6px;
     }
     #startStopWatch {
         width: 31px;
@@ -2010,12 +2991,19 @@
     .centerRoulette {
         left: -7%;
         transform: rotate3d(1, 1, 1, -6.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -6.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -6.5deg);
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 61deg);
+        -webkit-transform: rotate3d(1, 0, 0, 61deg);
+        -ms-transform: rotate3d(1, 0, 0, 61deg);
     }
     .plate {
-        width: 260px;
-        height: 259px;
-        margin-left: 8.044%;
-        margin-top: 20.6%;
+        width: 261px;
+        height: 261px;
+        margin-left: 8%;
+        margin-top: 23.6%;
     }
     .number {
         width: 25px;
@@ -2036,6 +3024,10 @@
     .tableNumberContainer {
         margin-top: 6px;
     }
+    .leftMoney>div,
+    .rightMoney>div {
+        height: 31px;
+    }
     #secondLineNumber,
     #firstLineNumber,
     #thirdLineNumber,
@@ -2044,7 +3036,7 @@
     #sixthLineNumber,
     #seventhLineNumber,
     #eighthLineNumber,
-    #ninethLineNumber,
+    #ninthLineNumber,
     #tenthLineNumber,
     #eleventhLineNumber,
     #twelfthLineNumber,
@@ -2059,7 +3051,7 @@
     #sixthLineNumber>div,
     #seventhLineNumber>div,
     #eighthLineNumber>div,
-    #ninethLineNumber>div,
+    #ninthLineNumber>div,
     #tenthLineNumber>div,
     #eleventhLineNumber>div,
     #twelfthLineNumber>div,
@@ -2068,6 +3060,9 @@
     }
     #tableNumber0 {
         height: 64px;
+        transform: skewX(-18deg);
+        -webkit-transform: skewX(-18deg);
+        -ms-transform: skewX(-18deg);
     }
     #_3rd12,
     #_1st12,
@@ -2080,7 +3075,246 @@
     #odd,
     #even,
     #_19to36 {
+        height: 28px;
         margin-top: -63px;
+    }
+    #firstLineNumber {
+        transform: skewX(-16deg);
+        -webkit-transform: skewX(-16deg);
+        -ms-transform: skewX(-16deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+    }
+    #fourthLineNumber {
+        transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
+    }
+    #fifthLineNumber {
+        transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        -ms-transform: skewX(-4deg);
+    }
+    #sixthLineNumber {
+        transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
+    }
+    #seventhLineNumber {
+        transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+    }
+    #eighthLineNumber {
+        transform: skewX(5deg);
+        -webkit-transform: skewX(5deg);
+        -ms-transform: skewX(5deg);
+    }
+    #ninthLineNumber {
+        transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(17deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
+    }
+    #getLines {
+        width: 6.2%;
+        transform: skewX(20deg);
+        -webkit-transform: skewX(20deg);
+        -ms-transform: skewX(20deg);
+    }
+    footer {
+        margin-top: -62px;
+    }
+    footer>h3 {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width: 653px) {
+    .score {
+        margin-top: 24%;
+    }
+    .score,
+    .win,
+    .bet {
+        height: 15px;
+        font-size: 6px;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 11px;
+        font-size: 5px;
+    }
+    .centerRoulette {
+        left: -8%;
+        transform: rotate3d(1, 1, 1, -6.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -6.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -6.5deg);
+    }
+    .numberData {
+        height: 7px;
+        font-size: 5px;
+    }
+    .container_buttonLeft {
+        margin-top: 10px;
+    }
+    .lastData {
+        height: 79px;
+        margin-top: 6px;
+    }
+    .container_buttonRight {
+        margin-top: 7px;
+    }
+    #fullscreen {
+        width: 170px;
+        height: 170px;
+    }
+    #fullscreen h3 {
+        font-size: 12px;
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 69deg);
+        -webkit-transform: rotate3d(1, 0, 0, 69deg);
+        -ms-transform: rotate3d(1, 0, 0, 69deg);
+    }
+    .plate {
+        width: 261px;
+        height: 261px;
+        margin-left: 7%;
+        margin-top: 25%;
+    }
+    .stopwatchContainer {
+        width: 35px;
+        height: 35px;
+        margin-top: 24px;
+    }
+    .inner.rest:before {
+        right: 21%;
+    }
+    .container_money {
+        margin-top: -159px;
+    }
+    .leftMoney>div,
+    .rightMoney>div {
+        height: 24px;
+    }
+    .tableNumberContainer {
+        margin-top: 5px;
+    }
+    .numberData {
+        height: 7px;
+        font-size: 5px;
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninthLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 47px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninthLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 15px;
+    }
+    #tableNumber0 {
+        height: 47px;
+        transform: skewX(-23deg);
+        -webkit-transform: skewX(-23deg);
+        -ms-transform: skewX(-23deg);
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 19px;
+        margin-top: -1px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        height: 21px;
+        margin-top: -66px;
+    }
+    #firstLineNumber {
+        transform: skewX(-20deg);
+        -webkit-transform: skewX(-20deg);
+        -ms-transform: skewX(-20deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-17deg);
+        -webkit-transform: skewX(-17deg);
+        -ms-transform: skewX(-17deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-14deg);
+        -webkit-transform: skewX(-14deg);
+        -ms-transform: skewX(-14deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(18deg);
+        -webkit-transform: skewX(18deg);
+        -ms-transform: skewX(18deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(21deg);
+        -webkit-transform: skewX(21deg);
+        -ms-transform: skewX(21deg);
+    }
+    #getLines {
+        width: 6%;
+        transform: skewX(26deg);
+        -webkit-transform: skewX(26deg);
+        -ms-transform: skewX(26deg);
     }
     #firstLineNumber>div>div,
     #secondLineNumber>div>div,
@@ -2090,7 +3324,7 @@
     #sixthLineNumber>div>div,
     #seventhLineNumber>div>div,
     #eighthLineNumber>div>div,
-    #ninethLineNumber>div>div,
+    #ninthLineNumber>div>div,
     #tenthLineNumber>div>div,
     #eleventhLineNumber>div>div,
     #twelfthLineNumber>div>div,
@@ -2108,101 +3342,30 @@
     #highlightColorRed>div,
     #highlightColorBlack>div,
     #tableNumber0>div {
-        width: 20px;
-        height: 20px;
+        width: 14px;
+        height: 14px;
+    }
+    footer {
+        margin-top: -85px;
+    }
+    footer>h3 {
+        font-size: 8px;
     }
 }
 
-@media only screen and (max-width: 653px) {
-    .centerRoulette {
-        left: -7.5%;
-        transform: rotate3d(1, 1, 1, -6.5deg);
-    }
-    svg {
-        top: 27%;
-        left: 19%;
-    }
-    .stopwatch {
-        height: 42px;
-        width: 42px;
-        top: 40px;
-        left: 33px;
-    }
-    #countdown-number {
-        width: 33px;
-        height: 33px;
-        top: 44.5px;
-        left: 38px;
-        font-size: 11px;
+@media screen and (max-width: 640px) {
+    .score {
+        margin-top: 33%;
     }
     .container_buttonLeft {
-        margin-top: 16px;
+        margin-top: 14px;
     }
-    .lastData {
-        height: 111px;
-    }
-    .inner.rest:before {
-        right: 21%;
-    }
-    .container_money {
-        margin-top: -154px;
-    }
-    .tableNumberContainer {
-        margin-top: 7px;
-    }
-    #secondLineNumber,
-    #firstLineNumber,
-    #thirdLineNumber,
-    #fourthLineNumber,
-    #fifthLineNumber,
-    #sixthLineNumber,
-    #seventhLineNumber,
-    #eighthLineNumber,
-    #ninethLineNumber,
-    #tenthLineNumber,
-    #eleventhLineNumber,
-    #twelfthLineNumber,
-    #getLines {
-        height: 62px;
-    }
-    #firstLineNumber>div,
-    #secondLineNumber>div,
-    #thirdLineNumber>div,
-    #fourthLineNumber>div,
-    #fifthLineNumber>div,
-    #sixthLineNumber>div,
-    #seventhLineNumber>div,
-    #eighthLineNumber>div,
-    #ninethLineNumber>div,
-    #tenthLineNumber>div,
-    #eleventhLineNumber>div,
-    #twelfthLineNumber>div,
-    #getLines>div {
-        height: 21px;
-    }
-    #tableNumber0 {
-        height: 61px;
-    }
-    #_3rd12,
-    #_1st12,
-    #_2en12 {
-        height: 23px;
-        margin-top: -1px;
-    }
-}
-
-@media only screen and (max-width: 640px) {
-    svg {
-        top: 26.4%;
-        left: 17.9%;
-    }
-    .stopwatch {
-        top: 38px;
-        left: 31px;
-    }
-    #countdown-number {
-        top: 42.5px;
-        left: 36px;
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 13px;
+        font-size: 5px;
     }
     .score,
     .win,
@@ -2211,10 +3374,17 @@
     }
     .lastData {
         width: 19%;
-        height: 109px;
+        height: 107px;
+    }
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 60deg);
+        -webkit-transform: rotate3d(1, 0, 0, 60deg);
+        -ms-transform: rotate3d(1, 0, 0, 60deg);
     }
     .numberData {
         height: 9.8px;
+        font-size: 7;
+        margin-left: 1px;
     }
     .container_buttonRight {
         margin-top: 7px;
@@ -2242,12 +3412,34 @@
         padding-top: 30px;
     }
     .container_money {
-        margin-top: -155px;
+        margin-top: -152px;
+    }
+    .leftMoney>div,
+    .rightMoney>div {
+        height: 28px;
     }
     .tableNumberContainer {
-        margin-top: 6px;
+        margin-top: 8px;
     }
     #tableNumber0 {
+        height: 61px;
+        transform: skewX( -18deg);
+        -webkit-transform: skewX( -18deg);
+        -ms-transform: skewX(-18deg);
+    }
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninthLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
         height: 61px;
     }
     #_3rd12,
@@ -2263,5 +3455,211 @@
     #_19to36 {
         height: 27px;
         margin-top: -63px;
+    }
+    #firstLineNumber {
+        transform: skewX(-16deg);
+        -webkit-transform: skewX(-16deg);
+        -ms-transform: skewX(-16deg);
+    }
+    #secondLineNumber {
+        transform: skewX(-13deg);
+        -webkit-transform: skewX(-13deg);
+        -ms-transform: skewX(-13deg);
+    }
+    #thirdLineNumber {
+        transform: skewX(-10deg);
+        -webkit-transform: skewX(-10deg);
+        -ms-transform: skewX(-10deg);
+    }
+    #fourthLineNumber {
+        transform: skewX(-7deg);
+        -webkit-transform: skewX(-7deg);
+        -ms-transform: skewX(-7deg);
+    }
+    #fifthLineNumber {
+        transform: skewX(-4deg);
+        -webkit-transform: skewX(-4deg);
+        -ms-transform: skewX(-4deg);
+    }
+    #sixthLineNumber {
+        transform: skewX(-1deg);
+        -webkit-transform: skewX(-1deg);
+        -ms-transform: skewX(-1deg);
+    }
+    #seventhLineNumber {
+        transform: skewX(2deg);
+        -webkit-transform: skewX(2deg);
+        -ms-transform: skewX(2deg);
+    }
+    #eighthLineNumber {
+        transform: skewX(5deg);
+        -webkit-transform: skewX(5deg);
+        -ms-transform: skewX(5deg);
+    }
+    #ninthLineNumber {
+        transform: skewX(8deg);
+        -webkit-transform: skewX(8deg);
+        -ms-transform: skewX(8deg);
+    }
+    #tenthLineNumber {
+        transform: skewX(11deg);
+        -webkit-transform: skewX(11deg);
+        -ms-transform: skewX(11deg);
+    }
+    #eleventhLineNumber {
+        transform: skewX(14deg);
+        -webkit-transform: skewX(14deg);
+        -ms-transform: skewX(14deg);
+    }
+    #twelfthLineNumber {
+        transform: skewX(17deg);
+        -webkit-transform: skewX(17deg);
+        -ms-transform: skewX(17deg);
+    }
+    #getLines {
+        width: 6.2%;
+        transform: skewX(20deg);
+        -webkit-transform: skewX(20deg);
+        -ms-transform: skewX(20deg);
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninthLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 20px;
+    }
+    footer {
+        margin-top: -67px;
+    }
+}
+
+@media screen and (max-width: 568px) {
+    #rotate3d {
+        transform: rotate3d(1, 0, 0, 61deg);
+        -webkit-transform: rotate3d(1, 0, 0, 61deg);
+        -ms-transform: rotate3d(1, 0, 0, 61deg);
+    }
+    .plate {
+        width: 223px;
+        height: 223px;
+        margin-left: 7%;
+        margin-top: 23%;
+    }
+    .number {
+        width: 21px;
+        height: 111px;
+        border-top: 110px solid #191919;
+        border-left: 6px solid transparent;
+        top: -2px;
+        left: calc(52% - (32px / 2));
+    }
+    .pit {
+        font-size: 8px;
+        left: -12px;
+        padding-top: 37px;
+    }
+    .inner.rest:before {
+        right: 21%;
+    }
+    .centerRoulette {
+        left: -7%;
+        transform: rotate3d(1, 1, 1, -7.5deg);
+        -webkit-transform: rotate3d(1, 1, 1, -7.5deg);
+        -ms-transform: rotate3d(1, 1, 1, -7.5deg);
+    }
+    .score {
+        margin-top: 32%;
+    }
+    .score,
+    .win,
+    .bet {
+        height: 17px;
+    }
+    #bet,
+    #rebet,
+    #take,
+    #quit {
+        height: 11px;
+        font-size: 5px;
+    }
+    .container_buttonLeft {
+        margin-top: 11px;
+    }
+    .lastData {
+        width: 19%;
+        height: 85px;
+        margin-top: 11px;
+    }
+    .numberData {
+        height: 7.4px;
+        font-size: 5px;
+        margin-left: 1px;
+    }
+    .container_buttonRight {
+        margin-top: 10px;
+    }
+    .container_money {
+        margin-top: -155px;
+    }
+    .tableNumberContainer {
+        margin-top: 4px;
+    }
+    #tableNumber0,
+    #secondLineNumber,
+    #firstLineNumber,
+    #thirdLineNumber,
+    #fourthLineNumber,
+    #fifthLineNumber,
+    #sixthLineNumber,
+    #seventhLineNumber,
+    #eighthLineNumber,
+    #ninthLineNumber,
+    #tenthLineNumber,
+    #eleventhLineNumber,
+    #twelfthLineNumber,
+    #getLines {
+        height: 54px;
+    }
+    #_3rd12,
+    #_1st12,
+    #_2en12 {
+        height: 21px;
+        margin-top: 0px;
+    }
+    #_1to18,
+    #highlightColorBlack,
+    #highlightColorRed,
+    #odd,
+    #even,
+    #_19to36 {
+        height: 25px;
+        margin-top: -64px;
+    }
+    #firstLineNumber>div,
+    #secondLineNumber>div,
+    #thirdLineNumber>div,
+    #fourthLineNumber>div,
+    #fifthLineNumber>div,
+    #sixthLineNumber>div,
+    #seventhLineNumber>div,
+    #eighthLineNumber>div,
+    #ninthLineNumber>div,
+    #tenthLineNumber>div,
+    #eleventhLineNumber>div,
+    #twelfthLineNumber>div,
+    #getLines>div {
+        height: 18px;
+    }
+    footer {
+        margin-top: -74px;
     }
 }

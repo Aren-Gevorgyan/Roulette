@@ -11,16 +11,24 @@
   <link rel="stylesheet" type="text/css" href="./style/media.css">
 </head>
 <body>
-  
+
  <div class ='container-fluid'>
 
+  <div class='fullscreenContainer col-12 pl-0 pr-0'></div>
+
+  <div id='fullscreen'>
+    <h3>Fullscreen mode</h3>
+    <button id='ok' class='col-3' >Ok</button>
+  </div>
+
+  <div class ='container col-12 pl-0 pr-0'>
    <header class ='row'>
 
       <div class = 'containerScore col-3'>
 
-        <div class = 'score col-5'><span >Score:</span><p>0.25</p></div>
-        <div class = 'win col-5'><span>Win:</span><p>0</p></div>
-        <div class = 'bet col-5'><span>Bet:</span><p>0</p></div>
+        <div class = 'score col-5'><span >Score:</span><p id='score'>50.25</p></div>
+        <div class = 'win col-5'><span>Win:</span><p id='win'>0</p></div>
+        <div class = 'bet col-5'><span>Bet:</span><p id='betCount'>0</p></div>
         <div class = 'container_buttonLeft col-11'>
           <a href='#' class='col-3 pl-0 pr-0'><button id = 'bet' class='col-12'>Bet</button></a>
           <a href='#' class='col-3 pl-0 pr-0'><button id = 'rebet' class='col-12'>Rebet</button></a>
@@ -28,7 +36,7 @@
       </div>
      
       <div class = 'roulette col'>
-        <audio controls id='audio'  muted="muted">
+        <audio id='audio' controls>
            <source src="./images/rouletteMusic.mp3" type="audio/ogg">
         </audio>
 
@@ -79,15 +87,16 @@
         </div>
       </div>
       
-      <div class = 'containerLastData row col-3'>
-          <div class="stopwatch-container">
-              <div class='stopwatch'></div>
-              <div id="clock"> </div>
+      <div class='containerLastData row col-3'>
+        <div class='stopwatchContainer'>
+          <div class='stopwatch'></div>
+            <div id="clock"> </div>
               <svg xmlns="http://www.w3.org/2000/svg" version="1.1">
-                  <polyline points="" />
+              <polyline points="" />
               </svg>
-              <div id="countdown-number"></div>
-          </div>
+            <div id="countdown-number"></div>
+        </div>
+         
         <div class = 'lastData'>
            <div class = 'lastDataNumber col-11 pl-0 pr-0'></div>
         </div>
@@ -168,7 +177,7 @@
         <div id='tableNumber22' class='black' value='22'></div>  
       </div>
 
-      <div id='ninethLineNumber'>
+      <div id='ninthLineNumber'>
         <div id='tableNumber27' class='red' value='27'></div>
         <div id='tableNumber26' class='black' value='26'></div>
         <div id='tableNumber25' class='red' value='25'></div>  
@@ -223,6 +232,9 @@
       
    </div>
 
+   <footer class='col-8 offset-2'><h3>FOR AMUSEMENT ONLYI!</h3></footer>
+
+  </div>
  </div>
 
 <script src='./script/script.js'></script>
