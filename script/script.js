@@ -18,8 +18,8 @@ $(document).ready(function() {
         let previusSeconds = 0;
 
         setInterval(interval, intervalTime);
-
-        function interval() {
+        //change to a arrow fun
+        const interval = () => {
             let oneSecond = 1 * 1000;
             let seconds = (Date.now() - start) / oneSecond;
 

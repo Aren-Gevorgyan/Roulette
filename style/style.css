@@ -42,6 +42,43 @@ body {
     color: #B1AE9A;
 }
 
+.stopwatch-container {
+    position: relative;
+}
+
+.stopwatch-container .stopwatch {
+    top: 0;
+    left: 0;
+    width: 121px;
+    height: 121px;
+}
+.stopwatch-container #countdown-number {
+    width: 110px;
+    height: 110px;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+.stopwatch-container svg {
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 100%;
+    height: 100%;
+}
+.stopwatch-container #clock {
+    width: 121px;
+    height: 121px;
+}
+
 .containerLastData {
     display: flex;
     justify-content: space-around;
