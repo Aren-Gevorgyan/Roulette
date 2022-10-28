@@ -1,11 +1,9 @@
 $(document).ready(function () {
-  console.log(1);
   let inner = $(".inner");
   let plate = $("#plate");
   let disabledMoney = true;
   let disabledChip = true;
   let red = [32, 19, 21, 25, 34, 27, 36, 30, 23, 5, 16, 1, 14, 9, 18, 7, 12, 3];
-  console.log(2);
 
   $("#ok").click(function () {
     //create fullscreen
@@ -24,7 +22,6 @@ $(document).ready(function () {
     $("#fullscreen").css({ display: "none" });
     createStopwatch();
   });
-  console.log(3);
 
   //change to a arrow fun
   let exitHandler = () => {
@@ -47,8 +44,6 @@ $(document).ready(function () {
   document.addEventListener("webkitfullscreenchange", exitHandler);
   document.addEventListener("mozfullscreenchange", exitHandler);
   document.addEventListener("MSFullscreenChange", exitHandler);
-
-  console.log(4);
 
   $("#rebet").click(() => {
     emptyTable();
@@ -231,7 +226,6 @@ $(document).ready(function () {
     let getChildren = winnerNumber.contents();
     let money = parseFloat($("#score").text());
     for (let i = 0; i < getChildren.length; i++) {
-      console.log(money);
       money += parseInt($(getChildren[i]).attr("value"));
     }
     $("#score").text(money);
